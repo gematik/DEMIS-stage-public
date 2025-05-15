@@ -1,0 +1,48 @@
+# If active, as default all traffic is denied
+allowNothing: true
+
+# If active, allow the services to access the local Postgres database
+postgres:
+  enabled: true
+
+# If active, allow the services to access PGBouncer
+pgbouncer:
+  enabled: true
+
+# Switches Auth Policies for TCP Services to principals instead of IPs
+tcp:
+  principals:
+    enabled: true
+
+# Identity Managements (IDM) Policies
+idm:
+  enabled: true
+  # Define the namespace where the IDM Policies/Services are deployed
+  namespace: "${namespace}"
+
+  keycloak:
+    demisNamespaces:
+      - demis
+    #appDomains:
+    #  - demis.rki.de
+    appDomains:
+      - ${core_hostname}
+    # Domains, that allow users to perform the authentication
+    #authDomains:
+    #  - auth.demis.rki.de
+    authDomains:
+      - ${auth_hostname}
+    # List of IPs that are allowed to access the Keycloak Instance
+    allowList:
+      enabled: false
+  bundidIdp:
+    enabled: true
+  gematikIdp:
+    enabled: true
+# DEMIS Services Policies
+demis:
+  enabled: false
+
+# Mesh Services Policies
+mesh:
+  enabled: false
