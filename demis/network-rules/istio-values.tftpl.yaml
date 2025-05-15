@@ -1,0 +1,44 @@
+peerAuthenticationRules:
+  enabled: true
+
+demis:
+  enabled: true
+  virtualServices:
+    # Redirects old Endpoints to newer ones
+    portalShellRedirectEndpoints:
+      enabled: true
+      istioGatewayName: ${cluster_gateway}
+      hosts:
+        ti:
+          %{~ for ti_host in portal_ti_hosts ~}
+          - ${ti_host}
+          %{~ endfor ~}
+        internet:
+          %{~ for internet_host in portal_internet_hosts ~}
+          - ${internet_host}
+          %{~ endfor ~}
+      uri:
+        prefix_exact: "${context_path}/"
+        prefix_redirect: "${context_path}/portal"
+    # Redirects the requests to portal.<domain.name> to portal.<domain.name>/portal
+    portalShellRootRedirect:
+      enabled: true
+      istioGatewayName: ${cluster_gateway}
+      hosts:
+        ti:
+          %{~ for ti_host in portal_ti_hosts ~}
+          - ${ti_host}
+          %{~ endfor ~}
+        internet:
+          %{~ for internet_host in portal_internet_hosts ~}
+          - ${internet_host}
+          %{~ endfor ~}
+      uri:
+        prefix_exact: "${context_path}/"
+        prefix_redirect: "${context_path}/"
+
+idm:
+  enabled: false
+
+mesh:
+  enabled: false

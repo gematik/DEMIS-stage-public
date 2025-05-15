@@ -1,0 +1,19 @@
+peerAuthenticationRules:
+  enabled: true
+
+demis:
+  enabled: false
+
+idm:
+  enabled: true
+  envoyFilters:
+    # Only for KIND Local environmen
+    # Extracts the User Certificate from Header and adds it to 'x-forwared-client-cert-kind' Header
+    keycloakCertHeaderRewrite:
+      enabled: true
+  # Controlling the Redis Peer Authentication. Needs to be disabled in the ABC environments and local
+  peerAuthenticationRedis:
+    enabled: false
+
+mesh:
+  enabled: false

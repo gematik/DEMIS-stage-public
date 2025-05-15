@@ -1,0 +1,25 @@
+# If active, as default all traffic is denied
+allowNothing: true
+
+# If active, allow the services to access the local Postgres database
+postgres:
+  enabled: false
+
+# If active, allow the services to access PGBouncer
+pgbouncer:
+  enabled: false
+
+# Identity Managements (IDM) Policies
+idm:
+  enabled: false
+
+# DEMIS Services Policies
+demis:
+  enabled: false
+
+# Mesh Services Policies
+mesh:
+  enabled: true
+  # List of IPs that are allowed to access the services through the Ingress Gateway
+  allowList:
+    enabled: false

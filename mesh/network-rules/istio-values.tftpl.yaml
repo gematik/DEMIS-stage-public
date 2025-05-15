@@ -1,0 +1,71 @@
+peerAuthenticationRules:
+  enabled: true
+
+demis:
+  enabled: false
+
+idm:
+  enabled: false
+
+mesh:
+  enabled: true
+
+  envoyFilters:
+    blockKomfortClientResponseMsg:
+      enabled: true
+    restrictedAccessResponseMsg:
+      enabled: false
+    # Sets the HTTP Request Header 'gateway-request' to 'true' if it comes from the Notification Gateway
+    portalGatewayRequestMapping:
+      enabled: true
+    # Allows Test User login to the Portal with Token Injection
+    portalWithTokenUrlFilter:
+      enabled: true
+      # The Name of the Header containing the User Certificate
+      # For KIND Cluster use: "x-forwarded-client-cert-kind"
+      certKey: "${token_cert_header}"
+      # Internal address of the keycloak service
+      # This should be set to 'keycloak.<namespace>.svc.cluster.local' (without the port)
+      keycloakHostname: "${keycloak_internal_hostname}"
+      # Address of the IDP Issuer URL
+      # This should be set to 'auth.<domain.name>'
+      issuerUrl: "${auth_hostname}"
+      # User Certificate to be used for the injection
+      cert: "${portal_test_token_certificate}"
+    # Redirects the any "<domain>/fhir" GET Request to the address: https://fhir.gematik.de/demis
+    redirectToFhir:
+      enabled: true
+    # Removes sensitive headers from the response before sending it to the client
+    removeResponseHeaders:
+      enabled: true
+
+  istioGateway:
+    # The name of the Istio Gateway object to be created in the current namespace
+    name: ${gateway_name}
+    mtls:
+      enabled: true
+      # The Secret containing the Server Certificate, Key and CA Chain Certificates for establishing Mutual TLS connections
+      credential: ${mutual_tls_credential}
+      # List of hosts requiring the mTLS connection
+      hosts:
+        %{~ for mtls_host in mutual_tls_hosts ~}
+        - ${mtls_host}
+        %{~ endfor ~}
+    tls:
+      # The Secret containing the Server Certificate and Key for establishing TLS connections
+      credential: ${tls_credential}
+      # List of hosts requiring the TLS connection
+      hosts:
+        %{~ for tls_host in tls_hosts ~}
+        - ${tls_host}
+        %{~ endfor ~}
+
+  virtualServices:
+    # Forwards the GET Request to the given domain to the desired destination
+    rootRedirect:
+      enabled: true
+      hosts:
+        - ${core_hostname}
+      redirect:
+        from: "/"
+        to: ${portal_hostname}

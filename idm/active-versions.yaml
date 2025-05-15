@@ -1,0 +1,89 @@
+#bundid-idp:
+#  enabled: false
+#  chart-name: keycloak
+certificate-update-service:
+  main:
+    version: 1.8.0
+    weight: 100
+  canary: {}
+  deployment-strategy: replace
+  enabled: true
+keycloak:
+  main:
+    version: 26.1.0
+    weight: 100
+  canary: {}
+  deployment-strategy: update
+  enabled: true
+bundid-idp:
+  main:
+    version: 26.1.0
+    weight: 100
+  canary: {}
+  deployment-strategy: update
+  chart-name: keycloak
+  enabled: true
+gematik-idp:
+  main:
+    version: 29.0.1
+    weight: 100
+  canary: {}
+  deployment-strategy: canary
+  enabled: true
+keycloak-user-purger:
+  main:
+    version: 1.1.1
+    weight: 100
+  canary: {}
+  deployment-strategy: replace
+  enabled: true
+network-rules:
+  main:
+    version: 2.1.0
+    weight: 100
+  canary: {}
+  deployment-strategy: update
+  enabled: true
+pgbouncer:
+  main:
+    version: 1.24.0
+    weight: 100
+  canary: {}
+  deployment-strategy: update
+  enabled: true
+policies-authorizations:
+  main:
+    version: 2.1.0
+    weight: 100
+  canary: {}
+  deployment-strategy: update
+  enabled: true
+postgres:
+  main:
+    version: 14.17.1
+    weight: 100
+  canary: {}
+  deployment-strategy: update
+  enabled: true
+redis-cus:
+  chart-name: redis
+  main:
+    version: 7.4.2
+    weight: 100
+  canary: {}
+  deployment-strategy: update
+  enabled: true
+istio-routing:
+  main:
+    version: 1.1.0
+    weight: 100
+  canary: {}
+  deployment-strategy: update
+  enabled: true
+stage-configuration-data:
+  main:
+    version: 1.4.1
+    weight: 100
+  canary: {}
+  deployment-strategy: update
+  enabled: true

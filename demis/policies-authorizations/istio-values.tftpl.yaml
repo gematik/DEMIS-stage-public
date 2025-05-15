@@ -1,0 +1,34 @@
+# If active, as default all traffic is denied
+allowNothing: true
+
+# If active, allow the services to access the local Postgres database
+postgres:
+  enabled: true
+
+# If active, allow the services to access PGBouncer
+pgbouncer:
+  enabled: true
+
+idm:
+  enabled: false
+
+demis: 
+  enabled: true
+  namespace: "${namespace}"
+  # List of DEMIS Gateway Services
+  gateway:
+    services:
+      - notification-gateway
+      - gateway-igs
+  local:
+    # If active, allows the services to access the minio instance  
+    minio:
+      enabled: true
+    # If active, allows Prometheus to access the services metrics
+    prometheusMetrics:
+      enabled: true
+
+# Mesh Services Policies
+mesh:
+  enabled: false
+  
