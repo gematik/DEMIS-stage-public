@@ -5,6 +5,10 @@ resource_definitions = [
     replicas = 1
   },
   {
+    service  = "ars-pseudonymization-service"
+    replicas = 1
+  },
+  {
     service  = "context-enrichment-service"
     replicas = 1
   },

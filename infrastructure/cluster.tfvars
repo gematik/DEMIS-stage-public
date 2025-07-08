@@ -28,7 +28,7 @@ service_mesh_monitoring_enabled = true
 service_mesh_tracing_sampling = "100.0"
 
 # Trivy Options
-trivy_enabled = false
+trivy_enabled                       = false
 trivy_private_registry_secret_names = []
 
 trivy_cron_job_schedule  = "0 */6 * * *"
