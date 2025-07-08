@@ -6,7 +6,7 @@
 context_path = ""
 # Name of the stage
 override_stage_name = "public"
-stage_name = "public"
+stage_name          = "public"
 # Name of the Namespace where to install the DEMIS services
 target_namespace = "demis"
 # The Helm repository to use for the deployment
@@ -29,7 +29,7 @@ database_target_host = "postgres.demis.svc.cluster.local"
 s3_hostname = "minio.demis.svc.cluster.local"
 s3_port     = 9000
 # fhir storage service purger cron schedule
-fhir_storage_purger_suspend = false
+fhir_storage_purger_suspend       = false
 fhir_storage_purger_cron_schedule = "0 22 * * *"
 
 # Definition of Volumes
