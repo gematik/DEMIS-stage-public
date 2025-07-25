@@ -1,14 +1,21 @@
 network-rules:
   main:
-    version: 2.1.1
+    version: 2.1.2
     weight: 100
   canary: {}
   deployment-strategy: update
   enabled: true
 policies-authorizations:
   main:
-    version: 2.2.1
+    version: 2.3.1
     weight: 100
   canary: {}
   deployment-strategy: update
   enabled: true
+kyverno-admission-policies:
+  main:
+    version: 1.0.0
+    weight: 100
+  canary: {}
+  deployment-strategy: update
+  enabled: false
