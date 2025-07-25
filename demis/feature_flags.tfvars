@@ -11,11 +11,6 @@ feature_flags = [
     flag_value = true
   },
   {
-    services   = ["portal-pathogen"]
-    flag_name  = "FEATURE_FLAG_COPY_CHECKBOX_FOR_NOTIFIER_DATA"
-    flag_value = true
-  },
-  {
     services   = ["futs-core"]
     flag_name  = "FEATURE_FLAG_FUTS_VALUESETS_SNOMED"
     flag_value = true
@@ -41,18 +36,13 @@ feature_flags = [
     flag_value = true
   },
   {
-    services   = ["portal-shell"]
-    flag_name  = "FEATURE_FLAG_NEW_STARTPAGE_DESIGN"
-    flag_value = true
-  },
-  {
-    services   = ["notification-processing-service", "notification-routing-service"]
-    flag_name  = "FEATURE_FLAG_NOTIFICATIONS_7_4"
-    flag_value = true
-  },
-  {
     services   = ["pdfgen-service"]
     flag_name  = "FEATURE_FLAG_PDFGEN_WARMUP"
+    flag_value = true
+  },
+  {
+    services   = ["portal-pathogen", "portal-disease", "portal-bedoccupancy"]
+    flag_name  = "FEATURE_FLAG_PORTAL_REPEAT"
     flag_value = true
   },
   {

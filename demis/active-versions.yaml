@@ -1,34 +1,34 @@
 context-enrichment-service:
   main:
-    version: 1.1.0
+    version: 1.1.1
     weight: 100
   canary: {}
   deployment-strategy: canary
   enabled: true
 fhir-storage-purger:
   main:
-    version: 1.2.1
+    version: 1.2.2
     weight: 100
   canary: {}
   deployment-strategy: replace
   enabled: true
 fhir-storage-reader:
   main:
-    version: 1.2.1
+    version: 1.2.2
     weight: 100
   canary: {}
   deployment-strategy: canary
   enabled: true
 fhir-storage-writer:
   main:
-    version: 1.2.1
+    version: 1.2.2
     weight: 100
   canary: {}
   deployment-strategy: canary
   enabled: true
 futs:
   main:
-    version: 2.1.5
+    version: 2.2.0
     weight: 100
   canary: {}
   chart-name: futs-delegation
@@ -36,7 +36,7 @@ futs:
   enabled: true
 futs-core:
   main:
-    version: 2.1.5
+    version: 2.2.0
     weight: 100
   canary: {}
   chart-name: futs
@@ -44,7 +44,7 @@ futs-core:
   enabled: true
 futs-igs:
   main:
-    version: 2.1.5
+    version: 2.2.0
     weight: 100
   canary: {}
   chart-name: futs
@@ -66,14 +66,14 @@ hospital-location-service:
   enabled: true
 igs-service:
   main:
-    version: 1.2.1
+    version: 1.2.2
     weight: 100
   canary: {}
   deployment-strategy: canary
   enabled: true
 lifecycle-validation-service:
   main:
-    version: 1.3.0
+    version: 1.3.1
     weight: 100
   canary: {}
   deployment-strategy: canary
@@ -87,28 +87,28 @@ minio:
   enabled: true
 notification-gateway:
   main:
-    version: 6.3.9
+    version: 6.4.0
     weight: 100
   canary: {}
   deployment-strategy: canary
   enabled: true
 notification-processing-service:
   main:
-    version: 2.3.1
+    version: 2.4.1
     weight: 100
   canary: {}
   deployment-strategy: canary
   enabled: true
 notification-routing-service:
   main:
-    version: 2.3.1
+    version: 2.3.3
     weight: 100
   canary: {}
   deployment-strategy: canary
   enabled: true
 pdfgen-service:
   main:
-    version: 2.7.1
+    version: 2.7.2
     weight: 100
   canary: {}
   deployment-strategy: canary
@@ -122,14 +122,14 @@ pgbouncer:
   enabled: true
 portal-bedoccupancy:
   main:
-    version: 1.4.3
+    version: 1.4.5
     weight: 100
   canary: {}
   deployment-strategy: canary
   enabled: true
 portal-disease:
   main:
-    version: 1.3.3
+    version: 1.3.5
     weight: 100
   canary: {}
   deployment-strategy: canary
@@ -143,21 +143,21 @@ portal-igs:
   enabled: true
 portal-pathogen:
   main:
-    version: 1.4.4
+    version: 1.4.6
     weight: 100
   canary: {}
   deployment-strategy: canary
   enabled: true
 portal-shell:
   main:
-    version: 1.2.4
+    version: 1.2.6
     weight: 100
   canary: {}
   deployment-strategy: canary
   enabled: true
 postgres:
   main:
-    version: 16.6.0
+    version: 16.7.0
     weight: 100
   canary: {}
   deployment-strategy: update
@@ -178,14 +178,14 @@ pseudonymization-storage-service:
   enabled: true
 report-processing-service:
   main:
-    version: 2.1.0
+    version: 2.1.1
     weight: 100
   canary: {}
   deployment-strategy: canary
   enabled: true
 validation-service:
   main:
-    version: 2.7.0
+    version: 2.8.0
     weight: 100
   canary: {}
   chart-name: validation-service-delegation
@@ -193,7 +193,7 @@ validation-service:
   enabled: true
 validation-service-core:
   main:
-    version: 2.7.0
+    version: 2.8.0
     weight: 100
   canary: {}
   chart-name: validation-service
@@ -201,7 +201,7 @@ validation-service-core:
   enabled: true
 validation-service-igs:
   main:
-    version: 2.7.0
+    version: 2.8.0
     weight: 100
   canary: {}
   chart-name: validation-service
@@ -209,7 +209,7 @@ validation-service-igs:
   enabled: true
 validation-service-ars:
   main:
-    version: 2.7.0
+    version: 2.8.0
     weight: 100
   canary: {}
   chart-name: validation-service
@@ -217,21 +217,21 @@ validation-service-ars:
   enabled: true
 network-rules:
   main:
-    version: 2.1.1
+    version: 2.1.2
     weight: 100
   canary: {}
   deployment-strategy: update
   enabled: true
 policies-authentications:
   main:
-    version: 2.2.1
+    version: 2.3.1
     weight: 100
   canary: {}
   deployment-strategy: update
   enabled: true
 policies-authorizations:
   main:
-    version: 2.2.1
+    version: 2.3.1
     weight: 100
   canary: {}
   deployment-strategy: update
@@ -280,7 +280,7 @@ notification-routing-data:
   enabled: true
 ars-service:
   main:
-    version: 1.1.0
+    version: 1.2.0
     weight: 100
   canary: {}
   deployment-strategy: canary
@@ -292,3 +292,10 @@ ars-pseudonymization-service:
   canary: {}
   deployment-strategy: canary
   enabled: true
+kyverno-admission-policies:
+  main:
+    version: 1.0.0
+    weight: 100
+  canary: {}
+  deployment-strategy: update
+  enabled: false
