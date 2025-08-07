@@ -42,11 +42,6 @@ config_options = [
     option_value = "1000,100,0.1"
   },
   {
-    services     = ["context-enrichment-service", "fhir-storage-purger", "fhir-storage-reader", "fhir-storage-writer", "futs-core", "futs-igs"]
-    option_name  = "MANAGEMENT_TRACING_PROPAGATION_TYPE"
-    option_value = "w3c"
-  },
-  {
     services     = ["pseudonymization-service"]
     option_name  = "OPS_FLAG_SECRETS_TWO_DISEASES"
     option_value = "hiv,trp,neg,ech,tox,cht"
