@@ -1,0 +1,22 @@
+# If active, as default all traffic is denied
+allowNothing: true
+
+ekmTemplate:
+  enabled: true
+
+postgres:
+  enabled: false
+pgbouncer:
+  enabled: false
+mesh:
+  enabled: false
+idm:
+  enabled: false
+demis:
+  enabled: false
+
+# Switches Auth Policies for TCP Services to principals instead of IPs. Needed for Terrafrom Stages
+tcp:
+  principals:
+    enabled: true
+
