@@ -2,6 +2,15 @@
 
 # Release Notes stage-public
 
+## Release 1.5.0
+- add ekm-template
+- Compatible with DEMIS-Development-Cluster 3.8.0
+
+## Release 1.4.0
+- Angular 19 updates for portal frontends
+- update InEK list
+- Compatible with DEMIS-Development-Cluster 3.7.2 and below
+
 ## Release 1.3.0
 - Update Postgres
   - remove pseudonymization storage service database from init script
