@@ -1,13 +1,13 @@
 network-rules:
   main:
-    version: 2.1.2
+    version: 2.2.0
     weight: 100
   canary: {}
   deployment-strategy: update
   enabled: true
 policies-authorizations:
   main:
-    version: 2.3.1
+    version: 2.4.0
     weight: 100
   canary: {}
   deployment-strategy: update

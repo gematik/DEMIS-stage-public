@@ -37,6 +37,11 @@ config_options = [
     option_value = true
   },
   {
+    services     = ["ars-service"]
+    option_name  = "DEMIS_NETWORK_ARS_PSEUDO_SERVICE_ADDRESS"
+    option_value = "http://ars-pseudonymization-service.demis.svc.cluster.local"
+  },
+  {
     services     = ["igs-service"]
     option_name  = "FASTA_VALIDATION_PATHOGEN_DUMY"
     option_value = "1000,100,0.1"

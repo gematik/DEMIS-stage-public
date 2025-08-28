@@ -2,6 +2,11 @@
 
 # Release Notes stage-public
 
+## Release 1.5.1
+- Add new policies
+- Updated Service-Versions
+- Compatible with DEMIS-Development-Cluster 3.8.0
+
 ## Release 1.5.0
 - add ekm-template
 - Compatible with DEMIS-Development-Cluster 3.8.0
