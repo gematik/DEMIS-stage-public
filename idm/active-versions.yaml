@@ -57,7 +57,7 @@ policies-authorizations:
   enabled: true
 postgres:
   main:
-    version: 16.7.0
+    version: 16.7.1
     weight: 100
   canary: {}
   deployment-strategy: update
@@ -79,7 +79,7 @@ istio-routing:
   enabled: true
 stage-configuration-data:
   main:
-    version: 1.5.2
+    version: 1.6.3
     weight: 100
   canary: {}
   deployment-strategy: update

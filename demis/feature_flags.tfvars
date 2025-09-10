@@ -11,6 +11,11 @@ feature_flags = [
     flag_value = true
   },
   {
+    services   = ["validation-service-core", "validation-service-igs", "validation-service-ars"]
+    flag_name  = "FEATURE_FLAG_FILTERED_VALIDATION_ERRORS_DISABLED"
+    flag_value = true
+  },
+  {
     services   = ["futs-core"]
     flag_name  = "FEATURE_FLAG_FUTS_VALUESETS_SNOMED"
     flag_value = true
@@ -18,11 +23,6 @@ feature_flags = [
   {
     services   = ["pdfgen-service"]
     flag_name  = "FEATURE_FLAG_HOSPITALIZATION_ORDER"
-    flag_value = true
-  },
-  {
-    services   = ["futs-core", "portal-disease", "notification-gateway"]
-    flag_name  = "FEATURE_FLAG_HOSP_COPY_CHECKBOXES"
     flag_value = true
   },
   {
@@ -43,6 +43,11 @@ feature_flags = [
   {
     services   = ["portal-pathogen", "portal-disease", "portal-bedoccupancy"]
     flag_name  = "FEATURE_FLAG_PORTAL_REPEAT"
+    flag_value = true
+  },
+  {
+    services   = ["portal-pathogen", "portal-disease", "portal-bedoccupancy"]
+    flag_name  = "FEATURE_FLAG_PORTAL_SUBMIT"
     flag_value = true
   },
   {

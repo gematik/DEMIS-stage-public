@@ -2,6 +2,11 @@
 
 # Release Notes stage-public
 
+## Release 1.6.0
+- Updated Service-Versions
+- Updated keycloak configuration including realm roles
+- Requires DEMIS-Development-Cluster version 4.0.0
+
 ## Release 1.5.1
 - Add new policies
 - Updated Service-Versions

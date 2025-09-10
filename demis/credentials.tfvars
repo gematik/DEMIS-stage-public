@@ -27,25 +27,11 @@ database_credentials = [
     secret-key-password = "POSTGRES_PASSWORD"
   },
   {
-    username            = "notification-admin"
-    password            = "dummy-password"
-    secret-name         = "ncapi-database-secret"
-    secret-key-user     = "NOTIFICATION_DB_USER"
-    secret-key-password = "NOTIFICATION_DB_PASSWORD"
-  },
-  {
     username            = "pseudo-admin"
     password            = "dummy-password"
     secret-name         = "pseudo-database-secret"
     secret-key-user     = "PSEUDO_DB_USER"
     secret-key-password = "PSEUDO_DB_PASSWORD"
-  },
-  {
-    username            = "espri-admin"
-    password            = "dummy-password"
-    secret-name         = "pseudo-storage-database-secret"
-    secret-key-user     = "ESPRI_DB_USER"
-    secret-key-password = "ESPRI_DB_PASSWORD"
   },
   {
     username            = "fhir-storage-writer-ddl"
@@ -88,6 +74,20 @@ database_credentials = [
     secret-name         = "hapi-fhir-reader-database-secret"
     secret-key-user     = "HAPI_FHIR_WRITER_DB_USER"
     secret-key-password = "HAPI_FHIR_READER_DB_PASSWORD"
+  },
+  {
+    username            = "ars-pseudo-ddl"
+    password            = "dummy-password"
+    secret-name         = "ars-pseudo-ddl-database-secret"
+    secret-key-user     = "ARS_PSEUDO_DDL_DB_USER"
+    secret-key-password = "ARS_PSEUDO_DDL_DB_PASSWORD"
+  },
+  {
+    username            = "ars-pseudo-user"
+    password            = "dummy-password"
+    secret-name         = "ars-pseudo-user-database-secret"
+    secret-key-user     = "ARS_PSEUDO_USER_DB_USER"
+    secret-key-password = "ARS_PSEUDO_USER_DB_PASSWORD"
   }
 ]
 
