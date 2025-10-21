@@ -2,6 +2,10 @@
 
 # Release Notes stage-public
 
+## Release 1.6.1
+- add .gitattributes
+- Updated Service-Versions
+
 ## Release 1.6.0
 - Updated Service-Versions
 - Updated keycloak configuration including realm roles
