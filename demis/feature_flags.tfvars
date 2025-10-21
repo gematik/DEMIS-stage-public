@@ -42,17 +42,32 @@ feature_flags = [
   },
   {
     services   = ["portal-pathogen", "portal-disease", "portal-bedoccupancy"]
-    flag_name  = "FEATURE_FLAG_PORTAL_REPEAT"
+    flag_name  = "FEATURE_FLAG_PORTAL_ERROR_DIALOG"
+    flag_value = true
+  },
+  {
+    services   = ["portal-pathogen", "portal-disease", "portal-bedoccupancy"]
+    flag_name  = "FEATURE_FLAG_PORTAL_ERROR_DIALOG_ON_SUBMIT"
+    flag_value = true
+  },
+  {
+    services   = ["portal-shell"]
+    flag_name  = "FEATURE_FLAG_PORTAL_INFOBANNER"
+    flag_value = true
+  },
+  {
+    services   = ["portal-pathogen", "portal-disease", "portal-bedoccupancy"]
+    flag_name  = "FEATURE_FLAG_PORTAL_PASTEBOX"
+    flag_value = true
+  },
+  {
+    services   = ["portal-pathogen"]
+    flag_name  = "FEATURE_FLAG_PORTAL_PATHOGEN_DATEPICKER"
     flag_value = true
   },
   {
     services   = ["portal-pathogen", "portal-disease", "portal-bedoccupancy"]
     flag_name  = "FEATURE_FLAG_PORTAL_SUBMIT"
-    flag_value = true
-  },
-  {
-    services   = ["notification-processing-service"]
-    flag_name  = "FEATURE_FLAG_PSEUDO_STORAGE_DISABLED"
     flag_value = true
   },
   {
@@ -68,11 +83,6 @@ feature_flags = [
   {
     services   = ["notification-gateway"]
     flag_name  = "FEATURE_FLAG_SNAPSHOT_5_3_0_ACTIVE"
-    flag_value = true
-  },
-  {
-    services   = ["notification-processing-service"]
-    flag_name  = "FEATURE_FLAG_TEST_ROUTING_V2"
     flag_value = true
   }
 ]
