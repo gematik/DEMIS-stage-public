@@ -43,14 +43,14 @@ network-rules:
   enabled: true
 pgbouncer:
   main:
-    version: 1.24.1
+    version: 1.24.2
     weight: 100
   canary: {}
   deployment-strategy: update
   enabled: true
 policies-authorizations:
   main:
-    version: 2.4.0
+    version: 2.5.0
     weight: 100
   canary: {}
   deployment-strategy: update
@@ -65,7 +65,7 @@ postgres:
 redis-cus:
   chart-name: redis
   main:
-    version: 7.4.2
+    version: 8.2.2
     weight: 100
   canary: {}
   deployment-strategy: update

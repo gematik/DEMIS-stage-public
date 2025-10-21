@@ -101,7 +101,7 @@ notification-processing-service:
   enabled: true
 notification-routing-service:
   main:
-    version: 2.3.6
+    version: 2.4.0
     weight: 100
   canary: {}
   deployment-strategy: canary
@@ -115,14 +115,14 @@ pdfgen-service:
   enabled: true
 pgbouncer:
   main:
-    version: 1.24.1
+    version: 1.24.2
     weight: 100
   canary: {}
   deployment-strategy: update
   enabled: true
 portal-bedoccupancy:
   main:
-    version: 1.5.3
+    version: 1.5.4
     weight: 100
   canary: {}
   deployment-strategy: canary
@@ -185,7 +185,7 @@ report-processing-service:
   enabled: true
 validation-service:
   main:
-    version: 2.9.0
+    version: 2.9.1
     weight: 100
   canary: {}
   chart-name: validation-service-delegation
@@ -193,7 +193,7 @@ validation-service:
   enabled: true
 validation-service-core:
   main:
-    version: 2.9.0
+    version: 2.9.1
     weight: 100
   canary: {}
   chart-name: validation-service
@@ -201,7 +201,7 @@ validation-service-core:
   enabled: true
 validation-service-igs:
   main:
-    version: 2.9.0
+    version: 2.9.1
     weight: 100
   canary: {}
   chart-name: validation-service
@@ -209,7 +209,7 @@ validation-service-igs:
   enabled: true
 validation-service-ars:
   main:
-    version: 2.9.0
+    version: 2.9.1
     weight: 100
   canary: {}
   chart-name: validation-service
@@ -224,14 +224,14 @@ network-rules:
   enabled: true
 policies-authentications:
   main:
-    version: 2.4.0
+    version: 2.5.0
     weight: 100
   canary: {}
   deployment-strategy: update
   enabled: true
 policies-authorizations:
   main:
-    version: 2.4.0
+    version: 2.5.0
     weight: 100
   canary: {}
   deployment-strategy: update
@@ -245,7 +245,7 @@ istio-routing:
   enabled: true
 fhir-profile-snapshots:
   main:
-    version: 5.3.2
+    version: 5.3.5
     weight: 100
   canary: {}
   deployment-strategy: update

@@ -46,7 +46,7 @@ feature_flags = [
     flag_value = true
   },
   {
-    services   = ["portal-pathogen", "portal-disease", "portal-bedoccupancy"]
+    services   = ["portal-pathogen", "portal-disease"]
     flag_name  = "FEATURE_FLAG_PORTAL_ERROR_DIALOG_ON_SUBMIT"
     flag_value = true
   },
@@ -66,7 +66,7 @@ feature_flags = [
     flag_value = true
   },
   {
-    services   = ["portal-pathogen", "portal-disease", "portal-bedoccupancy"]
+    services   = ["portal-pathogen", "portal-disease"]
     flag_name  = "FEATURE_FLAG_PORTAL_SUBMIT"
     flag_value = true
   },

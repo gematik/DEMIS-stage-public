@@ -2,6 +2,10 @@
 
 # Release Notes stage-public
 
+## Release 1.6.2
+- Updated Service-Versions
+- Compatible with DEMIS-Development-Cluster 4.1.0
+
 ## Release 1.6.1
 - add .gitattributes
 - Updated Service-Versions
