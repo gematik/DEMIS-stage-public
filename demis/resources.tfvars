@@ -109,6 +109,14 @@ resource_definitions = [
     replicas = 1
   },
   {
+    service  = "surveillance-pseudonym-service-ars"
+    replicas = 1
+  },
+  {
+    service  = "surveillance-pseudonym-purger-ars"
+    replicas = 1
+  },
+  {
     service  = "validation-service-core"
     replicas = 1
   },

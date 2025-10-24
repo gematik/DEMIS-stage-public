@@ -88,7 +88,14 @@ database_credentials = [
     secret-name         = "ars-pseudo-user-database-secret"
     secret-key-user     = "ARS_PSEUDO_USER_DB_USER"
     secret-key-password = "ARS_PSEUDO_USER_DB_PASSWORD"
-  }
+  },
+  {
+    username            = "ars-pseudo-purger"
+    password            = "dummy-password"
+    secret-name         = "ars-pseudo-purger-database-secret"
+    secret-key-user     = "ARS_PSEUDO_PURGER_DB_USER"
+    secret-key-password = "ARS_PSEUDO_PURGER_DB_PASSWORD"
+  },
 ]
 
 # PostgreSQL Certificates
@@ -119,3 +126,6 @@ minio_root_password = "minioadmin"
 # Redis CUS Credentials (Reader)
 redis_cus_reader_user     = "reader"
 redis_cus_reader_password = "read_this_password"
+
+# ars pseudo service secrets
+ars_pseudo_hash_pepper = "36EWaW1l4MBwORh39aaLzT9rVqF9wD3QtE4jltq8NKk="

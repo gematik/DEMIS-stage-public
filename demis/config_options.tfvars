@@ -16,16 +16,6 @@ config_options = [
     option_value = false
   },
   {
-    services     = ["postgres"]
-    option_name  = "CONFIG_BUNDID_DB"
-    option_value = false
-  },
-  {
-    services     = ["postgres"]
-    option_name  = "CONFIG_KEYCLOAK_DB"
-    option_value = false
-  },
-  {
     services                 = ["pdfgen-service"]
     option_name              = "CONFIG_OPTION_PDF_WATERMARK"
     option_value             = "stage-public"
@@ -35,11 +25,6 @@ config_options = [
     services     = ["portal-shell"]
     option_name  = "CONFIG_TOKEN_INJECTION_ENABLED"
     option_value = true
-  },
-  {
-    services     = ["ars-service"]
-    option_name  = "DEMIS_NETWORK_ARS_PSEUDO_SERVICE_ADDRESS"
-    option_value = "http://ars-pseudonymization-service.demis.svc.cluster.local"
   },
   {
     services     = ["igs-service"]
@@ -67,7 +52,7 @@ config_options = [
     option_value = true
   },
   {
-    services                 = ["fhir-storage-writer"]
+    services                 = ["fhir-storage-writer", "surveillance-pseudonym-service-ars"]
     option_name              = "SPRING_LIQUIBASE_ENABLED"
     option_value             = true
     synchronize_option_value = false
