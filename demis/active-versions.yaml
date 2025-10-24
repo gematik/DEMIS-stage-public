@@ -1,6 +1,6 @@
 context-enrichment-service:
   main:
-    version: 1.1.1
+    version: 1.1.2
     weight: 100
   canary: {}
   deployment-strategy: canary
@@ -108,7 +108,7 @@ notification-routing-service:
   enabled: true
 pdfgen-service:
   main:
-    version: 2.8.1
+    version: 2.8.2
     weight: 100
   canary: {}
   deployment-strategy: canary
@@ -157,7 +157,7 @@ portal-shell:
   enabled: true
 postgres:
   main:
-    version: 16.7.1
+    version: 16.7.2
     weight: 100
   canary: {}
   deployment-strategy: update
@@ -224,14 +224,14 @@ network-rules:
   enabled: true
 policies-authentications:
   main:
-    version: 2.5.0
+    version: 2.6.0
     weight: 100
   canary: {}
   deployment-strategy: update
   enabled: true
 policies-authorizations:
   main:
-    version: 2.5.0
+    version: 2.6.0
     weight: 100
   canary: {}
   deployment-strategy: update
@@ -280,14 +280,7 @@ notification-routing-data:
   enabled: true
 ars-service:
   main:
-    version: 1.2.1
-    weight: 100
-  canary: {}
-  deployment-strategy: canary
-  enabled: true
-ars-pseudonymization-service:
-  main:
-    version: 1.1.0
+    version: 1.2.2
     weight: 100
   canary: {}
   deployment-strategy: canary
@@ -299,3 +292,19 @@ kyverno-admission-policies:
   canary: {}
   deployment-strategy: update
   enabled: false
+surveillance-pseudonym-service-ars:
+  main:
+    version: 1.0.0
+    weight: 100
+  canary: {}
+  chart-name: surveillance-pseudonym-service
+  deployment-strategy: canary
+  enabled: true
+surveillance-pseudonym-purger-ars:
+  main:
+    version: 1.0.0
+    weight: 100
+  canary: {}
+  chart-name: surveillance-pseudonym-purger
+  deployment-strategy: replace
+  enabled: true

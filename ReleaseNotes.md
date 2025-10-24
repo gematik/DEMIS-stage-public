@@ -2,9 +2,14 @@
 
 # Release Notes stage-public
 
+## Release 1.7.0
+- Updated Service-Versions of postgres, CES and PDFGEN
+- Updated ARS-Service and enabled Surveillance-Pseudonym-Service
+- Compatible with DEMIS-Development-Cluster 4.2.1
+
 ## Release 1.6.2
 - Updated Service-Versions
-- Compatible with DEMIS-Development-Cluster 4.1.0
+- Compatible with DEMIS-Development-Cluster 4.2.1
 
 ## Release 1.6.1
 - add .gitattributes

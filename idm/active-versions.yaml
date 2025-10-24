@@ -50,14 +50,14 @@ pgbouncer:
   enabled: true
 policies-authorizations:
   main:
-    version: 2.5.0
+    version: 2.6.0
     weight: 100
   canary: {}
   deployment-strategy: update
   enabled: true
 postgres:
   main:
-    version: 16.7.1
+    version: 16.7.2
     weight: 100
   canary: {}
   deployment-strategy: update

@@ -7,7 +7,7 @@ network-rules:
   enabled: true
 policies-authorizations:
   main:
-    version: 2.5.0
+    version: 2.6.0
     weight: 100
   canary: {}
   deployment-strategy: update

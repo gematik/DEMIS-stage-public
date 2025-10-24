@@ -31,13 +31,13 @@ feature_flags = [
     flag_value = true
   },
   {
-    services   = ["notification-processing-service"]
-    flag_name  = "FEATURE_FLAG_LV_DISEASE"
+    services   = ["surveillance-pseudonym-service-ars"]
+    flag_name  = "FEATURE_FLAG_INDIVIDUAL_PSEUDONYM"
     flag_value = true
   },
   {
-    services   = ["pdfgen-service"]
-    flag_name  = "FEATURE_FLAG_PDFGEN_WARMUP"
+    services   = ["notification-processing-service"]
+    flag_name  = "FEATURE_FLAG_LV_DISEASE"
     flag_value = true
   },
   {
@@ -83,6 +83,11 @@ feature_flags = [
   {
     services   = ["notification-gateway"]
     flag_name  = "FEATURE_FLAG_SNAPSHOT_5_3_0_ACTIVE"
+    flag_value = true
+  },
+  {
+    services   = ["ars-service"]
+    flag_name  = "FEATURE_FLAG_SURVEILLANCE_PSEUDONYM_SERVICE_ENABLED"
     flag_value = true
   }
 ]

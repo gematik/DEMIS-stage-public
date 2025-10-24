@@ -27,7 +27,8 @@ demis:
     # If active, allows Prometheus to access the services metrics
     prometheusMetrics:
       enabled: true
-
+  sps:
+    arsEnabled: true
 # Mesh Services Policies
 mesh:
   enabled: false

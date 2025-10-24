@@ -32,6 +32,10 @@ s3_port     = 9000
 fhir_storage_purger_suspend       = false
 fhir_storage_purger_cron_schedule = "0 22 * * *"
 
+# surveillance-pseudonym-purger-ars cron schedule
+surveillance_pseudonym_purger_ars_suspend       = false
+surveillance_pseudonym_purger_ars_cron_schedule = "0 22 * * *"
+
 # Definition of Volumes
 volumes = {
   postgres-volume-claim = {
