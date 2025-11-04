@@ -2,6 +2,9 @@
 
 # Release Notes stage-public
 
+## Release 1.7.1
+- Made compatible with DEMIS-Development-Cluster 4.3.0
+
 ## Release 1.7.0
 - Updated Service-Versions of postgres, CES and PDFGEN
 - Updated ARS-Service and enabled Surveillance-Pseudonym-Service
