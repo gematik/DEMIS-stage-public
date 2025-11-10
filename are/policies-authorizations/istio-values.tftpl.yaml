@@ -1,7 +1,7 @@
 # If active, as default all traffic is denied
 allowNothing: true
 
-ekmTemplate:
+are:
   enabled: true
 
 postgres:

@@ -7,7 +7,8 @@ override_stage_name = "public"
 # Name of the Namespace where to install the DEMIS services
 target_namespace = "mesh"
 # The Helm repository to use for the deployment
-helm_repository = "https://gematik.github.io/DEMIS-Helm-Charts/"
+# Change to your feature branch/commit for local development
+helm_repository = "https://api.bitbucket.org/2.0/repositories/noves1/demis-helm-charts/src/feature_istio_setup"
 # The path to the kubeconfig file to use for the deployment
 kubeconfig_path = "../infrastructure/kind-config"
 

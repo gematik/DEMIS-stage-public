@@ -10,7 +10,8 @@ stage_name          = "public"
 # Name of the Namespace where to install the DEMIS services
 target_namespace = "demis"
 # The Helm repository to use for the deployment
-helm_repository = "https://gematik.github.io/DEMIS-Helm-Charts/"
+# Change to your feature branch/commit for local development
+helm_repository = "https://api.bitbucket.org/2.0/repositories/noves1/demis-helm-charts/src/feature_istio_setup"
 # The Docker registry to use for the pulling the images for the deployment
 docker_registry = "docker.io/gematik1"
 # The path to the kubeconfig file to use for the deployment
