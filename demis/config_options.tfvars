@@ -11,9 +11,10 @@ config_options = [
     option_value = true
   },
   {
-    services     = ["notification-gateway"]
-    option_name  = "APPLICATION_LEGACY_MODE"
-    option_value = false
+    services     = ["destination-lookup-writer"]
+    option_name  = "CONFIG_LIQUIBASE_ENABLED"
+    option_value = true
+    synchronize_option_value = false
   },
   {
     services                 = ["pdfgen-service"]
@@ -35,11 +36,6 @@ config_options = [
     services     = ["pseudonymization-service"]
     option_name  = "OPS_FLAG_SECRETS_TWO_DISEASES"
     option_value = "hiv,trp,neg,ech,tox,cht"
-  },
-  {
-    services     = ["notification-gateway"]
-    option_name  = "PATHOGEN_AUTHENTICATION_REQUIRED"
-    option_value = true
   },
   {
     services     = ["pseudonymization-service"]

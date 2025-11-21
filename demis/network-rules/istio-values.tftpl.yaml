@@ -42,3 +42,6 @@ idm:
 
 mesh:
   enabled: false
+
+featureFlags:
+  newApiEndpoints: ${feature_flag_new_api_endpoints}

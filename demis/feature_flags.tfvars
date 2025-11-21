@@ -11,13 +11,13 @@ feature_flags = [
     flag_value = true
   },
   {
-    services   = ["validation-service-core", "validation-service-igs", "validation-service-ars"]
-    flag_name  = "FEATURE_FLAG_FILTERED_VALIDATION_ERRORS_DISABLED"
+    services   = ["portal-disease", "futs-core", "futs-igs"]
+    flag_name  = "FEATURE_FLAG_DISEASE_DATEPICKER"
     flag_value = true
   },
   {
-    services   = ["futs-core"]
-    flag_name  = "FEATURE_FLAG_FUTS_VALUESETS_SNOMED"
+    services   = ["validation-service-core", "validation-service-igs", "validation-service-ars"]
+    flag_name  = "FEATURE_FLAG_FILTERED_VALIDATION_ERRORS_DISABLED"
     flag_value = true
   },
   {
@@ -26,14 +26,9 @@ feature_flags = [
     flag_value = true
   },
   {
-    services   = ["futs-core", "notification-gateway", "pdfgen-service"]
-    flag_name  = "FEATURE_FLAG_HOSP_REASON_MOVE"
-    flag_value = true
-  },
-  {
     services   = ["surveillance-pseudonym-service-ars"]
     flag_name  = "FEATURE_FLAG_INDIVIDUAL_PSEUDONYM"
-    flag_value = true
+    flag_value = false
   },
   {
     services   = ["notification-processing-service"]
@@ -41,13 +36,18 @@ feature_flags = [
     flag_value = true
   },
   {
-    services   = ["portal-pathogen", "portal-disease", "portal-bedoccupancy"]
-    flag_name  = "FEATURE_FLAG_PORTAL_ERROR_DIALOG"
+    services   = ["notification-processing-service", "notification-routing-service", "pdfgen-service", "report-processing-service", "igs-service", "ars-service", "fhir-storage-reader", "fhir-storage-writer", "hospital-location-service", "futs", "futs-core", "futs-igs", "policies-authorizations", "network-rules", "notification-gateway", "portal-pathogen", "portal-bedoccupancy", "portal-disease", "portal-shell", "portal-igs", "gateway-igs"]
+    flag_name  = "FEATURE_FLAG_NEW_API_ENDPOINTS"
     flag_value = true
   },
   {
-    services   = ["portal-pathogen", "portal-disease"]
-    flag_name  = "FEATURE_FLAG_PORTAL_ERROR_DIALOG_ON_SUBMIT"
+    services   = ["pdfgen-service"]
+    flag_name  = "FEATURE_FLAG_NEW_PDF_SECOND_PAGE"
+    flag_value = true
+  },
+  {
+    services   = ["portal-pathogen", "portal-disease", "portal-bedoccupancy"]
+    flag_name  = "FEATURE_FLAG_PORTAL_ERROR_DIALOG"
     flag_value = true
   },
   {
@@ -61,16 +61,6 @@ feature_flags = [
     flag_value = true
   },
   {
-    services   = ["portal-pathogen"]
-    flag_name  = "FEATURE_FLAG_PORTAL_PATHOGEN_DATEPICKER"
-    flag_value = true
-  },
-  {
-    services   = ["portal-pathogen", "portal-disease"]
-    flag_name  = "FEATURE_FLAG_PORTAL_SUBMIT"
-    flag_value = true
-  },
-  {
     services   = ["notification-processing-service", "report-processing-service"]
     flag_name  = "FEATURE_FLAG_RELAXED_VALIDATION"
     flag_value = true
@@ -81,13 +71,13 @@ feature_flags = [
     flag_value = true
   },
   {
-    services   = ["notification-gateway"]
-    flag_name  = "FEATURE_FLAG_SNAPSHOT_5_3_0_ACTIVE"
+    services   = ["notification-gateway", "futs-core", "futs-igs"]
+    flag_name  = "FEATURE_FLAG_SNAPSHOT_6_ACTIVE"
     flag_value = true
   },
   {
     services   = ["ars-service"]
     flag_name  = "FEATURE_FLAG_SURVEILLANCE_PSEUDONYM_SERVICE_ENABLED"
-    flag_value = true
+    flag_value = false
   }
 ]

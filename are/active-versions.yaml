@@ -1,21 +1,28 @@
-network-rules:
+service-demo:
   main:
-    version: 2.2.0
+    version: 1.0.0
+    weight: 100
+  canary: {}
+  deployment-strategy: canary
+  enabled: true
+policies-authentications:
+  main:
+    version: 2.4.0
     weight: 100
   canary: {}
   deployment-strategy: update
   enabled: true
 policies-authorizations:
   main:
-    version: 2.7.0
+    version: 2.4.0
     weight: 100
   canary: {}
   deployment-strategy: update
   enabled: true
-kyverno-admission-policies:
+istio-routing:
   main:
-    version: 1.0.0
+    version: 1.2.0
     weight: 100
   canary: {}
   deployment-strategy: update
-  enabled: false
+  enabled: true
