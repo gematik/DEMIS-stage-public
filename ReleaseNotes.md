@@ -2,6 +2,12 @@
 
 # Release Notes stage-public
 
+## Release 1.8.0
+- Made compatible with DEMIS-Development-Cluster 4.4.0
+- Updated Service-Versions
+- Activated new profile Version 6.1.7
+- Added ARE modul (EKM3)
+
 ## Release 1.7.1
 - Made compatible with DEMIS-Development-Cluster 4.3.0
 

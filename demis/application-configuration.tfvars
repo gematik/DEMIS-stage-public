@@ -36,6 +36,13 @@ fhir_storage_purger_cron_schedule = "0 22 * * *"
 surveillance_pseudonym_purger_ars_suspend       = false
 surveillance_pseudonym_purger_ars_cron_schedule = "0 22 * * *"
 
+# settings for validation service profile provisioning mode
+# null disabled the profile provisioning mode and deploy in old mode
+# possible values are: dedicated, distributed, combined
+profile_provisioning_mode_vs_core = "combined"
+profile_provisioning_mode_vs_igs  = "combined"
+profile_provisioning_mode_vs_ars  = "combined"
+
 # Definition of Volumes
 volumes = {
   postgres-volume-claim = {
