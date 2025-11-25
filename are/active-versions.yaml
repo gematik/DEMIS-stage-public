@@ -7,14 +7,14 @@ are-notification-processing-service:
   enabled: true
 policies-authentications:
   main:
-    version: 2.6.0
+    version: 2.7.0
     weight: 100
   canary: {}
   deployment-strategy: update
   enabled: true
 policies-authorizations:
   main:
-    version: 2.6.0
+    version: 2.7.0
     weight: 100
   canary: {}
   deployment-strategy: update
