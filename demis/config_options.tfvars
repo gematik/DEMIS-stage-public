@@ -11,9 +11,9 @@ config_options = [
     option_value = true
   },
   {
-    services     = ["destination-lookup-writer"]
-    option_name  = "CONFIG_LIQUIBASE_ENABLED"
-    option_value = true
+    services                 = ["destination-lookup-writer"]
+    option_name              = "CONFIG_LIQUIBASE_ENABLED"
+    option_value             = true
     synchronize_option_value = false
   },
   {
