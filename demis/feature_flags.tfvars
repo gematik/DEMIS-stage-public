@@ -1,11 +1,6 @@
 # Map containing the Feature Flags to be activated for services
 feature_flags = [
   {
-    services   = ["lifecycle-validation-service"]
-    flag_name  = "FEATURE_FLAG_ACCEPTING_ANONYMOUS_NOTIFICATIONS"
-    flag_value = true
-  },
-  {
     services   = ["ars-service"]
     flag_name  = "FEATURE_FLAG_ARS_VALIDATION_ENABLED"
     flag_value = true
@@ -16,24 +11,9 @@ feature_flags = [
     flag_value = true
   },
   {
-    services   = ["validation-service-core", "validation-service-igs", "validation-service-ars"]
-    flag_name  = "FEATURE_FLAG_FILTERED_VALIDATION_ERRORS_DISABLED"
-    flag_value = true
-  },
-  {
-    services   = ["pdfgen-service"]
-    flag_name  = "FEATURE_FLAG_HOSPITALIZATION_ORDER"
-    flag_value = true
-  },
-  {
     services   = ["surveillance-pseudonym-service-ars"]
     flag_name  = "FEATURE_FLAG_INDIVIDUAL_PSEUDONYM"
     flag_value = false
-  },
-  {
-    services   = ["notification-processing-service"]
-    flag_name  = "FEATURE_FLAG_LV_DISEASE"
-    flag_value = true
   },
   {
     services   = ["notification-processing-service", "notification-routing-service", "pdfgen-service", "report-processing-service", "igs-service", "ars-service", "fhir-storage-reader", "fhir-storage-writer", "hospital-location-service", "futs", "futs-core", "futs-igs", "policies-authorizations", "network-rules", "notification-gateway", "portal-pathogen", "portal-bedoccupancy", "portal-disease", "portal-shell", "portal-igs", "gateway-igs"]

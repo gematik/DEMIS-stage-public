@@ -57,7 +57,7 @@ policies-authorizations:
   enabled: true
 postgres:
   main:
-    version: 16.7.2
+    version: 16.10.0
     weight: 100
   canary: {}
   deployment-strategy: update
