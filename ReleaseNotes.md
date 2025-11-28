@@ -2,6 +2,11 @@
 
 # Release Notes stage-public
 
+## Release 1.9.1
+- Compatible with DEMIS-Development-Cluster 4.4.0
+- Updated Service-Versions
+- transfer postgres from bitnami source to postgres source (pvcs are not compatible. pv and pvc recreation is required )
+
 ## Release 1.9.0
 - Compatible with DEMIS-Development-Cluster 4.4.0
 - Activate Token-Exchange/PS-Authentication
