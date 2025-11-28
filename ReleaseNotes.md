@@ -2,6 +2,13 @@
 
 # Release Notes stage-public
 
+## Release 1.9.0
+- Compatible with DEMIS-Development-Cluster 4.4.0
+- Activate Token-Exchange/PS-Authentication
+- Updated Service-Versions
+- Activated new IGS profile Version 4.0.2
+- Reduce istio sidecar resource requests and limits
+
 ## Release 1.8.0
 - Made compatible with DEMIS-Development-Cluster 4.4.0
 - Updated Service-Versions

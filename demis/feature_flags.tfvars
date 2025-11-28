@@ -41,6 +41,11 @@ feature_flags = [
     flag_value = true
   },
   {
+    services   = ["all", "context-enrichment-service", "postgres", "pgbouncer", "destination-lookup-writer", "destination-lookup-reader", "pseudonymization-service"]
+    flag_name  = "FEATURE_FLAG_NEW_ISTIO_SIDECAR_REQUEST_AND_LIMITS"
+    flag_value = true
+  },
+  {
     services   = ["pdfgen-service"]
     flag_name  = "FEATURE_FLAG_NEW_PDF_SECOND_PAGE"
     flag_value = true
