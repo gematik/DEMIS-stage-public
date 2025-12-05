@@ -6,7 +6,7 @@ feature_flags = [
     flag_value = true
   },
   {
-    services   = ["portal-disease", "futs-core", "futs-igs"]
+    services   = ["futs-core", "futs-igs", "portal-disease"]
     flag_name  = "FEATURE_FLAG_DISEASE_DATEPICKER"
     flag_value = true
   },
@@ -16,12 +16,12 @@ feature_flags = [
     flag_value = false
   },
   {
-    services   = ["notification-processing-service", "notification-routing-service", "pdfgen-service", "report-processing-service", "igs-service", "ars-service", "fhir-storage-reader", "fhir-storage-writer", "hospital-location-service", "futs", "futs-core", "futs-igs", "policies-authorizations", "network-rules", "notification-gateway", "portal-pathogen", "portal-bedoccupancy", "portal-disease", "portal-shell", "portal-igs", "gateway-igs"]
+    services   = ["ars-service", "fhir-storage-reader", "fhir-storage-writer", "futs", "futs-core", "futs-igs", "gateway-igs", "hospital-location-service", "igs-service", "network-rules", "notification-gateway", "notification-processing-service", "notification-routing-service", "pdfgen-service", "policies-authorizations", "portal-bedoccupancy", "portal-disease", "portal-igs", "portal-pathogen", "portal-shell", "report-processing-service"]
     flag_name  = "FEATURE_FLAG_NEW_API_ENDPOINTS"
     flag_value = true
   },
   {
-    services   = ["all", "context-enrichment-service", "postgres", "pgbouncer", "destination-lookup-writer", "destination-lookup-reader", "pseudonymization-service"]
+    services   = ["all"]
     flag_name  = "FEATURE_FLAG_NEW_ISTIO_SIDECAR_REQUEST_AND_LIMITS"
     flag_value = true
   },
@@ -31,17 +31,12 @@ feature_flags = [
     flag_value = true
   },
   {
-    services   = ["portal-pathogen", "portal-disease", "portal-bedoccupancy"]
-    flag_name  = "FEATURE_FLAG_PORTAL_ERROR_DIALOG"
-    flag_value = true
-  },
-  {
     services   = ["portal-shell"]
     flag_name  = "FEATURE_FLAG_PORTAL_INFOBANNER"
     flag_value = true
   },
   {
-    services   = ["portal-pathogen", "portal-disease", "portal-bedoccupancy"]
+    services   = ["portal-bedoccupancy", "portal-disease", "portal-pathogen"]
     flag_name  = "FEATURE_FLAG_PORTAL_PASTEBOX"
     flag_value = true
   },
@@ -56,7 +51,7 @@ feature_flags = [
     flag_value = true
   },
   {
-    services   = ["notification-gateway", "futs-core", "futs-igs"]
+    services   = ["futs-core", "futs-igs", "notification-gateway"]
     flag_name  = "FEATURE_FLAG_SNAPSHOT_6_ACTIVE"
     flag_value = true
   },
