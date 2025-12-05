@@ -1,6 +1,6 @@
 certificate-update-service:
   main:
-    version: 1.8.4
+    version: 1.8.5
     weight: 100
   canary: {}
   deployment-strategy: replace
@@ -29,7 +29,7 @@ gematik-idp:
   enabled: true
 keycloak-user-purger:
   main:
-    version: 1.1.5
+    version: 1.1.6
     weight: 100
   canary: {}
   deployment-strategy: replace
