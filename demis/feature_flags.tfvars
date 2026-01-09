@@ -59,5 +59,10 @@ feature_flags = [
     services   = ["ars-service"]
     flag_name  = "FEATURE_FLAG_SURVEILLANCE_PSEUDONYM_SERVICE_ENABLED"
     flag_value = false
+  },
+  {
+    services   = ["notification-processing-service", "notification-routing-service"]
+    flag_name  = "FEATURE_FLAG_TUBERCULOSIS_ROUTING_ENABLED"
+    flag_value = true
   }
 ]
