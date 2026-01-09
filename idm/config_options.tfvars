@@ -9,19 +9,19 @@ config_options = [
   {
     services                 = ["keycloak"]
     option_name              = "JWT_VALIDATION_EXPECTED_ISSUER"
-    option_value             = null
+    option_value             = None
     synchronize_option_value = false
   },
   {
     services                 = ["keycloak"]
     option_name              = "JWT_VALIDATION_EXPECTED_SCOPE"
-    option_value             = null
+    option_value             = None
     synchronize_option_value = false
   },
   {
     services                 = ["keycloak"]
     option_name              = "JWT_VALIDATION_ISSUER_CERTIFICATE"
-    option_value             = null
+    option_value             = None
     synchronize_option_value = false
   },
   {
