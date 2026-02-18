@@ -2,6 +2,13 @@
 
 # Release Notes stage-public
 
+## Release 1.11.0
+- Compatible with DEMIS-Development-Cluster 5.2.0
+- Activated the new service [package-registry](https://github.com/gematik/DEMIS-package-registry)
+
+  - futs and validation services now use the package-registry to retrieve their fhir packages
+  - the package-registry loads its fhir packages from the configured source registry in [demis/config_options.tfvars](demis/config_options.tfvars) and needs the respective internet access to do so. If you run the cluster behind a firewall you may need to allow these connections.
+
 ## Release 1.10.1
 - Compatible with DEMIS-Development-Cluster 5.2.0
 - updated service versions

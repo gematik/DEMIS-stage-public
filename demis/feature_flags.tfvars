@@ -41,8 +41,18 @@ feature_flags = [
     flag_value = true
   },
   {
+    services   = ["futs-core", "futs-igs", "validation-service-ars", "validation-service-core", "validation-service-igs"]
+    flag_name  = "FEATURE_FLAG_PACKAGE_REGISTRY_ENABLED"
+    flag_value = true
+  },
+  {
     services   = ["portal-bedoccupancy", "portal-disease", "portal-igs", "portal-pathogen", "portal-shell"]
     flag_name  = "FEATURE_FLAG_PORTAL_HEADER_FOOTER"
+    flag_value = true
+  },
+  {
+    services   = ["portal-shell"]
+    flag_name  = "FEATURE_FLAG_PORTAL_TEXT"
     flag_value = true
   },
   {
