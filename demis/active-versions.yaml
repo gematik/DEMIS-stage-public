@@ -334,3 +334,10 @@ destination-lookup-purger:
   canary: {}
   deployment-strategy: replace
   enabled: true
+package-registry:
+  main:
+    version: 1.0.3
+    weight: 100
+  canary: {}
+  deployment-strategy: canary
+  enabled: true

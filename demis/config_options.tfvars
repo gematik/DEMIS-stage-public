@@ -48,6 +48,26 @@ config_options = [
     option_value = true
   },
   {
+    services     = ["package-registry"]
+    option_name  = "SIGNATURE_ATTESTATION_URL"
+    option_value = "https://artifactregistry.googleapis.com/download/v1/projects/gematik-demis-public/locations/europe-west3/repositories/npm-trust"
+  },
+  {
+    services     = ["package-registry"]
+    option_name  = "SIGNATURE_SAN"
+    option_value = "fhir-packages-writer@gematik-demis-public.iam.gserviceaccount.com"
+  },
+  {
+    services     = ["package-registry"]
+    option_name  = "SOURCE_REGISTRY_TYPE"
+    option_value = "GCP_PUBLIC"
+  },
+  {
+    services     = ["package-registry"]
+    option_name  = "SOURCE_REGISTRY_URL"
+    option_value = "https://europe-west3-npm.pkg.dev/gematik-demis-public/fhir-packages"
+  },
+  {
     services                 = ["fhir-storage-writer", "surveillance-pseudonym-service-ars"]
     option_name              = "SPRING_LIQUIBASE_ENABLED"
     option_value             = true
