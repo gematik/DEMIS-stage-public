@@ -71,6 +71,11 @@ feature_flags = [
     flag_value = true
   },
   {
+    services   = ["futs-core", "futs-igs"]
+    flag_name  = "FEATURE_FLAG_SNAPSHOT_6"
+    flag_value = true
+  },
+  {
     services   = ["ars-service"]
     flag_name  = "FEATURE_FLAG_SURVEILLANCE_PSEUDONYM_SERVICE_ENABLED"
     flag_value = false

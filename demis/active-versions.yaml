@@ -1,34 +1,34 @@
 context-enrichment-service:
   main:
-    version: 1.1.2
+    version: 1.1.3
     weight: 100
   canary: {}
   deployment-strategy: canary
   enabled: true
 fhir-storage-purger:
   main:
-    version: 1.3.1
+    version: 1.3.2
     weight: 100
   canary: {}
   deployment-strategy: replace
   enabled: true
 fhir-storage-reader:
   main:
-    version: 1.3.1
+    version: 1.3.2
     weight: 100
   canary: {}
   deployment-strategy: canary
   enabled: true
 fhir-storage-writer:
   main:
-    version: 1.3.1
+    version: 1.3.2
     weight: 100
   canary: {}
   deployment-strategy: canary
   enabled: true
 futs:
   main:
-    version: 2.4.0
+    version: 2.5.0
     weight: 100
   canary: {}
   chart-name: futs-delegation
@@ -36,7 +36,7 @@ futs:
   enabled: true
 futs-core:
   main:
-    version: 2.4.0
+    version: 2.5.0
     weight: 100
   canary: {}
   synchronize-profiles: false
@@ -45,7 +45,7 @@ futs-core:
   enabled: true
 futs-igs:
   main:
-    version: 2.4.0
+    version: 2.5.0
     weight: 100
   canary: {}
   synchronize-profiles: false
@@ -61,7 +61,7 @@ gateway-igs:
   enabled: true
 hospital-location-service:
   main:
-    version: 1.3.2
+    version: 1.3.3
     weight: 100
   canary: {}
   deployment-strategy: canary
@@ -110,7 +110,7 @@ notification-routing-service:
   enabled: true
 pdfgen-service:
   main:
-    version: 2.8.4
+    version: 2.9.0
     weight: 100
   canary: {}
   deployment-strategy: canary
@@ -166,7 +166,7 @@ postgres:
   enabled: true
 pseudonymization-service:
   main:
-    version: 3.4.0
+    version: 3.4.1
     weight: 100
   canary: {}
   deployment-strategy: canary
@@ -180,7 +180,7 @@ pseudonymization-storage-service:
   enabled: true
 report-processing-service:
   main:
-    version: 2.2.0
+    version: 2.2.1
     weight: 100
   canary: {}
   deployment-strategy: canary
@@ -292,7 +292,7 @@ ars-service:
   enabled: true
 kyverno-admission-policies:
   main:
-    version: 1.0.0
+    version: 1.0.1
     weight: 100
   canary: {}
   deployment-strategy: update
