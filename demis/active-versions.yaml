@@ -75,7 +75,7 @@ igs-service:
   enabled: true
 lifecycle-validation-service:
   main:
-    version: 1.4.2
+    version: 1.4.3
     weight: 100
   canary: {}
   deployment-strategy: canary
@@ -89,28 +89,28 @@ minio:
   enabled: true
 notification-gateway:
   main:
-    version: 6.7.7
+    version: 6.7.8
     weight: 100
   canary: {}
   deployment-strategy: canary
   enabled: true
 notification-processing-service:
   main:
-    version: 2.9.0
+    version: 2.9.1
     weight: 100
   canary: {}
   deployment-strategy: canary
   enabled: true
 notification-routing-service:
   main:
-    version: 2.5.1
+    version: 2.5.2
     weight: 100
   canary: {}
   deployment-strategy: canary
   enabled: true
 pdfgen-service:
   main:
-    version: 2.9.0
+    version: 2.9.1
     weight: 100
   canary: {}
   deployment-strategy: canary
@@ -250,7 +250,7 @@ istio-routing:
   enabled: true
 fhir-profile-snapshots:
   main:
-    version: 6.1.7
+    version: 6.2.5
     weight: 100
   canary: {}
   deployment-strategy: update

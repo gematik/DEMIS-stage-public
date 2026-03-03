@@ -41,6 +41,11 @@ feature_flags = [
     flag_value = true
   },
   {
+    services   = ["portal-disease"]
+    flag_name  = "FEATURE_FLAG_OUTLINE_DESIGN"
+    flag_value = true
+  },
+  {
     services   = ["futs-core", "futs-igs", "validation-service-ars", "validation-service-core", "validation-service-igs"]
     flag_name  = "FEATURE_FLAG_PACKAGE_REGISTRY_ENABLED"
     flag_value = true
