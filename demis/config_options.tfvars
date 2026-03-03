@@ -48,24 +48,28 @@ config_options = [
     option_value = true
   },
   {
-    services     = ["package-registry"]
-    option_name  = "SIGNATURE_ATTESTATION_URL"
-    option_value = "https://artifactregistry.googleapis.com/download/v1/projects/gematik-demis-public/locations/europe-west3/repositories/npm-trust"
+    services                 = ["package-registry"]
+    option_name              = "SIGNATURE_ATTESTATION_URL"
+    option_value             = "https://artifactregistry.googleapis.com/download/v1/projects/gematik-demis-public/locations/europe-west3/repositories/npm-trust"
+    synchronize_option_value = false
   },
   {
-    services     = ["package-registry"]
-    option_name  = "SIGNATURE_SAN"
-    option_value = "fhir-packages-writer@gematik-demis-public.iam.gserviceaccount.com"
+    services                 = ["package-registry"]
+    option_name              = "SIGNATURE_SAN"
+    option_value             = "fhir-packages-writer@gematik-demis-public.iam.gserviceaccount.com"
+    synchronize_option_value = false
   },
   {
-    services     = ["package-registry"]
-    option_name  = "SOURCE_REGISTRY_TYPE"
-    option_value = "GCP_PUBLIC"
+    services                 = ["package-registry"]
+    option_name              = "SOURCE_REGISTRY_TYPE"
+    option_value             = "GCP_PUBLIC"
+    synchronize_option_value = false
   },
   {
-    services     = ["package-registry"]
-    option_name  = "SOURCE_REGISTRY_URL"
-    option_value = "https://europe-west3-npm.pkg.dev/gematik-demis-public/fhir-packages"
+    services                 = ["package-registry"]
+    option_name              = "SOURCE_REGISTRY_URL"
+    option_value             = "https://europe-west3-npm.pkg.dev/gematik-demis-public/fhir-packages"
+    synchronize_option_value = false
   },
   {
     services                 = ["fhir-storage-writer", "surveillance-pseudonym-service-ars"]

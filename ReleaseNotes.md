@@ -2,6 +2,11 @@
 
 # Release Notes stage-public
 
+## Release 1.11.2
+- Compatible with DEMIS-Development-Cluster 5.2.0
+- updated service versions
+- activated outline design for inputs on portal-disease
+
 ## Release 1.11.1
 - Compatible with DEMIS-Development-Cluster 5.2.0
 - updated libraries and operating system in some services
