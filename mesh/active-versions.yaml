@@ -14,7 +14,7 @@ policies-authorizations:
   enabled: true
 kyverno-admission-policies:
   main:
-    version: 1.0.0
+    version: 1.0.1
     weight: 100
   canary: {}
   deployment-strategy: update

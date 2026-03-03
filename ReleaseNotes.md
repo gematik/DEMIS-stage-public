@@ -2,6 +2,11 @@
 
 # Release Notes stage-public
 
+## Release 1.11.1
+- Compatible with DEMIS-Development-Cluster 5.2.0
+- updated libraries and operating system in some services
+- Bugfixes in PDF Generation
+
 ## Release 1.11.0
 - Compatible with DEMIS-Development-Cluster 5.2.0
 - Activated the new service [package-registry](https://github.com/gematik/DEMIS-package-registry)

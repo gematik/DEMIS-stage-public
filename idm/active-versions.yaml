@@ -1,6 +1,6 @@
 certificate-update-service:
   main:
-    version: 1.8.5
+    version: 1.8.6
     weight: 100
   canary: {}
   deployment-strategy: replace
@@ -29,7 +29,7 @@ gematik-idp:
   enabled: true
 keycloak-user-purger:
   main:
-    version: 1.1.6
+    version: 1.1.7
     weight: 100
   canary: {}
   deployment-strategy: replace
@@ -86,7 +86,7 @@ stage-configuration-data:
   enabled: true
 kyverno-admission-policies:
   main:
-    version: 1.0.0
+    version: 1.0.1
     weight: 100
   canary: {}
   deployment-strategy: update
