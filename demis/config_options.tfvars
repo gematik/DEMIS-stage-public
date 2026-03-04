@@ -11,6 +11,12 @@ config_options = [
     option_value = true
   },
   {
+    services                 = ["package-registry"]
+    option_name              = "ATTESTATION_SAN"
+    option_value             = null
+    synchronize_option_value = false
+  },
+  {
     services                 = ["destination-lookup-writer"]
     option_name              = "CONFIG_LIQUIBASE_ENABLED"
     option_value             = true

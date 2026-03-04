@@ -1,6 +1,16 @@
 # Map containing the Feature Flags to be activated for services
 feature_flags = [
   {
+    services   = ["validation-service-core"]
+    flag_name  = "FEATURE_FLAG_ADDITIONAL_STRICT_CODING_VALIDATOR_ENABLED"
+    flag_value = true
+  },
+  {
+    services   = ["futs-core", "futs-igs"]
+    flag_name  = "FEATURE_FLAG_ADD_DESIGNATION_USE"
+    flag_value = true
+  },
+  {
     services   = ["ars-service"]
     flag_name  = "FEATURE_FLAG_ARS_VALIDATION_ENABLED"
     flag_value = true
@@ -8,6 +18,11 @@ feature_flags = [
   {
     services   = ["notification-processing-service", "lifecycle-validation-service"]
     flag_name  = "FEATURE_FLAG_CODEMAPPING_SERVICE_BASE"
+    flag_value = true
+  },
+  {
+    services   = ["pdfgen-service"]
+    flag_name  = "FEATURE_FLAG_DISEASE_SECOND_PAGE"
     flag_value = true
   },
   {
@@ -51,6 +66,11 @@ feature_flags = [
     flag_value = true
   },
   {
+    services   = ["pdfgen-service"]
+    flag_name  = "FEATURE_FLAG_PDF_OPTIMIZATION"
+    flag_value = true
+  },
+  {
     services   = ["portal-bedoccupancy", "portal-disease", "portal-igs", "portal-pathogen", "portal-shell"]
     flag_name  = "FEATURE_FLAG_PORTAL_HEADER_FOOTER"
     flag_value = true
@@ -78,6 +98,11 @@ feature_flags = [
   {
     services   = ["futs-core", "futs-igs"]
     flag_name  = "FEATURE_FLAG_SNAPSHOT_6"
+    flag_value = true
+  },
+  {
+    services   = ["futs-core", "futs-igs"]
+    flag_name  = "FEATURE_FLAG_SNOMED_VERSION_FROM_FUTS"
     flag_value = true
   },
   {
