@@ -2,6 +2,15 @@
 
 # Release Notes stage-public
 
+## Release 1.12.0
+- Compatible with DEMIS-Development-Cluster 5.3.1
+- activated features:
+  - strict check of code membership in valuesets despite a fragmented code system
+  - designation uses when outputting code displays from FUTS
+  - second page (QR code) for disease PDF
+  - new gender handling in pdf generation
+  - forwarding of standard code system versions to the gateway
+
 ## Release 1.11.2
 - Compatible with DEMIS-Development-Cluster 5.2.0
 - updated service versions
