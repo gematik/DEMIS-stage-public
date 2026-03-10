@@ -123,6 +123,27 @@ database_credentials = [
     secret-name         = "destination-lookup-purger-database-secret"
     secret-key-user     = "DESTINATION_LOOKUP_PURGER_DB_USER"
     secret-key-password = "DESTINATION_LOOKUP_PURGER_DB_PASSWORD"
+  },
+  {
+    username            = "ars-bulk-stats-ddl"
+    password            = "dummy-password"
+    secret-name         = "ars-bulk-stats-ddl-database-secret"
+    secret-key-user     = "ARS_BULK_STATS_DDL_DB_USER"
+    secret-key-password = "ARS_BULK_STATS_DDL_DB_PASSWORD"
+  },
+  {
+    username            = "ars-bulk-stats-user"
+    password            = "dummy-password"
+    secret-name         = "ars-bulk-stats-user-database-secret"
+    secret-key-user     = "ARS_BULK_STATS_USER_DB_USER"
+    secret-key-password = "ARS_BULK_STATS_USER_DB_PASSWORD"
+  },
+  {
+    username            = "ars-bulk-stats-purger"
+    password            = "dummy-password"
+    secret-name         = "ars-bulk-stats-purger-database-secret"
+    secret-key-user     = "ARS_BULK_STATS_PURGER_DB_USER"
+    secret-key-password = "ARS_BULK_STATS_PURGER_DB_PASSWORD"
   }
 ]
 

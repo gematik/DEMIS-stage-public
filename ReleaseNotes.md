@@ -2,6 +2,11 @@
 
 # Release Notes stage-public
 
+## Release 1.12.1
+- Compatible with DEMIS-Development-Cluster 5.4.0
+- removed Feature Flag NEW_API_EDNPOINTS
+- updating services with new libraries and base images
+
 ## Release 1.12.0
 - Compatible with DEMIS-Development-Cluster 5.3.1
 - activated features:
