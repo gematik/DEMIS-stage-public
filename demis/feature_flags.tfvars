@@ -41,11 +41,6 @@ feature_flags = [
     flag_value = false
   },
   {
-    services   = ["ars-service", "fhir-storage-reader", "fhir-storage-writer", "futs", "futs-core", "futs-igs", "gateway-igs", "hospital-location-service", "igs-service", "network-rules", "notification-gateway", "notification-processing-service", "notification-routing-service", "pdfgen-service", "policies-authorizations", "portal-bedoccupancy", "portal-disease", "portal-igs", "portal-pathogen", "portal-shell", "report-processing-service"]
-    flag_name  = "FEATURE_FLAG_NEW_API_ENDPOINTS"
-    flag_value = true
-  },
-  {
     services   = ["all"]
     flag_name  = "FEATURE_FLAG_NEW_ISTIO_SIDECAR_REQUEST_AND_LIMITS"
     flag_value = true

@@ -13,6 +13,18 @@ resource_definitions = [
     replicas = 1
   },
   {
+    service  = "destination-lookup-purger"
+    replicas = 1
+  },
+  {
+    service  = "destination-lookup-reader"
+    replicas = 1
+  },
+  {
+    service  = "destination-lookup-writer"
+    replicas = 1
+  },
+  {
     service  = "fhir-storage-purger"
     replicas = 1
   },
@@ -98,10 +110,6 @@ resource_definitions = [
   },
   {
     service  = "pseudonymization-service"
-    replicas = 1
-  },
-  {
-    service  = "pseudonymization-storage-service"
     replicas = 1
   },
   {
