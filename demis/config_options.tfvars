@@ -39,6 +39,11 @@ config_options = [
     option_value = "1000,100,0.1"
   },
   {
+    services     = ["gateway-igs"]
+    option_name  = "IGS_PROFILE_VERSION"
+    option_value = "v4"
+  },
+  {
     services     = ["pseudonymization-service"]
     option_name  = "OPS_FLAG_SECRETS_TWO_DISEASES"
     option_value = "hiv,trp,neg,ech,tox,cht"

@@ -69,6 +69,3 @@ mesh:
       redirect:
         from: "/"
         to: ${portal_hostname}
-
-featureFlags:
-  newApiEndpoints: true
