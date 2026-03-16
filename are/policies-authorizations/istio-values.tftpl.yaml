@@ -19,6 +19,3 @@ demis:
 tcp:
   principals:
     enabled: true
-
-featureFlags:
-  newApiEndpoints: ${feature_flag_new_api_endpoints}
