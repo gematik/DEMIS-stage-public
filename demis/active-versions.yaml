@@ -75,7 +75,7 @@ igs-service:
   enabled: true
 lifecycle-validation-service:
   main:
-    version: 1.4.4
+    version: 1.5.0
     weight: 100
   canary: {}
   deployment-strategy: canary
