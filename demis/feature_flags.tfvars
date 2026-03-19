@@ -31,6 +31,21 @@ feature_flags = [
     flag_value = true
   },
   {
+    services   = ["notification-gateway", "notification-processing-service", "notification-routing-service"]
+    flag_name  = "FEATURE_FLAG_FOLLOW_UP_NOTIFICATION"
+    flag_value = true
+  },
+  {
+    services   = ["portal-disease", "portal-shell"]
+    flag_name  = "FEATURE_FLAG_FOLLOW_UP_NOTIFICATION_PORTAL_DISEASE"
+    flag_value = true
+  },
+  {
+    services   = ["portal-pathogen", "portal-shell"]
+    flag_name  = "FEATURE_FLAG_FOLLOW_UP_NOTIFICATION_PORTAL_PATHOGEN"
+    flag_value = true
+  },
+  {
     services   = ["surveillance-pseudonym-service-ars"]
     flag_name  = "FEATURE_FLAG_INDIVIDUAL_PSEUDONYM"
     flag_value = false
@@ -38,6 +53,11 @@ feature_flags = [
   {
     services   = ["ars-service", "fhir-storage-reader", "notification-processing-service"]
     flag_name  = "FEATURE_FLAG_MOVE_ERROR_ID_TO_DIAGNOSTICS"
+    flag_value = false
+  },
+  {
+    services   = ["notification-processing-service"]
+    flag_name  = "FEATURE_FLAG_NBL_FOR_NOTBYNAME_ENABLED"
     flag_value = false
   },
   {
@@ -51,6 +71,11 @@ feature_flags = [
     flag_value = true
   },
   {
+    services   = ["notification-gateway"]
+    flag_name  = "FEATURE_FLAG_OTH_PRIVAT_LAB_SUBMITTER_ASSIGNMENT_DISABLED"
+    flag_value = true
+  },
+  {
     services   = ["portal-disease"]
     flag_name  = "FEATURE_FLAG_OUTLINE_DESIGN"
     flag_value = true
@@ -58,6 +83,11 @@ feature_flags = [
   {
     services   = ["futs-core", "futs-igs", "validation-service-ars", "validation-service-core", "validation-service-igs"]
     flag_name  = "FEATURE_FLAG_PACKAGE_REGISTRY_ENABLED"
+    flag_value = true
+  },
+  {
+    services   = ["pdfgen-service"]
+    flag_name  = "FEATURE_FLAG_PDF_LABEL"
     flag_value = true
   },
   {
@@ -83,6 +113,16 @@ feature_flags = [
   {
     services   = ["notification-processing-service", "report-processing-service"]
     flag_name  = "FEATURE_FLAG_RELAXED_VALIDATION"
+    flag_value = true
+  },
+  {
+    services   = ["lifecycle-validation-service"]
+    flag_name  = "FEATURE_FLAG_RETURN_DISEASE_FHIRPATH_VALIDATION_IN_RESPONSES"
+    flag_value = true
+  },
+  {
+    services   = ["lifecycle-validation-service"]
+    flag_name  = "FEATURE_FLAG_RETURN_FHIRPATH_VALIDATION_IN_RESPONSES"
     flag_value = true
   },
   {

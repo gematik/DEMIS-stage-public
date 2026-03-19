@@ -32,6 +32,9 @@ demis:
   dls:
     internal:
       enabled: true
+    #   manual change: active for acceptance tests by rki
+    external:
+      enabled: true
 # Mesh Services Policies
 mesh:
   enabled: false
