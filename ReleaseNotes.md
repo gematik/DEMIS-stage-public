@@ -2,6 +2,9 @@
 
 # Release Notes stage-public
 
+## 1.13.1
+- updated test-certificates
+
 ## 1.13.0
 - Compatible with DEMIS-Development-Cluster 5.4.0
 - activated §7.1 follow-up notifications for §7.1 notifications
