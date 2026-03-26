@@ -89,7 +89,7 @@ minio:
   enabled: true
 notification-gateway:
   main:
-    version: 6.7.8
+    version: 6.8.0
     weight: 100
   canary: {}
   deployment-strategy: canary
@@ -124,35 +124,35 @@ pgbouncer:
   enabled: true
 portal-bedoccupancy:
   main:
-    version: 1.6.0
+    version: 1.6.1
     weight: 100
   canary: {}
   deployment-strategy: canary
   enabled: true
 portal-disease:
   main:
-    version: 1.6.0
+    version: 1.6.1
     weight: 100
   canary: {}
   deployment-strategy: canary
   enabled: true
 portal-igs:
   main:
-    version: 1.4.0
+    version: 1.4.1
     weight: 100
   canary: {}
   deployment-strategy: canary
   enabled: true
 portal-pathogen:
   main:
-    version: 1.7.0
+    version: 1.7.1
     weight: 100
   canary: {}
   deployment-strategy: canary
   enabled: true
 portal-shell:
   main:
-    version: 1.5.0
+    version: 1.5.1
     weight: 100
   canary: {}
   deployment-strategy: canary

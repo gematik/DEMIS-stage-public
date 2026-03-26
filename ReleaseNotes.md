@@ -2,6 +2,12 @@
 
 # Release Notes stage-public
 
+## 1.14.0
+- Compatible with DEMIS-Development-Cluster 5.4.0
+- updated service versions
+- improved accessibility
+- enabled mixed follow-up notifications for §7.1 and §6.1 notifications
+
 ## 1.13.1
 - updated test-certificates
 

@@ -51,6 +51,11 @@ feature_flags = [
     flag_value = false
   },
   {
+    services   = ["portal-disease", "portal-pathogen"]
+    flag_name  = "FEATURE_FLAG_MIXED_FOLLOW_UP"
+    flag_value = true
+  },
+  {
     services   = ["ars-service", "fhir-storage-reader", "notification-processing-service"]
     flag_name  = "FEATURE_FLAG_MOVE_ERROR_ID_TO_DIAGNOSTICS"
     flag_value = false
@@ -93,6 +98,11 @@ feature_flags = [
   {
     services   = ["pdfgen-service"]
     flag_name  = "FEATURE_FLAG_PDF_OPTIMIZATION"
+    flag_value = true
+  },
+  {
+    services   = ["portal-bedoccupancy", "portal-disease", "portal-igs", "portal-pathogen", "portal-shell"]
+    flag_name  = "FEATURE_FLAG_PORTAL_ACCESSIBILITY"
     flag_value = true
   },
   {
@@ -144,5 +154,10 @@ feature_flags = [
     services   = ["ars-service"]
     flag_name  = "FEATURE_FLAG_SURVEILLANCE_PSEUDONYM_SERVICE_ENABLED"
     flag_value = false
+  },
+  {
+    services   = ["notification-gateway", "portal-pathogen"]
+    flag_name  = "FEATURE_FLAG_WITHOUT_CONTACT_POINT_USE"
+    flag_value = true
   }
 ]
