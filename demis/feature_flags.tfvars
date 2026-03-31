@@ -1,28 +1,13 @@
 # Map containing the Feature Flags to be activated for services
 feature_flags = [
   {
-    services   = ["validation-service-core"]
-    flag_name  = "FEATURE_FLAG_ADDITIONAL_STRICT_CODING_VALIDATOR_ENABLED"
-    flag_value = true
-  },
-  {
-    services   = ["futs-core", "futs-igs"]
-    flag_name  = "FEATURE_FLAG_ADD_DESIGNATION_USE"
-    flag_value = true
-  },
-  {
     services   = ["ars-service"]
     flag_name  = "FEATURE_FLAG_ARS_VALIDATION_ENABLED"
     flag_value = true
   },
   {
-    services   = ["notification-processing-service", "lifecycle-validation-service"]
-    flag_name  = "FEATURE_FLAG_CODEMAPPING_SERVICE_BASE"
-    flag_value = true
-  },
-  {
-    services   = ["pdfgen-service"]
-    flag_name  = "FEATURE_FLAG_DISEASE_SECOND_PAGE"
+    services   = ["validation-service-core"]
+    flag_name  = "FEATURE_FLAG_COMMON_CODE_SYSTEM_TERMINOLOGY_ENABLED"
     flag_value = true
   },
   {
@@ -71,11 +56,6 @@ feature_flags = [
     flag_value = true
   },
   {
-    services   = ["pdfgen-service"]
-    flag_name  = "FEATURE_FLAG_NEW_PDF_SECOND_PAGE"
-    flag_value = true
-  },
-  {
     services   = ["notification-gateway"]
     flag_name  = "FEATURE_FLAG_OTH_PRIVAT_LAB_SUBMITTER_ASSIGNMENT_DISABLED"
     flag_value = true
@@ -93,11 +73,6 @@ feature_flags = [
   {
     services   = ["pdfgen-service"]
     flag_name  = "FEATURE_FLAG_PDF_LABEL"
-    flag_value = true
-  },
-  {
-    services   = ["pdfgen-service"]
-    flag_name  = "FEATURE_FLAG_PDF_OPTIMIZATION"
     flag_value = true
   },
   {
@@ -138,16 +113,6 @@ feature_flags = [
   {
     services   = ["notification-routing-service"]
     flag_name  = "FEATURE_FLAG_SEARCH_COMPARISON"
-    flag_value = true
-  },
-  {
-    services   = ["futs-core", "futs-igs"]
-    flag_name  = "FEATURE_FLAG_SNAPSHOT_6"
-    flag_value = true
-  },
-  {
-    services   = ["futs-core", "futs-igs"]
-    flag_name  = "FEATURE_FLAG_SNOMED_VERSION_FROM_FUTS"
     flag_value = true
   },
   {
