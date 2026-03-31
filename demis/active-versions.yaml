@@ -28,7 +28,7 @@ fhir-storage-writer:
   enabled: true
 futs:
   main:
-    version: 2.5.0
+    version: 2.6.0
     weight: 100
   canary: {}
   chart-name: futs-delegation
@@ -36,7 +36,7 @@ futs:
   enabled: true
 futs-core:
   main:
-    version: 2.5.0
+    version: 2.6.0
     weight: 100
   canary: {}
   synchronize-profiles: false
@@ -45,7 +45,7 @@ futs-core:
   enabled: true
 futs-igs:
   main:
-    version: 2.5.0
+    version: 2.6.0
     weight: 100
   canary: {}
   synchronize-profiles: false
@@ -96,21 +96,21 @@ notification-gateway:
   enabled: true
 notification-processing-service:
   main:
-    version: 2.9.1
+    version: 2.10.0
     weight: 100
   canary: {}
   deployment-strategy: canary
   enabled: true
 notification-routing-service:
   main:
-    version: 2.5.2
+    version: 2.6.0
     weight: 100
   canary: {}
   deployment-strategy: canary
   enabled: true
 pdfgen-service:
   main:
-    version: 2.9.2
+    version: 2.10.0
     weight: 100
   canary: {}
   deployment-strategy: canary
@@ -187,7 +187,7 @@ report-processing-service:
   enabled: true
 validation-service:
   main:
-    version: 2.12.0
+    version: 2.13.0
     weight: 100
   canary: {}
   chart-name: validation-service-delegation
@@ -195,7 +195,7 @@ validation-service:
   enabled: true
 validation-service-core:
   main:
-    version: 2.12.0
+    version: 2.13.0
     weight: 100
   canary: {}
   synchronize-profiles: false
@@ -204,7 +204,7 @@ validation-service-core:
   enabled: true
 validation-service-igs:
   main:
-    version: 2.12.0
+    version: 2.13.0
     weight: 100
   canary: {}
   synchronize-profiles: false
@@ -213,7 +213,7 @@ validation-service-igs:
   enabled: true
 validation-service-ars:
   main:
-    version: 2.12.0
+    version: 2.13.0
     weight: 100
   canary: {}
   synchronize-profiles: false

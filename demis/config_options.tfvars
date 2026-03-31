@@ -23,6 +23,11 @@ config_options = [
     synchronize_option_value = false
   },
   {
+    services     = ["validation-service-core"]
+    option_name  = "CONFIG_OPTION_ADDITIONAL_STRICT_CODING_VALIDATOR_ENABLED"
+    option_value = true
+  },
+  {
     services                 = ["pdfgen-service"]
     option_name              = "CONFIG_OPTION_PDF_WATERMARK"
     option_value             = "stage-public"
