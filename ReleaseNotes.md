@@ -2,6 +2,14 @@
 
 # Release Notes stage-public
 
+## Release 1.15.1
+- compatible with DEMIS-Development-Cluster 5.4.0
+- updated service versions
+- removed feature flags around lifecycle management in lifecycle-validation-service
+- optimized RKI excerpt creation in notification-processing-service
+- updated main profile snapshot versions to 6.2.6 for validation-service and fhir-ui-data-model-translation-service
+- updated double validation profile snapshot fallback version to 5.4.1
+
 ## Release 1.15.0
 - Compatible with DEMIS-Development-Cluster 5.4.0
 - Added are-services

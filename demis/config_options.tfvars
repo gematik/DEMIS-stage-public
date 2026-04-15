@@ -54,6 +54,11 @@ config_options = [
     option_value = "hiv,trp,neg,ech,tox,cht"
   },
   {
+    services     = ["pdfgen-service"]
+    option_name  = "PDFGEN_QUANTITY_VALUE_DISPLAY_VALUE_SET_SOURCE"
+    option_value = "https://terminologien.bfarm.de/fhir/CodeSystem/ucum-common-units-translation-de-de"
+  },
+  {
     services     = ["pseudonymization-service"]
     option_name  = "SECRETS_ONE_GENERATION_INIT_ON_MISSING"
     option_value = true
