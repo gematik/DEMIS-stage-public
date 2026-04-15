@@ -28,7 +28,7 @@ fhir-storage-writer:
   enabled: true
 futs:
   main:
-    version: 2.6.0
+    version: 2.6.1
     weight: 100
   canary: {}
   chart-name: futs-delegation
@@ -36,7 +36,7 @@ futs:
   enabled: true
 futs-core:
   main:
-    version: 2.6.0
+    version: 2.6.1
     weight: 100
   canary: {}
   synchronize-profiles: false
@@ -45,7 +45,7 @@ futs-core:
   enabled: true
 futs-igs:
   main:
-    version: 2.6.0
+    version: 2.6.1
     weight: 100
   canary: {}
   synchronize-profiles: false
@@ -75,7 +75,7 @@ igs-service:
   enabled: true
 lifecycle-validation-service:
   main:
-    version: 1.5.0
+    version: 1.6.0
     weight: 100
   canary: {}
   deployment-strategy: canary
@@ -89,28 +89,28 @@ minio:
   enabled: true
 notification-gateway:
   main:
-    version: 6.8.0
+    version: 6.8.1
     weight: 100
   canary: {}
   deployment-strategy: canary
   enabled: true
 notification-processing-service:
   main:
-    version: 2.10.0
+    version: 2.11.0
     weight: 100
   canary: {}
   deployment-strategy: canary
   enabled: true
 notification-routing-service:
   main:
-    version: 2.6.0
+    version: 2.6.1
     weight: 100
   canary: {}
   deployment-strategy: canary
   enabled: true
 pdfgen-service:
   main:
-    version: 2.10.0
+    version: 2.10.1
     weight: 100
   canary: {}
   deployment-strategy: canary
@@ -124,14 +124,14 @@ pgbouncer:
   enabled: true
 portal-bedoccupancy:
   main:
-    version: 1.6.1
+    version: 1.7.0
     weight: 100
   canary: {}
   deployment-strategy: canary
   enabled: true
 portal-disease:
   main:
-    version: 1.6.1
+    version: 1.6.2
     weight: 100
   canary: {}
   deployment-strategy: canary
@@ -145,14 +145,14 @@ portal-igs:
   enabled: true
 portal-pathogen:
   main:
-    version: 1.7.1
+    version: 1.8.0
     weight: 100
   canary: {}
   deployment-strategy: canary
   enabled: true
 portal-shell:
   main:
-    version: 1.5.1
+    version: 1.6.0
     weight: 100
   canary: {}
   deployment-strategy: canary
@@ -180,7 +180,7 @@ pseudonymization-storage-service:
   enabled: true
 report-processing-service:
   main:
-    version: 2.2.1
+    version: 2.3.0
     weight: 100
   canary: {}
   deployment-strategy: canary
@@ -250,7 +250,7 @@ istio-routing:
   enabled: true
 fhir-profile-snapshots:
   main:
-    version: 6.2.5
+    version: 6.2.6
     weight: 100
   canary: {}
   deployment-strategy: update

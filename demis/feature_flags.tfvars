@@ -1,6 +1,11 @@
 # Map containing the Feature Flags to be activated for services
 feature_flags = [
   {
+    services   = ["lifecycle-validation-service", "portal-pathogen", "portal-shell"]
+    flag_name  = "FEATURE_FLAG_ANONYMOUS_NOTIFICATION"
+    flag_value = false
+  },
+  {
     services   = ["ars-service"]
     flag_name  = "FEATURE_FLAG_ARS_VALIDATION_ENABLED"
     flag_value = true
@@ -8,11 +13,6 @@ feature_flags = [
   {
     services   = ["validation-service-core"]
     flag_name  = "FEATURE_FLAG_COMMON_CODE_SYSTEM_TERMINOLOGY_ENABLED"
-    flag_value = true
-  },
-  {
-    services   = ["lifecycle-validation-service"]
-    flag_name  = "FEATURE_FLAG_FHIRPATH_VALIDATION_ENABLED"
     flag_value = true
   },
   {
@@ -48,12 +48,22 @@ feature_flags = [
   {
     services   = ["notification-processing-service"]
     flag_name  = "FEATURE_FLAG_NBL_FOR_NOTBYNAME_ENABLED"
-    flag_value = false
+    flag_value = true
   },
   {
     services   = ["all"]
     flag_name  = "FEATURE_FLAG_NEW_ISTIO_SIDECAR_REQUEST_AND_LIMITS"
     flag_value = true
+  },
+  {
+    services   = ["portal-disease", "portal-pathogen", "portal-shell"]
+    flag_name  = "FEATURE_FLAG_NON_NOMINAL_NOTIFICATION"
+    flag_value = false
+  },
+  {
+    services   = ["notification-processing-service"]
+    flag_name  = "FEATURE_FLAG_NOTIFICATIONS_7_3"
+    flag_value = false
   },
   {
     services   = ["notification-gateway"]
@@ -81,8 +91,18 @@ feature_flags = [
     flag_value = true
   },
   {
+    services   = ["portal-shell"]
+    flag_name  = "FEATURE_FLAG_PORTAL_ARE_ENABLED"
+    flag_value = false
+  },
+  {
     services   = ["portal-bedoccupancy", "portal-disease", "portal-igs", "portal-pathogen", "portal-shell"]
     flag_name  = "FEATURE_FLAG_PORTAL_HEADER_FOOTER"
+    flag_value = true
+  },
+  {
+    services   = ["portal-bedoccupancy", "portal-disease", "portal-pathogen"]
+    flag_name  = "FEATURE_FLAG_PORTAL_PAGE_STRUCTURE"
     flag_value = true
   },
   {
@@ -101,19 +121,14 @@ feature_flags = [
     flag_value = true
   },
   {
-    services   = ["lifecycle-validation-service"]
-    flag_name  = "FEATURE_FLAG_RETURN_DISEASE_FHIRPATH_VALIDATION_IN_RESPONSES"
-    flag_value = true
-  },
-  {
-    services   = ["lifecycle-validation-service"]
-    flag_name  = "FEATURE_FLAG_RETURN_FHIRPATH_VALIDATION_IN_RESPONSES"
-    flag_value = true
-  },
-  {
     services   = ["notification-routing-service"]
     flag_name  = "FEATURE_FLAG_SEARCH_COMPARISON"
     flag_value = true
+  },
+  {
+    services   = ["portal-shell"]
+    flag_name  = "FEATURE_FLAG_SURVEILLANCE_PROGRAM_ADMISSION_ENABLED"
+    flag_value = false
   },
   {
     services   = ["ars-service"]
