@@ -12,6 +12,14 @@ are-notification-processing-service:
   canary: {}
   deployment-strategy: canary
   enabled: true
+validation-service:
+  main:
+    version: 2.10.1
+    weight: 100
+  canary: {}
+  chart-name: validation-service-delegation
+  deployment-strategy: canary
+  enabled: true
 validation-service-are:
   main:
     version: 2.10.1
