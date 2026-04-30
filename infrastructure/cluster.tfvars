@@ -1,7 +1,7 @@
 # Define if it is local or remote
 local_cluster = true
 # Version of KIND
-kind_image_tag = "v1.33.0"
+kind_image_tag = "v1.34.3"
 # Name of the KIND cluster
 kind_cluster_name = "demis-cluster"
 # Number of worker nodes
@@ -13,19 +13,22 @@ stage_name = "public"
 cluster_region = "public"
 
 # Service Mesh Options
-service_mesh_istio_version      = "1.28.1"
-service_mesh_kiali_version      = "2.19.0"
-service_mesh_jaeger_version     = "2.12.0"
-service_mesh_jaeger_digest      = "sha256:4c8423cd8fa8b727bd632f0acda2cc39118f21a4bdcef322a6c9ddbeb6dcd424"
-service_mesh_grafana_version    = "12.1.4"
-service_mesh_grafana_digest     = "sha256:553160ed532b89bac217ffd424c2d7fb62a1dfbc49685d29993795b77e9cea9a"
-service_mesh_prometheus_version = "27.50.0"
+service_mesh_istio_version      = "1.29.2"
+service_mesh_kiali_version      = "2.24.0"
+service_mesh_jaeger_version     = "2.17.0"
+service_mesh_jaeger_digest      = "sha256:6266573208d665ce5c17483bce0a75d0806480d92c84766d288d0aee885ce708"
+service_mesh_grafana_version    = "12.4.2"
+service_mesh_grafana_digest     = "sha256:83749231c3835e390a3144e5e940203e42b9589761f20ef3169c716e734ad505"
+service_mesh_prometheus_version = "29.1.0"
 # Number of replicas for the Istiod services
 service_mesh_istiod_replica_count = 3
 # Enable the deployment of Monitoring Services (Grafana, Prometheus)
 service_mesh_monitoring_enabled = true
 # The sampling rate option can be used to control what percentage of requests get reported to the tracing system
 service_mesh_tracing_sampling = "100.0"
+
+# Enable native sidecars for istio (istio 1.27.0+ default true)
+service_mesh_enable_native_sidecar_injection = true
 
 # Trivy Options
 trivy_enabled                       = false

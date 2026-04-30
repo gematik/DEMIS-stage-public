@@ -2,6 +2,25 @@
 
 # Release Notes stage-public
 
+## Release 1.16.0
+- compatible with DEMIS-Development-Cluster 5.7.0
+- updated ARE Versions to first Major Release
+- enabled ARE validation and enrichtent Features
+- modernized infrastructure
+  - upgraded kind to version 1.34.3
+  - upgraded istio to version 1.29.2
+  - upgraded kiali to version 2.24.0
+  - upgraded jaeger to version 2.17.0
+  - upgraded grafana to version 12.4.2
+  - upgraded prometheus to version 29.1.0
+- activated native sidecar usage for istio-proxies
+- upgraded istio policies version
+- upgraded network rules version
+- upgraded keycloak and stage-configuration-data version
+- activated new login themes for keycloak
+- activated feature flags for ARE-Onboarding
+- added network-rules for ARE-Services
+
 ## Release 1.15.1
 - compatible with DEMIS-Development-Cluster 5.4.0
 - updated service versions

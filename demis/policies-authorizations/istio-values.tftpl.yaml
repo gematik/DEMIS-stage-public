@@ -29,12 +29,6 @@ demis:
       enabled: true
   sps:
     arsEnabled: true
-  dls:
-    internal:
-      enabled: true
-    #   manual change: active for acceptance tests by rki
-    external:
-      enabled: true
 # Mesh Services Policies
 mesh:
   enabled: false

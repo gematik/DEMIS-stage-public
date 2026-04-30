@@ -16,18 +16,13 @@ feature_flags = [
     flag_value = true
   },
   {
+    services   = ["portal-disease", "portal-pathogen", "portal-shell"]
+    flag_name  = "FEATURE_FLAG_FOLLOW_UP_7_3"
+    flag_value = false
+  },
+  {
     services   = ["notification-gateway", "notification-processing-service", "notification-routing-service"]
     flag_name  = "FEATURE_FLAG_FOLLOW_UP_NOTIFICATION"
-    flag_value = true
-  },
-  {
-    services   = ["portal-disease", "portal-shell"]
-    flag_name  = "FEATURE_FLAG_FOLLOW_UP_NOTIFICATION_PORTAL_DISEASE"
-    flag_value = true
-  },
-  {
-    services   = ["portal-pathogen", "portal-shell"]
-    flag_name  = "FEATURE_FLAG_FOLLOW_UP_NOTIFICATION_PORTAL_PATHOGEN"
     flag_value = true
   },
   {
@@ -91,9 +86,15 @@ feature_flags = [
     flag_value = true
   },
   {
-    services   = ["portal-shell"]
-    flag_name  = "FEATURE_FLAG_PORTAL_ARE_ENABLED"
-    flag_value = false
+    services               = ["portal-shell"]
+    flag_name              = "FEATURE_FLAG_PORTAL_ARE_ENABLED"
+    flag_value             = true
+    synchronize_flag_value = false
+  },
+  {
+    services   = ["notification-gateway", "portal-bedoccupancy", "portal-disease", "portal-pathogen"]
+    flag_name  = "FEATURE_FLAG_PORTAL_ERROR_DIALOG_FILTERING"
+    flag_value = true
   },
   {
     services   = ["portal-bedoccupancy", "portal-disease", "portal-igs", "portal-pathogen", "portal-shell"]
@@ -103,11 +104,6 @@ feature_flags = [
   {
     services   = ["portal-bedoccupancy", "portal-disease", "portal-pathogen"]
     flag_name  = "FEATURE_FLAG_PORTAL_PAGE_STRUCTURE"
-    flag_value = true
-  },
-  {
-    services   = ["portal-shell"]
-    flag_name  = "FEATURE_FLAG_PORTAL_TEXT"
     flag_value = true
   },
   {
@@ -126,9 +122,10 @@ feature_flags = [
     flag_value = true
   },
   {
-    services   = ["portal-shell"]
-    flag_name  = "FEATURE_FLAG_SURVEILLANCE_PROGRAM_ADMISSION_ENABLED"
-    flag_value = false
+    services               = ["portal-shell"]
+    flag_name              = "FEATURE_FLAG_SURVEILLANCE_PROGRAM_ADMISSION_ENABLED"
+    flag_value             = true
+    synchronize_flag_value = false
   },
   {
     services   = ["ars-service"]
