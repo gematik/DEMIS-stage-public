@@ -1,6 +1,11 @@
 # Map containing the Config Options to be activated for services
 config_options = [
   {
+    services     = ["keycloak"]
+    option_name  = "ALLOWED_CLIENT_IDS"
+    option_value = "meldeportal,meldeportal-internet"
+  },
+  {
     services                 = ["certificate-update-service"]
     option_name              = "CERT_ROOT_FOLDER_PATH"
     option_value             = "config/"
@@ -34,5 +39,15 @@ config_options = [
     services     = ["keycloak"]
     option_name  = "ONLINE_SERVICE_ID"
     option_value = "BMI-A2623"
+  },
+  {
+    services     = ["keycloak"]
+    option_name  = "SURVEILLANCE_PROGRAM_MANAGEMENT_REALM"
+    option_value = "SURVEILLANCE-PROGRAMS"
+  },
+  {
+    services     = ["keycloak"]
+    option_name  = "USER_REALM"
+    option_value = "PORTAL"
   }
 ]

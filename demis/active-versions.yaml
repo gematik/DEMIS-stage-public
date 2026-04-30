@@ -28,7 +28,7 @@ fhir-storage-writer:
   enabled: true
 futs:
   main:
-    version: 2.6.1
+    version: 2.6.2
     weight: 100
   canary: {}
   chart-name: futs-delegation
@@ -36,7 +36,7 @@ futs:
   enabled: true
 futs-core:
   main:
-    version: 2.6.1
+    version: 2.6.2
     weight: 100
   canary: {}
   synchronize-profiles: false
@@ -96,21 +96,21 @@ notification-gateway:
   enabled: true
 notification-processing-service:
   main:
-    version: 2.11.0
+    version: 2.11.1
     weight: 100
   canary: {}
   deployment-strategy: canary
   enabled: true
 notification-routing-service:
   main:
-    version: 2.6.1
+    version: 2.6.2
     weight: 100
   canary: {}
   deployment-strategy: canary
   enabled: true
 pdfgen-service:
   main:
-    version: 2.10.1
+    version: 2.10.2
     weight: 100
   canary: {}
   deployment-strategy: canary
@@ -124,14 +124,14 @@ pgbouncer:
   enabled: true
 portal-bedoccupancy:
   main:
-    version: 1.7.0
+    version: 1.7.1
     weight: 100
   canary: {}
   deployment-strategy: canary
   enabled: true
 portal-disease:
   main:
-    version: 1.6.2
+    version: 1.7.0
     weight: 100
   canary: {}
   deployment-strategy: canary
@@ -145,14 +145,14 @@ portal-igs:
   enabled: true
 portal-pathogen:
   main:
-    version: 1.8.0
+    version: 1.9.0
     weight: 100
   canary: {}
   deployment-strategy: canary
   enabled: true
 portal-shell:
   main:
-    version: 1.6.0
+    version: 1.7.2
     weight: 100
   canary: {}
   deployment-strategy: canary
@@ -222,21 +222,21 @@ validation-service-ars:
   enabled: true
 network-rules:
   main:
-    version: 2.2.1
+    version: 2.3.0
     weight: 100
   canary: {}
   deployment-strategy: update
   enabled: true
 policies-authentications:
   main:
-    version: 2.8.1
+    version: 2.10.1
     weight: 100
   canary: {}
   deployment-strategy: update
   enabled: true
 policies-authorizations:
   main:
-    version: 2.8.1
+    version: 2.10.1
     weight: 100
   canary: {}
   deployment-strategy: update

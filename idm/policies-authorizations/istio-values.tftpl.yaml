@@ -20,9 +20,10 @@ idm:
   # Define the namespace where the IDM Policies/Services are deployed
   namespace: "${namespace}"
 
+  demisNamespaces:
+    - demis
+
   keycloak:
-    demisNamespaces:
-      - demis
     #appDomains:
     #  - demis.rki.de
     appDomains:
