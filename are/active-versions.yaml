@@ -1,13 +1,13 @@
 are-gateway:
   main:
-    version: 1.1.1
+    version: 1.1.2
     weight: 100
   canary: {}
   deployment-strategy: canary
   enabled: true
 are-notification-processing-service:
   main:
-    version: 1.1.0
+    version: 1.1.1
     weight: 100
   canary: {}
   deployment-strategy: canary
@@ -52,7 +52,7 @@ policies-authorizations:
   enabled: true
 portal-are:
   main:
-    version: 1.1.0
+    version: 1.1.1
     weight: 100
   canary: {}
   deployment-strategy: canary
