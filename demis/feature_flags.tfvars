@@ -16,6 +16,11 @@ feature_flags = [
     flag_value = true
   },
   {
+    services   = ["portal-disease"]
+    flag_name  = "FEATURE_FLAG_DISEASE_AUTOCOMPLETE"
+    flag_value = false
+  },
+  {
     services   = ["portal-disease", "portal-pathogen", "portal-shell"]
     flag_name  = "FEATURE_FLAG_FOLLOW_UP_7_3"
     flag_value = false
@@ -73,11 +78,6 @@ feature_flags = [
   {
     services   = ["futs-core", "futs-igs", "validation-service-ars", "validation-service-core", "validation-service-igs"]
     flag_name  = "FEATURE_FLAG_PACKAGE_REGISTRY_ENABLED"
-    flag_value = true
-  },
-  {
-    services   = ["pdfgen-service"]
-    flag_name  = "FEATURE_FLAG_PDF_LABEL"
     flag_value = true
   },
   {
