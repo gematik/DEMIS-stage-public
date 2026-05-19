@@ -2,6 +2,10 @@
 
 # Release Notes stage-public
 
+## Release 1.16.1
+- compatible with DEMIS-Development-Cluster 5.7.0
+- updated service versions
+
 ## Release 1.16.0
 - compatible with DEMIS-Development-Cluster 5.7.0
 - updated ARE Versions to first Major Release
