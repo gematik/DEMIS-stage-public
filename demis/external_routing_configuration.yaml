@@ -1,0 +1,373 @@
+traffic_routes_templates:
+- service: "destination-lookup-reader"
+  enabled: true
+  rewrite:
+    target: "/"
+  additional_headers:
+    x-api-version: ${api_version}
+  matches:
+  - uri_template: "${context_path}/destination-lookup/${api_version}"
+    ignoreUriCase: true
+  http_route_configs:
+  - variables:
+      api_version: "v1"
+- service: "ars-service"
+  enabled: true
+  variables:
+    profile_name: "ars-profile-snapshots"
+    package_name: "ars-profile-snapshots"
+    api_version: "v1"
+    package_version: "v1"
+  rewrite:
+    target: "/"
+  http_route_configs:
+  - matches:
+    - uri_template: "${context_path}/surveillance/antibiotic-resistance/${api_version}/fhir/"
+      ignoreUriCase: true
+    additional_headers:
+      x-fhir-api-version: "${api_version}"
+      x-api-version: "${api_version}"
+      x-fhir-profile: "${profile_name}"
+      x-fhir-package-version: "${package_version}"
+      x-fhir-package: "${package_name}"
+  - matches:
+    - uri_template: "${context_path}/surveillance/antibiotic-resistance/${api_version}/batch/"
+      method:
+        exact: GET
+      ignoreUriCase: true
+    rewrite:
+      target: "/batch/"
+  - matches:
+    - uri_template: "${context_path}/surveillance/antibiotic-resistance/fhir/"
+      ignoreUriCase: true
+    additional_headers:
+      x-fhir-api-version: "${api_version}"
+      x-api-version: "${api_version}"
+      x-fhir-profile: "${profile_name}"
+      x-fhir-package-version: "${package_version}"
+      x-fhir-package: "${package_name}"
+- service: "fhir-storage-reader"
+  enabled: true
+  matches:
+  - uri_template: "${context_path}/notifications/${api_version}/fhir"
+  rewrite:
+    target: "/"
+  http_route_configs:
+  - variables:
+     api_version: "v1"
+    additional_headers:
+      x-api-version: ${api_version}
+  - matches:
+    - uri_template: "${context_path}/notification-clearing-api/fhir"
+- service: "futs"
+  enabled: true
+  variables:
+    profile_name: "fhir-profile-snapshots"
+    package_name: "fhir-profile-snapshots"
+  matches:
+  - uri_template: "${context_path}/translation/ui-data-model/${api_version}/fhir"
+    headers:
+      x-fhir-profile: "${profile_name}"
+  - uri_template: "${context_path}/translation/ui-data-model/${api_version}/fhir"
+    headers:
+      x-fhir-package: "${package_name}"
+  rewrite:
+    target: "/"
+  delegate:
+    name: futs-core-internal
+    namespace: ${namespace}
+  http_route_configs:
+  - variables:
+      api_version: "v6"
+    additional_headers:
+      x-api-version: "${api_version}"
+  - variables:
+      api_version: "v4"
+      profile_name: "igs-profile-snapshots"
+      package_name: "igs-profile-snapshots"
+    additional_headers:
+      x-api-version: "${api_version}"
+    delegate:
+      name: futs-igs-internal
+      namespace: ${namespace}
+  - matches:
+    - uri_template: "${context_path}/services/fhir-ui-data-model-translation"
+      without_headers:
+      - x-fhir-profile
+      - x-fhir-package
+    - uri_template: "${context_path}/fhir-ui-data-model-translation"
+      without_headers:
+      - x-fhir-profile
+      - x-fhir-package
+- service: "gateway-igs"
+  matches:
+    - uri_template: "${context_path}/gateway/igs"
+  enabled: true
+  rewrite:
+    target: "/"
+  http_route_configs:
+  - variables:
+      api_version: "v4"
+      profile_name: "igs-profile-snapshots"
+    additional_headers:
+      x-fhir-api-version: "${api_version}"
+      x-fhir-package-version: "${api_version}"
+      x-fhir-profile: "${profile_name}"
+      x-fhir-package: "${profile_name}"
+- service: "hospital-location-service"
+  enabled: true
+  matches:
+  - uri_template: "${context_path}/directory/hospital/${api_version}/locations"
+  rewrite:
+    target: "/locations"
+  http_route_configs:
+  - variables:
+      api_version: "v1"
+    additional_headers:
+      x-api-version: "${api_version}"
+  - matches:
+    - uri_template: "${context_path}/services/hospital-locations"
+    - uri_template: "${context_path}/hospital-locations"
+- service: "igs-service"
+  enabled: true
+  variables:
+    profile_name: "igs-profile-snapshots"
+    package_name: "igs-profile-snapshots"
+  rewrite:
+    target: "/"
+  http_route_configs:
+  - variables:
+      api_version: "v5"
+      package_version: "v5"
+    matches:
+    - uri_template: "${context_path}/surveillance/notification-sequence/${api_version}/fhir/"
+      ignoreUriCase: true
+    additional_headers:
+      x-fhir-api-version: "${api_version}"
+      x-api-version: "${api_version}"
+      x-fhir-profile: "${profile_name}"
+      x-fhir-package-version: "${package_version}"
+      x-fhir-package: "${package_name}"
+  - variables:
+      api_version: "v5"
+      package_version: "v5"
+    matches:
+    - uri_template: "${context_path}/surveillance/notification-sequence/${api_version}/S3Controller"
+      ignoreUriCase: true
+    additional_headers:
+      x-fhir-api-version: "${api_version}"
+      x-api-version: "${api_version}"
+      x-fhir-profile: "${profile_name}"
+      x-fhir-package-version: "${package_version}"
+      x-fhir-package: "${package_name}"
+    rewrite:
+      target: "/S3Controller"
+  - variables:
+      api_version: "v4"
+      package_version: "v4"
+    matches:
+    - uri_template: "${context_path}/surveillance/notification-sequence/${api_version}/fhir/"
+      ignoreUriCase: true
+    additional_headers:
+      x-fhir-api-version: "${api_version}"
+      x-api-version: "${api_version}"
+      x-fhir-profile: "${profile_name}"
+      x-fhir-package-version: "${package_version}"
+      x-fhir-package: "${package_name}"
+  - variables:
+      api_version: "v4"
+      package_version: "v4"
+    matches:
+    - uri_template: "${context_path}/surveillance/notification-sequence/${api_version}/S3Controller"
+      ignoreUriCase: true
+    additional_headers:
+      x-fhir-api-version: "${api_version}"
+      x-api-version: "${api_version}"
+      x-fhir-profile: "${profile_name}"
+      x-fhir-package-version: "${package_version}"
+      x-fhir-package: "${package_name}"
+    rewrite:
+      target: "/S3Controller"
+  - matches:
+    - method:
+        exact: GET
+      # version wild card is required because the binary-access-read endpoint is shared between multiple versions
+      uri_template: "(?i)^${context_path}/surveillance/notification-sequence/v([1-9][0-9]?)/fhir/.*binary-access-read$"
+      match_type: "regex"
+    rewrite:
+      method: "regex"
+      match_template: "(?i)^${context_path}/surveillance/notification-sequence/v([1-9][0-9]?)/fhir/(.*)?$"
+      target: "/\\2"
+  - matches:
+    - uri_template: "${context_path}/surveillance/notification-sequence/fhir/"
+    additional_headers:
+      x-fhir-profile: "${profile_name}"
+      x-fhir-package: "${package_name}"
+  - matches:
+    - uri_template: "${context_path}/surveillance/notification-sequence/S3Controller/upload/"
+    rewrite:
+      target: "/S3Controller/upload/"
+- service: "minio"
+  enabled: true
+  rewrite:
+    target: "/"
+  http_route_configs:
+    - matches:
+        - uri_template: "/"
+- service: "notification-gateway"
+  enabled: true
+  variables:
+    profile_name: "fhir-profile-snapshots"
+    api_version: "v6"
+    package_name: "fhir-profile-snapshots"
+    package_version: "v6"
+    request_origin: "internal"
+  additional_headers:
+    x-fhir-profile: "${profile_name}"
+    x-fhir-api-version: "${api_version}"
+    x-api-version: "${api_version}"
+    x-fhir-package: "${package_name}"
+    x-fhir-package-version: "${package_version}"
+    x-fhir-api-request-origin: "${request_origin}"
+  matches:
+  - uri_template: "${context_path}/gateway/${gateway_name}"
+  rewrite:
+    target: "/"
+  http_route_configs:
+  - variables:
+      submission_type: "pathogen"
+      gateway_name: "pathogen"
+    additional_headers:
+      x-fhir-api-submission-type: "${submission_type}"
+  - variables:
+      submission_type: "disease"
+      gateway_name: "disease"
+    additional_headers:
+      x-fhir-api-submission-type: "${submission_type}"
+  - variables:
+      gateway_name: "bedoccupancy"
+- service: "notification-processing-service"
+  enabled: true
+  variables:
+    request_origin: "external"
+    profile_name: "fhir-profile-snapshots"
+    package_name: "fhir-profile-snapshots"
+  additional_headers:
+    x-fhir-api-request-origin: "${request_origin}"
+    x-fhir-api-submission-type: "${submission_type}"
+  matches:
+  - uri_template: "${context_path}/notifications/${submission_type}/${api_version}/fhir/"
+    ignoreUriCase: true
+  rewrite:
+    target: "/"
+  http_route_configs:
+  - variables:
+      api_version: "v6"
+      package_version: "v6"
+      submission_type: "disease"
+    additional_headers:
+      x-fhir-api-version: "${api_version}"
+      x-api-version: "${api_version}"
+      x-fhir-profile: "${profile_name}"
+      x-fhir-package-version: "${package_version}"
+      x-fhir-package: "${package_name}"
+  - variables:
+      api_version: "v6"
+      package_version: "v6"
+      submission_type: "pathogen"
+    additional_headers:
+      x-fhir-api-version: "${api_version}"
+      x-api-version: "${api_version}"
+      x-fhir-profile: "${profile_name}"
+      x-fhir-package-version: "${package_version}"
+      x-fhir-package: "${package_name}"
+  - variables:
+      api_version: "v5"
+      package_version: "v5"
+      submission_type: "disease"
+    additional_headers:
+      x-fhir-api-version: "${api_version}"
+      x-api-version: "${api_version}"
+      x-fhir-profile: "${profile_name}"
+      x-fhir-package-version: "${package_version}"
+      x-fhir-package: "${package_name}"
+  - variables:
+      api_version: "v5"
+      package_version: "v5"
+      submission_type: "pathogen"
+    additional_headers:
+      x-fhir-api-version: "${api_version}"
+      x-api-version: "${api_version}"
+      x-fhir-profile: "${profile_name}"
+      x-fhir-package-version: "${package_version}"
+      x-fhir-package: "${package_name}"
+  - variables:
+      submission_type: "any"
+    matches:
+    - uri_template: "${context_path}/hospitalization/fhir"
+    - uri_template: "${context_path}/notification-api/fhir"
+- service: "portal-bedoccupancy"
+  enabled: true
+  rewrite:
+    target: "/"
+  http_route_configs:
+  - matches:
+    - uri_template: "${context_path}/portal/bedoccupancy"
+- service: "portal-disease"
+  enabled: true
+  rewrite:
+    target: "/"
+  http_route_configs:
+  - matches:
+    - uri_template: "${context_path}/portal/disease"
+- service: "portal-igs"
+  enabled: true
+  rewrite:
+    target: "/"
+  http_route_configs:
+  - matches:
+    - uri_template: "${context_path}/portal/igs"
+- service: "portal-pathogen"
+  enabled: true
+  rewrite:
+    target: "/"
+  http_route_configs:
+  - matches:
+    - uri_template: "${context_path}/portal/pathogen"
+- service: "portal-shell"
+  enabled: true
+  rewrite:
+    target: "/"
+  http_route_configs:
+  - matches:
+    - uri_template: "${context_path}/portal/shell"
+- service: "report-processing-service"
+  enabled: true
+  variables:
+    profile_name: "fhir-profile-snapshots"
+    package_name: "fhir-profile-snapshots"
+  additional_headers:
+    x-fhir-profile: "${profile_name}"
+    x-fhir-package: "${package_name}"
+  matches:
+  - uri_template: "${context_path}/reports/bedoccupancy/${api_version}/fhir/"
+    ignoreUriCase: true
+  rewrite:
+    target: "/"
+  http_route_configs:
+  - variables:
+      api_version: "v6"
+      package_version: "v6"
+    additional_headers:
+      x-fhir-api-version: "${api_version}"
+      x-api-version: "${api_version}"
+      x-fhir-package-version: "${package_version}"
+  - variables:
+      api_version: "v5"
+      package_version: "v5"
+    additional_headers:
+      x-fhir-api-version: "${api_version}"
+      x-api-version: "${api_version}"
+      x-fhir-package-version: "${package_version}"
+  - matches:
+    - uri_template: "${context_path}/reports/fhir/"

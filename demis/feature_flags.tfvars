@@ -16,6 +16,11 @@ feature_flags = [
     flag_value = true
   },
   {
+    services   = ["validation-service-ars", "validation-service-core", "validation-service-igs"]
+    flag_name  = "FEATURE_FLAG_DENY_MODIFIER_EXTENSIONS"
+    flag_value = true
+  },
+  {
     services   = ["portal-disease"]
     flag_name  = "FEATURE_FLAG_DISEASE_AUTOCOMPLETE"
     flag_value = false
@@ -131,6 +136,11 @@ feature_flags = [
     services   = ["ars-service"]
     flag_name  = "FEATURE_FLAG_SURVEILLANCE_PSEUDONYM_SERVICE_ENABLED"
     flag_value = false
+  },
+  {
+    services   = ["validation-service-ars", "validation-service-core", "validation-service-igs"]
+    flag_name  = "FEATURE_FLAG_VALIDATION_EXTENSION_CHECK_ENABLED"
+    flag_value = true
   },
   {
     services   = ["notification-gateway", "portal-pathogen"]

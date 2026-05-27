@@ -22,8 +22,9 @@ idm:
 
   demisNamespaces:
     - demis
-
   keycloak:
+    # The issuer URL of the Keycloak Instance, used to request surveillance access
+    issuerUrl: ${auth_hostname}
     #appDomains:
     #  - demis.rki.de
     appDomains:
