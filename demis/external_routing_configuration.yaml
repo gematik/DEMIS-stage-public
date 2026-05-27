@@ -14,8 +14,7 @@ traffic_routes_templates:
 - service: "ars-service"
   enabled: true
   variables:
-    profile_name: "ars-profile-snapshots"
-    package_name: "ars-profile-snapshots"
+    package_name: "ars"
     api_version: "v1"
     package_version: "v1"
   rewrite:
@@ -27,7 +26,7 @@ traffic_routes_templates:
     additional_headers:
       x-fhir-api-version: "${api_version}"
       x-api-version: "${api_version}"
-      x-fhir-profile: "${profile_name}"
+      x-fhir-profile: "${package_name}"
       x-fhir-package-version: "${package_version}"
       x-fhir-package: "${package_name}"
   - matches:
@@ -43,7 +42,7 @@ traffic_routes_templates:
     additional_headers:
       x-fhir-api-version: "${api_version}"
       x-api-version: "${api_version}"
-      x-fhir-profile: "${profile_name}"
+      x-fhir-profile: "${package_name}"
       x-fhir-package-version: "${package_version}"
       x-fhir-package: "${package_name}"
 - service: "fhir-storage-reader"
@@ -61,44 +60,30 @@ traffic_routes_templates:
     - uri_template: "${context_path}/notification-clearing-api/fhir"
 - service: "futs"
   enabled: true
-  variables:
-    profile_name: "fhir-profile-snapshots"
-    package_name: "fhir-profile-snapshots"
   matches:
-  - uri_template: "${context_path}/translation/ui-data-model/${api_version}/fhir"
-    headers:
-      x-fhir-profile: "${profile_name}"
-  - uri_template: "${context_path}/translation/ui-data-model/${api_version}/fhir"
-    headers:
-      x-fhir-package: "${package_name}"
+  - uri_template: "${context_path}/translation/ui-data-model/${package_name}/${api_version}/fhir"
   rewrite:
     target: "/"
+  additional_headers:
+    x-api-version: "${api_version}"
+    x-fhir-profile: "${package_name}"
+    x-fhir-package: "${package_name}"
   delegate:
-    name: futs-core-internal
+    name: futs-${service_name}-internal
     namespace: ${namespace}
   http_route_configs:
   - variables:
       api_version: "v6"
-    additional_headers:
-      x-api-version: "${api_version}"
+      service_name: "disease"
+      package_name: "disease"
+  - variables:
+      api_version: "v6"
+      service_name: "pathogen"
+      package_name: "laboratory"
   - variables:
       api_version: "v4"
-      profile_name: "igs-profile-snapshots"
-      package_name: "igs-profile-snapshots"
-    additional_headers:
-      x-api-version: "${api_version}"
-    delegate:
-      name: futs-igs-internal
-      namespace: ${namespace}
-  - matches:
-    - uri_template: "${context_path}/services/fhir-ui-data-model-translation"
-      without_headers:
-      - x-fhir-profile
-      - x-fhir-package
-    - uri_template: "${context_path}/fhir-ui-data-model-translation"
-      without_headers:
-      - x-fhir-profile
-      - x-fhir-package
+      service_name: "igs"
+      package_name: "igs"
 - service: "gateway-igs"
   matches:
     - uri_template: "${context_path}/gateway/igs"
@@ -108,12 +93,12 @@ traffic_routes_templates:
   http_route_configs:
   - variables:
       api_version: "v4"
-      profile_name: "igs-profile-snapshots"
+      package_name: "igs"
     additional_headers:
       x-fhir-api-version: "${api_version}"
       x-fhir-package-version: "${api_version}"
-      x-fhir-profile: "${profile_name}"
-      x-fhir-package: "${profile_name}"
+      x-fhir-profile: "${package_name}"
+      x-fhir-package: "${package_name}"
 - service: "hospital-location-service"
   enabled: true
   matches:
@@ -131,8 +116,7 @@ traffic_routes_templates:
 - service: "igs-service"
   enabled: true
   variables:
-    profile_name: "igs-profile-snapshots"
-    package_name: "igs-profile-snapshots"
+    package_name: "igs"
   rewrite:
     target: "/"
   http_route_configs:
@@ -145,7 +129,7 @@ traffic_routes_templates:
     additional_headers:
       x-fhir-api-version: "${api_version}"
       x-api-version: "${api_version}"
-      x-fhir-profile: "${profile_name}"
+      x-fhir-profile: "${package_name}"
       x-fhir-package-version: "${package_version}"
       x-fhir-package: "${package_name}"
   - variables:
@@ -157,7 +141,7 @@ traffic_routes_templates:
     additional_headers:
       x-fhir-api-version: "${api_version}"
       x-api-version: "${api_version}"
-      x-fhir-profile: "${profile_name}"
+      x-fhir-profile: "${package_name}"
       x-fhir-package-version: "${package_version}"
       x-fhir-package: "${package_name}"
     rewrite:
@@ -171,7 +155,7 @@ traffic_routes_templates:
     additional_headers:
       x-fhir-api-version: "${api_version}"
       x-api-version: "${api_version}"
-      x-fhir-profile: "${profile_name}"
+      x-fhir-profile: "${package_name}"
       x-fhir-package-version: "${package_version}"
       x-fhir-package: "${package_name}"
   - variables:
@@ -183,7 +167,7 @@ traffic_routes_templates:
     additional_headers:
       x-fhir-api-version: "${api_version}"
       x-api-version: "${api_version}"
-      x-fhir-profile: "${profile_name}"
+      x-fhir-profile: "${package_name}"
       x-fhir-package-version: "${package_version}"
       x-fhir-package: "${package_name}"
     rewrite:
@@ -201,7 +185,7 @@ traffic_routes_templates:
   - matches:
     - uri_template: "${context_path}/surveillance/notification-sequence/fhir/"
     additional_headers:
-      x-fhir-profile: "${profile_name}"
+      x-fhir-profile: "${package_name}"
       x-fhir-package: "${package_name}"
   - matches:
     - uri_template: "${context_path}/surveillance/notification-sequence/S3Controller/upload/"
@@ -217,13 +201,11 @@ traffic_routes_templates:
 - service: "notification-gateway"
   enabled: true
   variables:
-    profile_name: "fhir-profile-snapshots"
     api_version: "v6"
-    package_name: "fhir-profile-snapshots"
     package_version: "v6"
     request_origin: "internal"
   additional_headers:
-    x-fhir-profile: "${profile_name}"
+    x-fhir-profile: "${package_name}"
     x-fhir-api-version: "${api_version}"
     x-api-version: "${api_version}"
     x-fhir-package: "${package_name}"
@@ -235,23 +217,24 @@ traffic_routes_templates:
     target: "/"
   http_route_configs:
   - variables:
+      package_name: "laboratory"
       submission_type: "pathogen"
       gateway_name: "pathogen"
     additional_headers:
       x-fhir-api-submission-type: "${submission_type}"
   - variables:
+      package_name: "disease"
       submission_type: "disease"
       gateway_name: "disease"
     additional_headers:
       x-fhir-api-submission-type: "${submission_type}"
   - variables:
+      package_name: "statistic"
       gateway_name: "bedoccupancy"
 - service: "notification-processing-service"
   enabled: true
   variables:
     request_origin: "external"
-    profile_name: "fhir-profile-snapshots"
-    package_name: "fhir-profile-snapshots"
   additional_headers:
     x-fhir-api-request-origin: "${request_origin}"
     x-fhir-api-submission-type: "${submission_type}"
@@ -265,40 +248,44 @@ traffic_routes_templates:
       api_version: "v6"
       package_version: "v6"
       submission_type: "disease"
+      package_name: "disease"
     additional_headers:
       x-fhir-api-version: "${api_version}"
       x-api-version: "${api_version}"
-      x-fhir-profile: "${profile_name}"
+      x-fhir-profile: "${package_name}"
       x-fhir-package-version: "${package_version}"
       x-fhir-package: "${package_name}"
   - variables:
       api_version: "v6"
       package_version: "v6"
       submission_type: "pathogen"
+      package_name: "laboratory"
     additional_headers:
       x-fhir-api-version: "${api_version}"
       x-api-version: "${api_version}"
-      x-fhir-profile: "${profile_name}"
+      x-fhir-profile: "${package_name}"
       x-fhir-package-version: "${package_version}"
       x-fhir-package: "${package_name}"
   - variables:
       api_version: "v5"
       package_version: "v5"
       submission_type: "disease"
+      package_name: "disease"
     additional_headers:
       x-fhir-api-version: "${api_version}"
       x-api-version: "${api_version}"
-      x-fhir-profile: "${profile_name}"
+      x-fhir-profile: "${package_name}"
       x-fhir-package-version: "${package_version}"
       x-fhir-package: "${package_name}"
   - variables:
       api_version: "v5"
       package_version: "v5"
       submission_type: "pathogen"
+      package_name: "laboratory"
     additional_headers:
       x-fhir-api-version: "${api_version}"
       x-api-version: "${api_version}"
-      x-fhir-profile: "${profile_name}"
+      x-fhir-profile: "${package_name}"
       x-fhir-package-version: "${package_version}"
       x-fhir-package: "${package_name}"
   - variables:
@@ -344,10 +331,9 @@ traffic_routes_templates:
 - service: "report-processing-service"
   enabled: true
   variables:
-    profile_name: "fhir-profile-snapshots"
-    package_name: "fhir-profile-snapshots"
+    package_name: "statistic"
   additional_headers:
-    x-fhir-profile: "${profile_name}"
+    x-fhir-profile: "${package_name}"
     x-fhir-package: "${package_name}"
   matches:
   - uri_template: "${context_path}/reports/bedoccupancy/${api_version}/fhir/"

@@ -2,6 +2,10 @@
 
 # Release Notes stage-public
 
+## Release 1.17.0
+- compatible with DEMIS-Development-Cluster 5.8.0
+- split of validation-service-core and futs-core into separate instances for bedoccupancy, disease and pathogen
+
 ## Release 1.16.2
 - compatible with DEMIS-Development-Cluster 5.7.0
 - updated service versions

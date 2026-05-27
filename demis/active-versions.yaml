@@ -43,6 +43,39 @@ futs-core:
   chart-name: futs
   deployment-strategy: canary
   enabled: true
+futs-bedoccupancy:
+  main:
+    version: 2.6.2
+    weight: 100
+    profiles:
+      - 6.2.7
+  canary: {}
+  synchronize-profiles: false
+  chart-name: futs
+  deployment-strategy: canary
+  enabled: true
+futs-disease:
+  main:
+    version: 2.6.2
+    weight: 100
+    profiles:
+      - 6.2.7
+  canary: {}
+  synchronize-profiles: false
+  chart-name: futs
+  deployment-strategy: canary
+  enabled: true
+futs-pathogen:
+  main:
+    version: 2.6.2
+    weight: 100
+    profiles:
+      - 6.2.7
+  canary: {}
+  synchronize-profiles: false
+  chart-name: futs
+  deployment-strategy: canary
+  enabled: true
 futs-igs:
   main:
     version: 2.6.1
@@ -202,6 +235,42 @@ validation-service-core:
   chart-name: validation-service
   deployment-strategy: canary
   enabled: true
+validation-service-bedoccupancy:
+  main:
+    version: 2.13.0
+    weight: 100
+    profiles:
+      - 6.2.7
+      - 5.4.1
+  canary: {}
+  synchronize-profiles: false
+  chart-name: validation-service
+  deployment-strategy: canary
+  enabled: true
+validation-service-disease:
+  main:
+    version: 2.13.0
+    weight: 100
+    profiles:
+      - 6.2.7
+      - 5.4.1
+  canary: {}
+  synchronize-profiles: false
+  chart-name: validation-service
+  deployment-strategy: canary
+  enabled: true
+validation-service-pathogen:
+  main:
+    version: 2.13.0
+    weight: 100
+    profiles:
+      - 6.2.7
+      - 5.4.1
+  canary: {}
+  synchronize-profiles: false
+  chart-name: validation-service
+  deployment-strategy: canary
+  enabled: true
 validation-service-igs:
   main:
     version: 2.13.0
@@ -229,14 +298,14 @@ network-rules:
   enabled: true
 policies-authentications:
   main:
-    version: 2.10.1
+    version: 2.11.0
     weight: 100
   canary: {}
   deployment-strategy: update
   enabled: true
 policies-authorizations:
   main:
-    version: 2.10.1
+    version: 2.11.0
     weight: 100
   canary: {}
   deployment-strategy: update

@@ -11,12 +11,12 @@ feature_flags = [
     flag_value = true
   },
   {
-    services   = ["validation-service-core"]
+    services   = ["validation-service-bedoccupancy", "validation-service-core", "validation-service-disease", "validation-service-pathogen"]
     flag_name  = "FEATURE_FLAG_COMMON_CODE_SYSTEM_TERMINOLOGY_ENABLED"
     flag_value = true
   },
   {
-    services   = ["validation-service-ars", "validation-service-core", "validation-service-igs"]
+    services   = ["validation-service-ars", "validation-service-bedoccupancy", "validation-service-core", "validation-service-disease", "validation-service-igs", "validation-service-pathogen"]
     flag_name  = "FEATURE_FLAG_DENY_MODIFIER_EXTENSIONS"
     flag_value = true
   },
@@ -24,6 +24,16 @@ feature_flags = [
     services   = ["portal-disease"]
     flag_name  = "FEATURE_FLAG_DISEASE_AUTOCOMPLETE"
     flag_value = false
+  },
+  {
+    services   = ["notification-processing-service"]
+    flag_name  = "FEATURE_FLAG_FEIGN_INTERCEPTOR_ENABLED"
+    flag_value = true
+  },
+  {
+    services   = ["lifecycle-validation-service", "notification-processing-service"]
+    flag_name  = "FEATURE_FLAG_FHIR_CORE_SPLIT"
+    flag_value = true
   },
   {
     services   = ["portal-disease", "portal-pathogen", "portal-shell"]
@@ -81,7 +91,7 @@ feature_flags = [
     flag_value = true
   },
   {
-    services   = ["futs-core", "futs-igs", "validation-service-ars", "validation-service-core", "validation-service-igs"]
+    services   = ["futs-bedoccupancy", "futs-core", "futs-disease", "futs-igs", "futs-pathogen", "validation-service-ars", "validation-service-bedoccupancy", "validation-service-core", "validation-service-disease", "validation-service-igs", "validation-service-pathogen"]
     flag_name  = "FEATURE_FLAG_PACKAGE_REGISTRY_ENABLED"
     flag_value = true
   },
@@ -138,7 +148,7 @@ feature_flags = [
     flag_value = false
   },
   {
-    services   = ["validation-service-ars", "validation-service-core", "validation-service-igs"]
+    services   = ["validation-service-ars", "validation-service-bedoccupancy", "validation-service-core", "validation-service-disease", "validation-service-igs", "validation-service-pathogen"]
     flag_name  = "FEATURE_FLAG_VALIDATION_EXTENSION_CHECK_ENABLED"
     flag_value = true
   },

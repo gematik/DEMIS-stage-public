@@ -39,9 +39,12 @@ surveillance_pseudonym_purger_ars_cron_schedule = "0 22 * * *"
 # settings for validation service profile provisioning mode
 # null disabled the profile provisioning mode and deploy in old mode
 # possible values are: dedicated, distributed, combined
-profile_provisioning_mode_vs_core = "combined"
-profile_provisioning_mode_vs_igs  = "combined"
-profile_provisioning_mode_vs_ars  = "combined"
+profile_provisioning_mode_vs_core         = "combined"
+profile_provisioning_mode_vs_igs          = "combined"
+profile_provisioning_mode_vs_ars          = "combined"
+profile_provisioning_mode_vs_bedoccupancy = "combined"
+profile_provisioning_mode_vs_disease      = "combined"
+profile_provisioning_mode_vs_pathogen     = "combined"
 
 # Definition of Volumes
 volumes = {
@@ -58,4 +61,5 @@ volumes = {
 # Definition of the feature flags for the project
 project_feature_flags = {
   FEATURE_FLAG_SEPARATION_API_VERSION_AND_PROFILE_VERSION = true
+  FEATURE_FLAG_FHIR_CORE_SPLIT                            = true
 }
