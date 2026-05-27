@@ -1,13 +1,13 @@
 certificate-update-service:
   main:
-    version: 1.9.0
+    version: 1.9.1
     weight: 100
   canary: {}
   deployment-strategy: replace
   enabled: true
 keycloak:
   main:
-    version: 26.3.3
+    version: 26.5.3
     weight: 100
   canary: {}
   deployment-strategy: update
@@ -29,7 +29,7 @@ gematik-idp:
   enabled: true
 keycloak-user-purger:
   main:
-    version: 1.2.0
+    version: 1.2.1
     weight: 100
   canary: {}
   deployment-strategy: replace
@@ -44,6 +44,13 @@ network-rules:
 pgbouncer:
   main:
     version: 1.24.2
+    weight: 100
+  canary: {}
+  deployment-strategy: update
+  enabled: true
+policies-authentications:
+  main:
+    version: 2.10.1
     weight: 100
   canary: {}
   deployment-strategy: update
@@ -79,7 +86,7 @@ istio-routing:
   enabled: true
 stage-configuration-data:
   main:
-    version: 1.7.7
+    version: 1.8.2
     weight: 100
   canary: {}
   deployment-strategy: update

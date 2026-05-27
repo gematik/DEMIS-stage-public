@@ -2,6 +2,11 @@
 
 # Release Notes stage-public
 
+## Release 1.16.2
+- compatible with DEMIS-Development-Cluster 5.7.0
+- updated service versions
+- upgraded keycloak to 26.5.3 and stage-configuration-data version
+
 ## Release 1.16.1
 - compatible with DEMIS-Development-Cluster 5.7.0
 - updated service versions

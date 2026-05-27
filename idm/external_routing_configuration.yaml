@@ -1,0 +1,24 @@
+traffic_routes_templates:
+- service: "bundid-idp"
+  enabled: true
+  rewrite:
+    target: "/"
+  http_route_configs:
+  - matches:
+    - uri_template: "/auth"
+    - uri_template: "/"
+- service: "gematik-idp"
+  enabled: true
+  rewrite:
+    target: "/"
+  http_route_configs:
+  - matches:
+    - uri_template: "/"
+- service: "keycloak"
+  enabled: true
+  rewrite:
+    target: "/"
+  http_route_configs:
+  - matches:
+    - uri_template: "/auth"
+    - uri_template: "/"

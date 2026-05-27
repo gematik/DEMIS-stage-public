@@ -60,3 +60,8 @@ volumes = {
     capacity      = "50Mi"
   }
 }
+
+# Definition of the feature flags for the project
+project_feature_flags = {
+  FEATURE_FLAG_SEPARATION_API_VERSION_AND_PROFILE_VERSION = true
+}
