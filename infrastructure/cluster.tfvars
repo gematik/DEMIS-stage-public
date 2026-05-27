@@ -27,9 +27,6 @@ service_mesh_monitoring_enabled = true
 # The sampling rate option can be used to control what percentage of requests get reported to the tracing system
 service_mesh_tracing_sampling = "100.0"
 
-# Enable native sidecars for istio (istio 1.27.0+ default true)
-service_mesh_enable_native_sidecar_injection = true
-
 # Trivy Options
 trivy_enabled                       = false
 trivy_private_registry_secret_names = []
