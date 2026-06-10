@@ -1,11 +1,6 @@
 # Map containing the Feature Flags to be activated for services
 feature_flags = [
   {
-    services   = ["lifecycle-validation-service", "portal-pathogen", "portal-shell"]
-    flag_name  = "FEATURE_FLAG_ANONYMOUS_NOTIFICATION"
-    flag_value = false
-  },
-  {
     services   = ["ars-service"]
     flag_name  = "FEATURE_FLAG_ARS_VALIDATION_ENABLED"
     flag_value = true
@@ -23,7 +18,7 @@ feature_flags = [
   {
     services   = ["portal-disease"]
     flag_name  = "FEATURE_FLAG_DISEASE_AUTOCOMPLETE"
-    flag_value = false
+    flag_value = true
   },
   {
     services   = ["notification-processing-service"]
@@ -36,29 +31,9 @@ feature_flags = [
     flag_value = true
   },
   {
-    services   = ["portal-disease", "portal-pathogen", "portal-shell"]
-    flag_name  = "FEATURE_FLAG_FOLLOW_UP_7_3"
-    flag_value = false
-  },
-  {
-    services   = ["notification-gateway", "notification-processing-service", "notification-routing-service"]
-    flag_name  = "FEATURE_FLAG_FOLLOW_UP_NOTIFICATION"
+    services   = ["notification-gateway"]
+    flag_name  = "FEATURE_FLAG_LOINC_VERSION_VIA_PORTAL"
     flag_value = true
-  },
-  {
-    services   = ["surveillance-pseudonym-service-ars"]
-    flag_name  = "FEATURE_FLAG_INDIVIDUAL_PSEUDONYM"
-    flag_value = false
-  },
-  {
-    services   = ["portal-disease", "portal-pathogen"]
-    flag_name  = "FEATURE_FLAG_MIXED_FOLLOW_UP"
-    flag_value = true
-  },
-  {
-    services   = ["ars-service", "fhir-storage-reader", "notification-processing-service"]
-    flag_name  = "FEATURE_FLAG_MOVE_ERROR_ID_TO_DIAGNOSTICS"
-    flag_value = false
   },
   {
     services   = ["notification-processing-service"]
@@ -71,23 +46,8 @@ feature_flags = [
     flag_value = true
   },
   {
-    services   = ["portal-disease", "portal-pathogen", "portal-shell"]
-    flag_name  = "FEATURE_FLAG_NON_NOMINAL_NOTIFICATION"
-    flag_value = false
-  },
-  {
-    services   = ["notification-processing-service"]
-    flag_name  = "FEATURE_FLAG_NOTIFICATIONS_7_3"
-    flag_value = false
-  },
-  {
     services   = ["notification-gateway"]
     flag_name  = "FEATURE_FLAG_OTH_PRIVAT_LAB_SUBMITTER_ASSIGNMENT_DISABLED"
-    flag_value = true
-  },
-  {
-    services   = ["portal-disease"]
-    flag_name  = "FEATURE_FLAG_OUTLINE_DESIGN"
     flag_value = true
   },
   {
@@ -107,8 +67,8 @@ feature_flags = [
     synchronize_flag_value = false
   },
   {
-    services   = ["notification-gateway", "portal-bedoccupancy", "portal-disease", "portal-pathogen"]
-    flag_name  = "FEATURE_FLAG_PORTAL_ERROR_DIALOG_FILTERING"
+    services   = ["portal-shell"]
+    flag_name  = "FEATURE_FLAG_PORTAL_FOOTER_LOGO"
     flag_value = true
   },
   {
@@ -117,13 +77,13 @@ feature_flags = [
     flag_value = true
   },
   {
-    services   = ["portal-bedoccupancy", "portal-disease", "portal-pathogen"]
-    flag_name  = "FEATURE_FLAG_PORTAL_PAGE_STRUCTURE"
+    services   = ["portal-shell"]
+    flag_name  = "FEATURE_FLAG_PORTAL_LINK_SURVSTAT"
     flag_value = true
   },
   {
-    services   = ["portal-shell"]
-    flag_name  = "FEATURE_FLAG_PORTAL_WELCOME_PAGE_A11Y"
+    services   = ["notification-gateway", "portal-pathogen"]
+    flag_name  = "FEATURE_FLAG_REFERENCE_FIELD"
     flag_value = true
   },
   {
@@ -143,18 +103,8 @@ feature_flags = [
     synchronize_flag_value = false
   },
   {
-    services   = ["ars-service"]
-    flag_name  = "FEATURE_FLAG_SURVEILLANCE_PSEUDONYM_SERVICE_ENABLED"
-    flag_value = false
-  },
-  {
     services   = ["validation-service-ars", "validation-service-bedoccupancy", "validation-service-core", "validation-service-disease", "validation-service-igs", "validation-service-pathogen"]
     flag_name  = "FEATURE_FLAG_VALIDATION_EXTENSION_CHECK_ENABLED"
-    flag_value = true
-  },
-  {
-    services   = ["notification-gateway", "portal-pathogen"]
-    flag_name  = "FEATURE_FLAG_WITHOUT_CONTACT_POINT_USE"
     flag_value = true
   }
 ]

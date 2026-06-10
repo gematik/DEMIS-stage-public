@@ -2,6 +2,13 @@
 
 # Release Notes stage-public
 
+## Release 1.18.0
+- compatible with DEMIS-Development-Cluster 5.8.0
+- integrated kubernetes-network-policies
+- updated kyverno-policies
+- enabled feature flags to change behavior of istio peer auhentication and authorization policies
+- updated portal versions
+
 ## Release 1.17.0
 - compatible with DEMIS-Development-Cluster 5.8.0
 - split of validation-service-core and futs-core into separate instances for bedoccupancy, disease and pathogen

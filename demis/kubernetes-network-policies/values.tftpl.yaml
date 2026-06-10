@@ -1,0 +1,15 @@
+# Identity Managements (IDM) Policies
+idm:
+  enabled: false
+
+# DEMIS Services Policies
+demis:
+  enabled: true
+  local:
+    # If active, allows the services to access the minio instance
+    minio:
+      enabled: true
+
+# DMZ Services Policies
+dmz: 
+  enabled: false
