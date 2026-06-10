@@ -9,7 +9,7 @@ feature_flags = [
   {
     services   = ["certificate-update-service"]
     flag_name  = "FEATURE_FLAG_KEYCLOAK_CUS_CLIENT"
-    flag_value = false
+    flag_value = true
   },
   {
     services   = ["all"]

@@ -93,8 +93,15 @@ stage-configuration-data:
   enabled: true
 kyverno-admission-policies:
   main:
-    version: 1.0.1
+    version: 1.1.0
     weight: 100
   canary: {}
   deployment-strategy: update
   enabled: false
+kubernetes-network-policies:
+  main:
+    version: 1.0.0
+    weight: 100
+  canary: {}
+  deployment-strategy: update
+  enabled: true

@@ -5,23 +5,7 @@ resource_definitions = [
     replicas = 1
   },
   {
-    service  = "ars-pseudonymization-service"
-    replicas = 1
-  },
-  {
     service  = "context-enrichment-service"
-    replicas = 1
-  },
-  {
-    service  = "destination-lookup-purger"
-    replicas = 1
-  },
-  {
-    service  = "destination-lookup-reader"
-    replicas = 1
-  },
-  {
-    service  = "destination-lookup-writer"
     replicas = 1
   },
   {
@@ -33,11 +17,27 @@ resource_definitions = [
     replicas = 1
   },
   {
+    service  = "package-registry"
+    replicas = 1
+  },
+  {
     service  = "fhir-storage-writer"
     replicas = 1
   },
   {
     service  = "futs-core"
+    replicas = 1
+  },
+  {
+    service  = "futs-bedoccupancy"
+    replicas = 1
+  },
+  {
+    service  = "futs-disease"
+    replicas = 1
+  },
+  {
+    service  = "futs-pathogen"
     replicas = 1
   },
   {
@@ -125,15 +125,44 @@ resource_definitions = [
     replicas = 1
   },
   {
+    service  = "validation-service-ars"
+    replicas = 1
+  },
+  {
+    service  = "validation-service-bedoccupancy"
+    replicas = 1
+  },
+  {
     service  = "validation-service-core"
+    replicas = 1
+  },
+  {
+    service  = "validation-service-disease"
     replicas = 1
   },
   {
     service  = "validation-service-igs"
     replicas = 1
+    resources = {
+      limits = {
+        memory = "1500Mi"
+      }
+      requests = {
+        cpu    = "200m"
+        memory = "1500Mi"
+      }
+    }
   },
   {
-    service  = "validation-service-ars"
+    service  = "validation-service-pathogen"
+    replicas = 1
+  },
+  {
+    service  = "destination-lookup-writer"
+    replicas = 1
+  },
+  {
+    service  = "destination-lookup-reader"
     replicas = 1
   }
 ]

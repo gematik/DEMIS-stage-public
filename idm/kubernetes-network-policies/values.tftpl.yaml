@@ -1,0 +1,17 @@
+# Identity Managements (IDM) Policies
+idm:
+  enabled: true
+  demisNamespaces: 
+      - demis
+  bundidIdp:
+    enabled: true
+  gematikIdp:
+    enabled: true
+
+# DEMIS Services Policies
+demis:
+  enabled: false
+
+# DMZ Services Policies
+dmz: 
+  enabled: false
