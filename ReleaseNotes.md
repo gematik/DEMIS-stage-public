@@ -2,6 +2,12 @@
 
 # Release Notes stage-public
 
+## Release 1.19.0
+- compatible with DEMIS-Development-Cluster 5.9.0
+- updated service versions (including validation-service)
+- updated package versions for pathogen, disease and bedoccupancy to 6.2.9
+- package has to be defined in profiles section of futs and validation-service of active-versions.yaml
+
 ## Release 1.18.0
 - compatible with DEMIS-Development-Cluster 5.8.0
 - integrated kubernetes-network-policies

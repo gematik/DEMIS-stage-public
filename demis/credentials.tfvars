@@ -155,5 +155,6 @@ redis_cus_reader_password = "read_this_password"
 ars_pseudo_hash_pepper = "36EWaW1l4MBwORh39aaLzT9rVqF9wD3QtE4jltq8NKk="
 
 # RabbitMQ Credentials
-rabbitmq_username = "rabbit_user"
-rabbitmq_password = "rabbit_password"
+rabbitmq_username     = "rabbit_user"
+rabbitmq_password     = "rabbit_password"
+rabbitmq_ars_password = "MyARSPassword123!"

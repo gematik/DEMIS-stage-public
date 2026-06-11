@@ -125,30 +125,57 @@ resource_definitions = [
     replicas = 1
   },
   {
-    service  = "validation-service-ars"
-    replicas = 1
-  },
-  {
     service  = "validation-service-bedoccupancy"
     replicas = 1
   },
   {
-    service  = "validation-service-core"
+    service  = "validation-service-bedoccupancy:v5"
     replicas = 1
+    resources = {
+      requests = {
+        memory = "1200Mi"
+      }
+      limits = {
+        memory = "1200Mi"
+      }
+    }
+  },
+  {
+    service  = "validation-service-bedoccupancy:v6"
+    replicas = 1
+    resources = {
+      requests = {
+        memory = "1200Mi"
+      }
+      limits = {
+        memory = "1200Mi"
+      }
+    }
   },
   {
     service  = "validation-service-disease"
     replicas = 1
   },
   {
-    service  = "validation-service-igs"
+    service  = "validation-service-disease:v5"
     replicas = 1
     resources = {
+      requests = {
+        memory = "1500Mi"
+      }
       limits = {
         memory = "1500Mi"
       }
+    }
+  },
+  {
+    service  = "validation-service-disease:v6"
+    replicas = 1
+    resources = {
       requests = {
-        cpu    = "200m"
+        memory = "1500Mi"
+      }
+      limits = {
         memory = "1500Mi"
       }
     }
@@ -156,6 +183,62 @@ resource_definitions = [
   {
     service  = "validation-service-pathogen"
     replicas = 1
+  },
+  {
+    service  = "validation-service-pathogen:v5"
+    replicas = 1
+    resources = {
+      requests = {
+        memory = "1700Mi"
+      }
+      limits = {
+        memory = "1700Mi"
+      }
+    }
+  },
+  {
+    service  = "validation-service-pathogen:v6"
+    replicas = 1
+    resources = {
+      requests = {
+        memory = "1700Mi"
+      }
+      limits = {
+        memory = "1700Mi"
+      }
+    }
+  },
+  {
+    service  = "validation-service-igs"
+    replicas = 1
+  },
+  {
+    service  = "validation-service-igs:v4"
+    replicas = 1
+    resources = {
+      limits = {
+        memory = "1500Mi"
+      }
+      requests = {
+        memory = "1500Mi"
+      }
+    }
+  },
+  {
+    service  = "validation-service-ars"
+    replicas = 1
+  },
+  {
+    service  = "validation-service-ars:v1"
+    replicas = 1
+    resources = {
+      limits = {
+        memory = "1700Mi"
+      }
+      requests = {
+        memory = "1700Mi"
+      }
+    }
   },
   {
     service  = "destination-lookup-writer"

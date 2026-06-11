@@ -255,6 +255,7 @@ traffic_routes_templates:
       x-fhir-profile: "${package_name}"
       x-fhir-package-version: "${package_version}"
       x-fhir-package: "${package_name}"
+      x-validation-relaxed: "true"
   - variables:
       api_version: "v6"
       package_version: "v6"
@@ -266,6 +267,7 @@ traffic_routes_templates:
       x-fhir-profile: "${package_name}"
       x-fhir-package-version: "${package_version}"
       x-fhir-package: "${package_name}"
+      x-validation-relaxed: "false"
   - variables:
       api_version: "v5"
       package_version: "v5"
@@ -277,6 +279,7 @@ traffic_routes_templates:
       x-fhir-profile: "${package_name}"
       x-fhir-package-version: "${package_version}"
       x-fhir-package: "${package_name}"
+      x-validation-relaxed: "true"
   - variables:
       api_version: "v5"
       package_version: "v5"
@@ -288,8 +291,11 @@ traffic_routes_templates:
       x-fhir-profile: "${package_name}"
       x-fhir-package-version: "${package_version}"
       x-fhir-package: "${package_name}"
+      x-validation-relaxed: "true"
   - variables:
       submission_type: "any"
+    additional_headers:
+      x-validation-relaxed: "true"
     matches:
     - uri_template: "${context_path}/hospitalization/fhir"
     - uri_template: "${context_path}/notification-api/fhir"
@@ -335,6 +341,7 @@ traffic_routes_templates:
   additional_headers:
     x-fhir-profile: "${package_name}"
     x-fhir-package: "${package_name}"
+    x-validation-relaxed: "true"
   matches:
   - uri_template: "${context_path}/reports/bedoccupancy/${api_version}/fhir/"
     ignoreUriCase: true
