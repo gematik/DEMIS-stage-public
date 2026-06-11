@@ -31,6 +31,11 @@ feature_flags = [
     flag_value = true
   },
   {
+    services   = ["validation-service-ars", "validation-service-igs"]
+    flag_name  = "FEATURE_FLAG_FILTERED_ERRORS_AS_WARNINGS_DISABLED"
+    flag_value = true
+  },
+  {
     services   = ["notification-gateway"]
     flag_name  = "FEATURE_FLAG_LOINC_VERSION_VIA_PORTAL"
     flag_value = true
@@ -84,11 +89,6 @@ feature_flags = [
   {
     services   = ["notification-gateway", "portal-pathogen"]
     flag_name  = "FEATURE_FLAG_REFERENCE_FIELD"
-    flag_value = true
-  },
-  {
-    services   = ["notification-processing-service", "report-processing-service"]
-    flag_name  = "FEATURE_FLAG_RELAXED_VALIDATION"
     flag_value = true
   },
   {

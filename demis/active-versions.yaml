@@ -38,6 +38,8 @@ futs-core:
   main:
     version: 2.6.2
     weight: 100
+    profiles:
+      - 6.2.6
   canary: {}
   synchronize-profiles: false
   chart-name: futs
@@ -48,7 +50,7 @@ futs-bedoccupancy:
     version: 2.6.2
     weight: 100
     profiles:
-      - 6.2.7
+      - 6.2.9
   canary: {}
   synchronize-profiles: false
   chart-name: futs
@@ -59,7 +61,7 @@ futs-disease:
     version: 2.6.2
     weight: 100
     profiles:
-      - 6.2.7
+      - 6.2.9
   canary: {}
   synchronize-profiles: false
   chart-name: futs
@@ -70,7 +72,7 @@ futs-pathogen:
     version: 2.6.2
     weight: 100
     profiles:
-      - 6.2.7
+      - 6.2.9
   canary: {}
   synchronize-profiles: false
   chart-name: futs
@@ -80,6 +82,8 @@ futs-igs:
   main:
     version: 2.6.1
     weight: 100
+    profiles:
+      - 4.0.2
   canary: {}
   synchronize-profiles: false
   chart-name: futs
@@ -129,14 +133,14 @@ notification-gateway:
   enabled: true
 notification-processing-service:
   main:
-    version: 2.12.1
+    version: 2.12.2
     weight: 100
   canary: {}
   deployment-strategy: canary
   enabled: true
 notification-routing-service:
   main:
-    version: 2.6.2
+    version: 2.7.0
     weight: 100
   canary: {}
   deployment-strategy: canary
@@ -213,14 +217,14 @@ pseudonymization-storage-service:
   enabled: true
 report-processing-service:
   main:
-    version: 2.3.0
+    version: 2.4.0
     weight: 100
   canary: {}
   deployment-strategy: canary
   enabled: true
 validation-service:
   main:
-    version: 2.13.0
+    version: 2.14.0
     weight: 100
   canary: {}
   chart-name: validation-service-delegation
@@ -228,8 +232,10 @@ validation-service:
   enabled: true
 validation-service-core:
   main:
-    version: 2.13.0
+    version: 2.14.0
     weight: 100
+    profiles:
+        - 6.2.6
   canary: {}
   synchronize-profiles: false
   chart-name: validation-service
@@ -237,10 +243,10 @@ validation-service-core:
   enabled: true
 validation-service-bedoccupancy:
   main:
-    version: 2.13.0
+    version: 2.14.0
     weight: 100
     profiles:
-      - 6.2.7
+      - 6.2.9
       - 5.4.1
   canary: {}
   synchronize-profiles: false
@@ -249,10 +255,10 @@ validation-service-bedoccupancy:
   enabled: true
 validation-service-disease:
   main:
-    version: 2.13.0
+    version: 2.14.0
     weight: 100
     profiles:
-      - 6.2.7
+      - 6.2.9
       - 5.4.1
   canary: {}
   synchronize-profiles: false
@@ -261,10 +267,10 @@ validation-service-disease:
   enabled: true
 validation-service-pathogen:
   main:
-    version: 2.13.0
+    version: 2.14.0
     weight: 100
     profiles:
-      - 6.2.7
+      - 6.2.9
       - 5.4.1
   canary: {}
   synchronize-profiles: false
@@ -273,8 +279,10 @@ validation-service-pathogen:
   enabled: true
 validation-service-igs:
   main:
-    version: 2.13.0
+    version: 2.14.0
     weight: 100
+    profiles:
+      - 4.0.2
   canary: {}
   synchronize-profiles: false
   chart-name: validation-service
@@ -282,8 +290,10 @@ validation-service-igs:
   enabled: true
 validation-service-ars:
   main:
-    version: 2.13.0
+    version: 2.14.0
     weight: 100
+    profiles:
+      - 1.1.0
   canary: {}
   synchronize-profiles: false
   chart-name: validation-service
@@ -354,7 +364,7 @@ notification-routing-data:
   enabled: true
 ars-service:
   main:
-    version: 1.4.0
+    version: 1.4.1
     weight: 100
   canary: {}
   deployment-strategy: canary
