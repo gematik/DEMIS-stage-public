@@ -51,11 +51,6 @@ feature_flags = [
     flag_value = true
   },
   {
-    services   = ["notification-gateway"]
-    flag_name  = "FEATURE_FLAG_OTH_PRIVAT_LAB_SUBMITTER_ASSIGNMENT_DISABLED"
-    flag_value = true
-  },
-  {
     services   = ["futs-bedoccupancy", "futs-core", "futs-disease", "futs-igs", "futs-pathogen", "validation-service-ars", "validation-service-bedoccupancy", "validation-service-core", "validation-service-disease", "validation-service-igs", "validation-service-pathogen"]
     flag_name  = "FEATURE_FLAG_PACKAGE_REGISTRY_ENABLED"
     flag_value = true

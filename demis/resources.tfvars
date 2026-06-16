@@ -67,6 +67,14 @@ resource_definitions = [
   {
     service  = "notification-gateway"
     replicas = 1
+    resources = {
+      requests = {
+        memory = "450Mi"
+      }
+      limits = {
+        memory = "450Mi"
+      }
+    }
   },
   {
     service  = "notification-processing-service"
