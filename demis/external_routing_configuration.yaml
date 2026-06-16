@@ -121,32 +121,6 @@ traffic_routes_templates:
     target: "/"
   http_route_configs:
   - variables:
-      api_version: "v5"
-      package_version: "v5"
-    matches:
-    - uri_template: "${context_path}/surveillance/notification-sequence/${api_version}/fhir/"
-      ignoreUriCase: true
-    additional_headers:
-      x-fhir-api-version: "${api_version}"
-      x-api-version: "${api_version}"
-      x-fhir-profile: "${package_name}"
-      x-fhir-package-version: "${package_version}"
-      x-fhir-package: "${package_name}"
-  - variables:
-      api_version: "v5"
-      package_version: "v5"
-    matches:
-    - uri_template: "${context_path}/surveillance/notification-sequence/${api_version}/S3Controller"
-      ignoreUriCase: true
-    additional_headers:
-      x-fhir-api-version: "${api_version}"
-      x-api-version: "${api_version}"
-      x-fhir-profile: "${package_name}"
-      x-fhir-package-version: "${package_version}"
-      x-fhir-package: "${package_name}"
-    rewrite:
-      target: "/S3Controller"
-  - variables:
       api_version: "v4"
       package_version: "v4"
     matches:
@@ -294,10 +268,25 @@ traffic_routes_templates:
       x-validation-relaxed: "true"
   - variables:
       submission_type: "any"
+      api_version: "v6"
+      package_version: "v6"
     additional_headers:
+      x-fhir-api-version: "${api_version}"
+      x-api-version: "${api_version}"
+      x-fhir-package-version: "${package_version}"
       x-validation-relaxed: "true"
     matches:
     - uri_template: "${context_path}/hospitalization/fhir"
+  - variables:
+      api_version: "v6"
+      package_version: "v6"
+      submission_type: "any"
+    additional_headers:
+      x-fhir-api-version: "${api_version}"
+      x-api-version: "${api_version}"
+      x-fhir-package-version: "${package_version}"
+      x-validation-relaxed: "false"
+    matches:
     - uri_template: "${context_path}/notification-api/fhir"
 - service: "portal-bedoccupancy"
   enabled: true
@@ -362,5 +351,12 @@ traffic_routes_templates:
       x-fhir-api-version: "${api_version}"
       x-api-version: "${api_version}"
       x-fhir-package-version: "${package_version}"
-  - matches:
+  - variables:
+      api_version: "v6"
+      package_version: "v6"
+    additional_headers:
+      x-fhir-api-version: "${api_version}"
+      x-api-version: "${api_version}"
+      x-fhir-package-version: "${package_version}"
+    matches:
     - uri_template: "${context_path}/reports/fhir/"

@@ -2,6 +2,15 @@
 
 # Release Notes stage-public
 
+## Release 1.19.1
+- compatible with DEMIS-Development-Cluster 5.9.0
+- removed double validation for validation-services:
+  - validation-service-core
+  - validation-service-disease
+  - validation-service-pathogen
+  - validation-service-bedoccupancy
+  - validation-service-ars
+
 ## Release 1.19.0
 - compatible with DEMIS-Development-Cluster 5.9.0
 - updated service versions (including validation-service)
