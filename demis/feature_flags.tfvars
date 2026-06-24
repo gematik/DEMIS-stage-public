@@ -36,6 +36,11 @@ feature_flags = [
     flag_value = true
   },
   {
+    services   = ["surveillance-pseudonym-service-ars"]
+    flag_name  = "FEATURE_FLAG_INDIVIDUAL_PSEUDONYM"
+    flag_value = true
+  },
+  {
     services   = ["notification-gateway"]
     flag_name  = "FEATURE_FLAG_LOINC_VERSION_VIA_PORTAL"
     flag_value = true

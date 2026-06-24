@@ -7,21 +7,21 @@ context-enrichment-service:
   enabled: true
 fhir-storage-purger:
   main:
-    version: 1.4.0
+    version: 1.5.0
     weight: 100
   canary: {}
   deployment-strategy: replace
   enabled: true
 fhir-storage-reader:
   main:
-    version: 1.4.0
+    version: 1.5.0
     weight: 100
   canary: {}
   deployment-strategy: canary
   enabled: true
 fhir-storage-writer:
   main:
-    version: 1.4.0
+    version: 1.5.0
     weight: 100
   canary: {}
   deployment-strategy: canary
@@ -105,7 +105,7 @@ hospital-location-service:
   enabled: true
 igs-service:
   main:
-    version: 1.4.0
+    version: 1.5.0
     weight: 100
   canary: {}
   deployment-strategy: canary
@@ -196,14 +196,14 @@ portal-shell:
   enabled: true
 postgres:
   main:
-    version: 16.10.0
+    version: 16.12.0
     weight: 100
   canary: {}
   deployment-strategy: update
   enabled: true
 pseudonymization-service:
   main:
-    version: 3.5.0
+    version: 3.6.0
     weight: 100
   canary: {}
   deployment-strategy: canary
@@ -301,21 +301,21 @@ validation-service-ars:
   enabled: true
 network-rules:
   main:
-    version: 2.3.0
+    version: 2.4.0
     weight: 100
   canary: {}
   deployment-strategy: update
   enabled: true
 policies-authentications:
   main:
-    version: 2.11.0
+    version: 2.12.0
     weight: 100
   canary: {}
   deployment-strategy: update
   enabled: true
 policies-authorizations:
   main:
-    version: 2.11.0
+    version: 2.12.0
     weight: 100
   canary: {}
   deployment-strategy: update
@@ -364,7 +364,7 @@ notification-routing-data:
   enabled: true
 ars-service:
   main:
-    version: 1.4.1
+    version: 1.5.0
     weight: 100
   canary: {}
   deployment-strategy: canary
@@ -394,21 +394,21 @@ surveillance-pseudonym-purger-ars:
   enabled: true
 destination-lookup-writer:
   main:
-    version: 1.2.0
+    version: 1.3.0
     weight: 100
   canary: {}
   deployment-strategy: canary
   enabled: true
 destination-lookup-reader:
   main:
-    version: 1.2.0
+    version: 1.3.0
     weight: 100
   canary: {}
   deployment-strategy: canary
   enabled: true
 destination-lookup-purger:
   main:
-    version: 1.2.0
+    version: 1.3.0
     weight: 100
   canary: {}
   deployment-strategy: replace
@@ -422,8 +422,15 @@ package-registry:
   enabled: true
 kubernetes-network-policies:
   main:
-    version: 1.0.0
+    version: 1.1.0
     weight: 100
   canary: {}
   deployment-strategy: update
+  enabled: true
+ars-purger:
+  main:
+    version: 1.5.0
+    weight: 100
+  canary: {}
+  deployment-strategy: replace
   enabled: true

@@ -2,6 +2,11 @@
 
 # Release Notes stage-public
 
+## Release 1.20.0
+- compatible with DEMIS-Development-Cluster 5.9.0
+- updated service versions
+- add Workaround for are Service-Images from DockerHub
+
 ## Release 1.19.1
 - compatible with DEMIS-Development-Cluster 5.9.0
 - removed double validation for validation-services:

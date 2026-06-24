@@ -1,13 +1,13 @@
 are-gateway:
   main:
-    version: 1.0.0
+    version: 1.2.1
     weight: 100
   canary: {}
   deployment-strategy: canary
   enabled: true
 are-notification-processing-service:
   main:
-    version: 1.0.0
+    version: 1.1.4
     weight: 100
   canary: {}
   deployment-strategy: canary
@@ -25,36 +25,29 @@ validation-service-are:
     version: 2.14.0
     weight: 100
     profiles:
-      - 1.0.1
+      - 1.0.2
   canary: {}
   synchronize-profiles: false
   chart-name: validation-service
   deployment-strategy: canary
   enabled: true
-are-profile-snapshots:
-  main:
-    version: 1.0.1
-    weight: 100
-  canary: {}
-  deployment-strategy: update
-  enabled: true
 policies-authentications:
   main:
-    version: 2.10.1
+    version: 2.12.0
     weight: 100
   canary: {}
   deployment-strategy: update
   enabled: true
 policies-authorizations:
   main:
-    version: 2.10.1
+    version: 2.12.0
     weight: 100
   canary: {}
   deployment-strategy: update
   enabled: true
 portal-are:
   main:
-    version: 1.0.0
+    version: 1.1.4
     weight: 100
   canary: {}
   deployment-strategy: canary
@@ -68,8 +61,15 @@ istio-routing:
   enabled: true
 network-rules:
   main:
-    version: 2.3.0
+    version: 2.4.0
     weight: 100
   canary: {}
   deployment-strategy: update
   enabled: true
+kyverno-admission-policies:
+  main:
+    version: 1.1.0
+    weight: 100
+  canary: {}
+  deployment-strategy: update
+  enabled: false

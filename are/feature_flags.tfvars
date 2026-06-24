@@ -9,5 +9,10 @@ feature_flags = [
     services   = ["are-notification-processing-service"]
     flag_name  = "FEATURE_FLAG_ARE_VALIDATION_ENABLED"
     flag_value = true
+  },
+  {
+    services   = ["validation-service-are"]
+    flag_name  = "FEATURE_FLAG_PACKAGE_REGISTRY_ENABLED"
+    flag_value = true
   }
 ]
