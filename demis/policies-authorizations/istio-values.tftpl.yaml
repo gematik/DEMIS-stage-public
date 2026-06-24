@@ -5,15 +5,6 @@ allowNothing: true
 postgres:
   enabled: true
 
-# If active, allow the services to access PGBouncer
-pgbouncer:
-  enabled: true
-
-# Switches Auth Policies for TCP Services to principals instead of IPs. Needed for Terrafrom Stages
-tcp:
-  principals:
-    enabled: true
-
 idm:
   enabled: false
 

@@ -5,10 +5,6 @@ allowNothing: true
 postgres:
   enabled: false
 
-# If active, allow the services to access PGBouncer
-pgbouncer:
-  enabled: false
-
 # Identity Managements (IDM) Policies
 idm:
   enabled: false

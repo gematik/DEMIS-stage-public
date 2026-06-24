@@ -1,11 +1,5 @@
 peerAuthenticationRules:
   enabled: true
-  # Controlling the Postgres Peer Authentication. Needs to be disabled in the Terraform environments
-  peerAuthenticationPostgres:
-    enabled: false
-  # Controlling the PgBouncer Peer Authentication. Needs to be disabled in the Terraform environments
-  peerAuthenticationPgBouncer:
-    enabled: false
 
 demis:
   enabled: false

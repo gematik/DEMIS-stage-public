@@ -1,11 +1,5 @@
 peerAuthenticationRules:
   enabled: true
-  # Controlling the Postgres Peer Authentication. Needs to be disabled in the Terraform environments
-  peerAuthenticationPostgres:
-    enabled: false
-  # Controlling the PgBouncer Peer Authentication. Needs to be disabled in the Terraform environments
-  peerAuthenticationPgBouncer:
-    enabled: false
 
 demis:
   enabled: false
@@ -17,9 +11,6 @@ idm:
     # Extracts the User Certificate from Header and adds it to 'x-forwared-client-cert-kind' Header
     keycloakCertHeaderRewrite:
       enabled: true
-  # Controlling the Redis Peer Authentication. Needs to be disabled in the ABC environments and local
-  peerAuthenticationRedis:
-    enabled: false
 
 mesh:
   enabled: false
