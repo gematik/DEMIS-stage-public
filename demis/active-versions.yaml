@@ -28,7 +28,7 @@ fhir-storage-writer:
   enabled: true
 futs:
   main:
-    version: 2.6.2
+    version: 2.7.0
     weight: 100
   canary: {}
   chart-name: futs-delegation
@@ -36,7 +36,7 @@ futs:
   enabled: true
 futs-core:
   main:
-    version: 2.6.2
+    version: 2.7.0
     weight: 100
     profiles:
       - 6.2.6
@@ -47,7 +47,7 @@ futs-core:
   enabled: true
 futs-bedoccupancy:
   main:
-    version: 2.6.2
+    version: 2.7.0
     weight: 100
     profiles:
       - 6.2.9
@@ -58,7 +58,7 @@ futs-bedoccupancy:
   enabled: true
 futs-disease:
   main:
-    version: 2.6.2
+    version: 2.7.0
     weight: 100
     profiles:
       - 6.2.9
@@ -69,7 +69,7 @@ futs-disease:
   enabled: true
 futs-pathogen:
   main:
-    version: 2.6.2
+    version: 2.7.0
     weight: 100
     profiles:
       - 6.2.9
@@ -80,7 +80,7 @@ futs-pathogen:
   enabled: true
 futs-igs:
   main:
-    version: 2.6.1
+    version: 2.7.0
     weight: 100
     profiles:
       - 4.0.2
@@ -98,7 +98,7 @@ gateway-igs:
   enabled: true
 hospital-location-service:
   main:
-    version: 1.4.0
+    version: 1.5.0
     weight: 100
   canary: {}
   deployment-strategy: canary
@@ -126,14 +126,14 @@ minio:
   enabled: true
 notification-gateway:
   main:
-    version: 6.8.2
+    version: 6.9.0
     weight: 100
   canary: {}
   deployment-strategy: canary
   enabled: true
 notification-processing-service:
   main:
-    version: 2.12.2
+    version: 2.13.0
     weight: 100
   canary: {}
   deployment-strategy: canary
@@ -147,7 +147,7 @@ notification-routing-service:
   enabled: true
 pdfgen-service:
   main:
-    version: 2.10.3
+    version: 2.11.0
     weight: 100
   canary: {}
   deployment-strategy: canary
@@ -161,35 +161,35 @@ pgbouncer:
   enabled: true
 portal-bedoccupancy:
   main:
-    version: 1.7.2
+    version: 1.7.3
     weight: 100
   canary: {}
   deployment-strategy: canary
   enabled: true
 portal-disease:
   main:
-    version: 1.8.0
+    version: 1.9.0
     weight: 100
   canary: {}
   deployment-strategy: canary
   enabled: true
 portal-igs:
   main:
-    version: 1.4.2
+    version: 1.4.3
     weight: 100
   canary: {}
   deployment-strategy: canary
   enabled: true
 portal-pathogen:
   main:
-    version: 1.9.1
+    version: 1.9.3
     weight: 100
   canary: {}
   deployment-strategy: canary
   enabled: true
 portal-shell:
   main:
-    version: 1.8.0
+    version: 1.8.2
     weight: 100
   canary: {}
   deployment-strategy: canary

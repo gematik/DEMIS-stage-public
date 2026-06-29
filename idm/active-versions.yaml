@@ -86,7 +86,7 @@ istio-routing:
   enabled: true
 stage-configuration-data:
   main:
-    version: 1.8.2
+    version: 1.9.0
     weight: 100
   canary: {}
   deployment-strategy: update

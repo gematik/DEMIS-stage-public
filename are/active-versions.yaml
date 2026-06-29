@@ -27,7 +27,6 @@ validation-service-are:
     profiles:
       - 1.0.2
   canary: {}
-  synchronize-profiles: false
   chart-name: validation-service
   deployment-strategy: canary
   enabled: true

@@ -2,6 +2,13 @@
 
 # Release Notes stage-public
 
+## Release 1.21.0
+- compatible with DEMIS-Development-Cluster 5.9.0
+- updated service versions
+- features:
+    - activated new feature flag FEATURE_FLAG_REMOVABLE_ANALYT for deleting the analyt from the notification on portal pathogen
+    - activated new feature flag FEATURE_FLAG_NEW_ERROR_MESSAGE_FOR_FAILED_ROUTING for deliver new error messages from notification-routing-service and notification-processing-service
+
 ## Release 1.20.0
 - compatible with DEMIS-Development-Cluster 5.9.0
 - updated service versions
