@@ -1,0 +1,33 @@
+traffic_routes_templates:
+- service: "are-gateway"
+  enabled: true
+  variables:
+    api_version: "v1"
+    package_version: "v1"
+    request_origin: "internal"
+  additional_headers:
+    x-fhir-profile: "${package_name}"
+    x-fhir-api-version: "${api_version}"
+    x-api-version: "${api_version}"
+    x-fhir-package: "${package_name}"
+    x-fhir-package-version: "${package_version}"
+    x-fhir-api-request-origin: "${request_origin}"
+  matches:
+    - uri_template: "${context_path}/gateway/${gateway_name}/"
+    - uri_template: "${context_path}/gateway/${gateway_name}"
+  rewrite:
+    target: "/"
+  http_route_configs:
+    - variables:
+        package_name: "are"
+        submission_type: "are"
+        gateway_name: "are"
+      additional_headers:
+        x-fhir-api-submission-type: "${submission_type}"
+- service: "portal-are"
+  enabled: true
+  rewrite:
+    target: "/"
+  http_route_configs:
+    - matches:
+        - uri_template: "${context_path}/portal/are"
