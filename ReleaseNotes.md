@@ -2,6 +2,11 @@
 
 # Release Notes stage-public
 
+## Release 1.22.0
+- compatible with DEMIS-Development-Cluster 5.9.0
+- Update ARE Services
+- Activated external routing configuration
+
 ## Release 1.21.0
 - compatible with DEMIS-Development-Cluster 5.9.0
 - updated service versions
