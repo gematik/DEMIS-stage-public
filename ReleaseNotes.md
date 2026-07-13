@@ -2,6 +2,12 @@
 
 # Release Notes stage-public
 
+## Release 1.23.0
+- compatible with DEMIS-Development-Cluster 5.9.0
+- features:
+  - activated new indentation for portal disease
+  - activated validation of uuids for initial notification ids in portal pathogen
+
 ## Release 1.22.0
 - compatible with DEMIS-Development-Cluster 5.9.0
 - Update ARE Services

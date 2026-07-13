@@ -21,6 +21,11 @@ feature_flags = [
     flag_value = true
   },
   {
+    services   = ["futs-bedoccupancy", "futs-core", "futs-disease", "futs-igs", "futs-pathogen"]
+    flag_name  = "FEATURE_FLAG_DISEASE_INDENT"
+    flag_value = true
+  },
+  {
     services   = ["notification-processing-service"]
     flag_name  = "FEATURE_FLAG_FEIGN_INTERCEPTOR_ENABLED"
     flag_value = true
@@ -101,6 +106,11 @@ feature_flags = [
     flag_name              = "FEATURE_FLAG_SURVEILLANCE_PROGRAM_ADMISSION_ENABLED"
     flag_value             = true
     synchronize_flag_value = false
+  },
+  {
+    services   = ["portal-pathogen"]
+    flag_name  = "FEATURE_FLAG_UUID_VALIDATION"
+    flag_value = true
   },
   {
     services   = ["validation-service-ars", "validation-service-bedoccupancy", "validation-service-core", "validation-service-disease", "validation-service-igs", "validation-service-pathogen"]
