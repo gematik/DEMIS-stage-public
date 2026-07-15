@@ -98,6 +98,11 @@ feature_flags = [
   },
   {
     services   = ["notification-routing-service"]
+    flag_name  = "FEATURE_FLAG_REMOVE_SORMAS_EXCERPTS"
+    flag_value = true
+  },
+  {
+    services   = ["notification-routing-service"]
     flag_name  = "FEATURE_FLAG_SEARCH_COMPARISON"
     flag_value = true
   },

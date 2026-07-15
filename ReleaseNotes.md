@@ -2,6 +2,11 @@
 
 # Release Notes stage-public
 
+## Release 1.24.0
+- compatible with DEMIS-Development-Cluster 5.9.0
+- fetaures:
+  - deactivated sormas notification support
+
 ## Release 1.23.0
 - compatible with DEMIS-Development-Cluster 5.9.0
 - features:
