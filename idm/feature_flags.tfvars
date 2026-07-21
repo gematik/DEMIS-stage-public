@@ -12,11 +12,6 @@ feature_flags = [
     flag_value = true
   },
   {
-    services   = ["all"]
-    flag_name  = "FEATURE_FLAG_NEW_ISTIO_SIDECAR_REQUEST_AND_LIMITS"
-    flag_value = true
-  },
-  {
     services   = ["keycloak"]
     flag_name  = "FEATURE_FLAG_TOKEN_EXCHANGE_ENABLED"
     flag_value = true
