@@ -61,11 +61,6 @@ feature_flags = [
     flag_value = true
   },
   {
-    services   = ["all"]
-    flag_name  = "FEATURE_FLAG_NEW_ISTIO_SIDECAR_REQUEST_AND_LIMITS"
-    flag_value = true
-  },
-  {
     services   = ["pdfgen-service"]
     flag_name  = "FEATURE_FLAG_PDF_OPTIMIZATION"
     flag_value = true
@@ -107,10 +102,9 @@ feature_flags = [
     flag_value = true
   },
   {
-    services               = ["portal-shell"]
-    flag_name              = "FEATURE_FLAG_SURVEILLANCE_PROGRAM_ADMISSION_ENABLED"
-    flag_value             = true
-    synchronize_flag_value = false
+    services   = ["portal-shell"]
+    flag_name  = "FEATURE_FLAG_SURVEILLANCE_PROGRAM_ADMISSION_ENABLED"
+    flag_value = true
   },
   {
     services   = ["portal-pathogen"]

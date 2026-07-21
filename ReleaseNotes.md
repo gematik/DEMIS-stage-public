@@ -2,6 +2,18 @@
 
 # Release Notes stage-public
 
+## Release 1.25.0
+- compatible with DEMIS-Development-Cluster 5.10.0
+- modernized infrastructure
+  - upgraded istio to version 1.30.2
+  - upgraded kiali to version 2.17.0
+  - upgraded jaeger to version 2.19.0
+  - upgraded grafana to version 13.0.2
+  - upgraded prometheus to version 29.12.0
+  - upgraded trivy to version 0.32.0
+  - upgraded kyverno to version 3.8.1
+  - upgraded kyverno policy reporter to version 3.7.4
+
 ## Release 1.24.0
 - compatible with DEMIS-Development-Cluster 5.9.0
 - fetaures:
