@@ -6,12 +6,12 @@ feature_flags = [
     flag_value = true
   },
   {
-    services   = ["validation-service-bedoccupancy", "validation-service-core", "validation-service-disease", "validation-service-pathogen"]
+    services   = ["validation-service-bedoccupancy", "validation-service-disease", "validation-service-pathogen"]
     flag_name  = "FEATURE_FLAG_COMMON_CODE_SYSTEM_TERMINOLOGY_ENABLED"
     flag_value = true
   },
   {
-    services   = ["validation-service-ars", "validation-service-bedoccupancy", "validation-service-core", "validation-service-disease", "validation-service-igs", "validation-service-pathogen"]
+    services   = ["validation-service-ars", "validation-service-bedoccupancy", "validation-service-disease", "validation-service-igs", "validation-service-pathogen"]
     flag_name  = "FEATURE_FLAG_DENY_MODIFIER_EXTENSIONS"
     flag_value = true
   },
@@ -21,18 +21,13 @@ feature_flags = [
     flag_value = true
   },
   {
-    services   = ["futs-bedoccupancy", "futs-core", "futs-disease", "futs-igs", "futs-pathogen"]
+    services   = ["futs-bedoccupancy", "futs-disease", "futs-igs", "futs-pathogen"]
     flag_name  = "FEATURE_FLAG_DISEASE_INDENT"
     flag_value = true
   },
   {
     services   = ["notification-processing-service"]
     flag_name  = "FEATURE_FLAG_FEIGN_INTERCEPTOR_ENABLED"
-    flag_value = true
-  },
-  {
-    services   = ["lifecycle-validation-service", "notification-processing-service"]
-    flag_name  = "FEATURE_FLAG_FHIR_CORE_SPLIT"
     flag_value = true
   },
   {
@@ -56,11 +51,6 @@ feature_flags = [
     flag_value = true
   },
   {
-    services   = ["notification-processing-service", "notification-routing-service"]
-    flag_name  = "FEATURE_FLAG_NEW_ERROR_MESSAGE_FOR_FAILED_ROUTING"
-    flag_value = true
-  },
-  {
     services   = ["pdfgen-service"]
     flag_name  = "FEATURE_FLAG_PDF_OPTIMIZATION"
     flag_value = true
@@ -79,6 +69,11 @@ feature_flags = [
   {
     services   = ["portal-bedoccupancy", "portal-disease", "portal-igs", "portal-pathogen", "portal-shell"]
     flag_name  = "FEATURE_FLAG_PORTAL_HEADER_FOOTER"
+    flag_value = true
+  },
+  {
+    services   = ["notification-processing-service"]
+    flag_name  = "FEATURE_FLAG_RECEIPT_WITH_NBL"
     flag_value = true
   },
   {
@@ -112,7 +107,7 @@ feature_flags = [
     flag_value = true
   },
   {
-    services   = ["validation-service-ars", "validation-service-bedoccupancy", "validation-service-core", "validation-service-disease", "validation-service-igs", "validation-service-pathogen"]
+    services   = ["validation-service-ars", "validation-service-bedoccupancy", "validation-service-disease", "validation-service-igs", "validation-service-pathogen"]
     flag_name  = "FEATURE_FLAG_VALIDATION_EXTENSION_CHECK_ENABLED"
     flag_value = true
   },

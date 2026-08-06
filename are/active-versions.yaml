@@ -14,7 +14,7 @@ are-notification-processing-service:
   enabled: true
 validation-service:
   main:
-    version: 2.14.0
+    version: 2.15.0
     weight: 100
   canary: {}
   chart-name: validation-service-delegation
@@ -22,7 +22,7 @@ validation-service:
   enabled: true
 validation-service-are:
   main:
-    version: 2.14.0
+    version: 2.15.0
     weight: 100
     profiles:
       - 1.0.2
@@ -32,14 +32,14 @@ validation-service-are:
   enabled: true
 policies-authentications:
   main:
-    version: 2.12.1
+    version: 2.12.2
     weight: 100
   canary: {}
   deployment-strategy: update
   enabled: true
 policies-authorizations:
   main:
-    version: 2.12.1
+    version: 2.12.2
     weight: 100
   canary: {}
   deployment-strategy: update
