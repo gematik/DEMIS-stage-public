@@ -147,6 +147,10 @@ s3_tls_credential = "LS0tLS1CRUdJTiBDRVJUSUZJQ0FURS0tLS0tCk1JSUNxRENDQWs2Z0F3SUJ
 minio_root_user     = "minioadmin"
 minio_root_password = "minioadmin"
 
+# S3 Credentials
+object_storage_service_access_key = "minioadmin"
+object_storage_service_secret_key = "minioadmin"
+
 # Redis CUS Credentials (Reader)
 redis_cus_reader_user     = "reader"
 redis_cus_reader_password = "read_this_password"

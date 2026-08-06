@@ -52,14 +52,11 @@ volumes = {
     storage_class = "standard"
     capacity      = "1Gi"
   }
-  minio-volume-claim = {
+  object-storage-volume-claim = {
     storage_class = "standard"
     capacity      = "1Gi"
   }
 }
 
 # Definition of the feature flags for the project
-project_feature_flags = {
-  FEATURE_FLAG_SEPARATION_API_VERSION_AND_PROFILE_VERSION = true
-  FEATURE_FLAG_FHIR_CORE_SPLIT                            = true
-}
+project_feature_flags = {}

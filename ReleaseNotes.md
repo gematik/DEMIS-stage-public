@@ -2,6 +2,12 @@
 
 # Release Notes stage-public
 
+## Release 1.26.0
+- compatible with DEMIS-Development-Cluster 5.11.0
+- removed futs and validation-service core from demis
+- external routing configuration is required now
+- replaced minio by object-storage-service (new S3 on SeaweedFS)
+
 ## Release 1.25.0
 - compatible with DEMIS-Development-Cluster 5.10.0
 - modernized infrastructure

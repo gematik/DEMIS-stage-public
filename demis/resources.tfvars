@@ -25,10 +25,6 @@ resource_definitions = [
     replicas = 1
   },
   {
-    service  = "futs-core"
-    replicas = 1
-  },
-  {
     service  = "futs-bedoccupancy"
     replicas = 1
   },
@@ -58,10 +54,6 @@ resource_definitions = [
   },
   {
     service  = "lifecycle-validation-service"
-    replicas = 1
-  },
-  {
-    service  = "minio"
     replicas = 1
   },
   {
@@ -139,26 +131,10 @@ resource_definitions = [
   {
     service  = "validation-service-bedoccupancy:v5"
     replicas = 1
-    resources = {
-      requests = {
-        memory = "1200Mi"
-      }
-      limits = {
-        memory = "1200Mi"
-      }
-    }
   },
   {
     service  = "validation-service-bedoccupancy:v6"
     replicas = 1
-    resources = {
-      requests = {
-        memory = "1200Mi"
-      }
-      limits = {
-        memory = "1200Mi"
-      }
-    }
   },
   {
     service  = "validation-service-disease"
@@ -167,26 +143,10 @@ resource_definitions = [
   {
     service  = "validation-service-disease:v5"
     replicas = 1
-    resources = {
-      requests = {
-        memory = "1500Mi"
-      }
-      limits = {
-        memory = "1500Mi"
-      }
-    }
   },
   {
     service  = "validation-service-disease:v6"
     replicas = 1
-    resources = {
-      requests = {
-        memory = "1500Mi"
-      }
-      limits = {
-        memory = "1500Mi"
-      }
-    }
   },
   {
     service  = "validation-service-pathogen"
@@ -195,26 +155,10 @@ resource_definitions = [
   {
     service  = "validation-service-pathogen:v5"
     replicas = 1
-    resources = {
-      requests = {
-        memory = "1700Mi"
-      }
-      limits = {
-        memory = "1700Mi"
-      }
-    }
   },
   {
     service  = "validation-service-pathogen:v6"
     replicas = 1
-    resources = {
-      requests = {
-        memory = "1700Mi"
-      }
-      limits = {
-        memory = "1700Mi"
-      }
-    }
   },
   {
     service  = "validation-service-igs"
@@ -223,14 +167,6 @@ resource_definitions = [
   {
     service  = "validation-service-igs:v4"
     replicas = 1
-    resources = {
-      limits = {
-        memory = "1500Mi"
-      }
-      requests = {
-        memory = "1500Mi"
-      }
-    }
   },
   {
     service  = "validation-service-ars"
@@ -239,14 +175,6 @@ resource_definitions = [
   {
     service  = "validation-service-ars:v1"
     replicas = 1
-    resources = {
-      limits = {
-        memory = "1700Mi"
-      }
-      requests = {
-        memory = "1700Mi"
-      }
-    }
   },
   {
     service  = "destination-lookup-writer"
@@ -254,6 +182,10 @@ resource_definitions = [
   },
   {
     service  = "destination-lookup-reader"
+    replicas = 1
+  },
+  {
+    service  = "object-storage-service"
     replicas = 1
   }
 ]

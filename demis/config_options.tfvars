@@ -1,12 +1,12 @@
 # Map containing the Config Options to be activated for services
 config_options = [
   {
-    services     = ["futs-bedoccupancy", "futs-core", "futs-disease", "futs-igs", "futs-pathogen"]
+    services     = ["futs-bedoccupancy", "futs-disease", "futs-igs", "futs-pathogen"]
     option_name  = "ADD_TEST_DATA_ERROR_CASE_FOR_LAB"
     option_value = true
   },
   {
-    services     = ["futs-bedoccupancy", "futs-core", "futs-disease", "futs-igs", "futs-pathogen"]
+    services     = ["futs-bedoccupancy", "futs-disease", "futs-igs", "futs-pathogen"]
     option_name  = "ADD_TEST_DATA_LABORATORY_SORTING"
     option_value = true
   },
@@ -23,7 +23,7 @@ config_options = [
     synchronize_option_value = false
   },
   {
-    services     = ["validation-service-bedoccupancy", "validation-service-core", "validation-service-disease", "validation-service-pathogen"]
+    services     = ["validation-service-bedoccupancy", "validation-service-disease", "validation-service-pathogen"]
     option_name  = "CONFIG_OPTION_ADDITIONAL_STRICT_CODING_VALIDATOR_ENABLED"
     option_value = true
   },
