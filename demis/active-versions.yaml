@@ -61,7 +61,7 @@ futs-pathogen:
     version: 2.8.0
     weight: 100
     profiles:
-      - 6.2.9
+      - 6.2.10
   canary: {}
   synchronize-profiles: false
   chart-name: futs
@@ -241,7 +241,7 @@ validation-service-pathogen:
     version: 2.15.0
     weight: 100
     profiles:
-      - 6.2.9
+      - 6.2.10
       - 5.4.1
   canary: {}
   synchronize-profiles: false

@@ -2,6 +2,10 @@
 
 # Release Notes stage-public
 
+## Release 1.26.1
+- compatible with DEMIS-Development-Cluster 5.11.0
+- changed pathogen package to version 6.2.10
+
 ## Release 1.26.0
 - compatible with DEMIS-Development-Cluster 5.11.0
 - removed futs and validation-service core from demis
