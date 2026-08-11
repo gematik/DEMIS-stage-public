@@ -2,6 +2,10 @@
 
 # Release Notes stage-public
 
+## Release 1.26.2
+- compatible with DEMIS-Development-Cluster 5.11.0
+- changed disease package to version 6.2.11
+
 ## Release 1.26.1
 - compatible with DEMIS-Development-Cluster 5.11.0
 - changed pathogen package to version 6.2.10
