@@ -36,13 +36,13 @@ feature_flags = [
     flag_value = true
   },
   {
-    services   = ["surveillance-pseudonym-service-ars"]
-    flag_name  = "FEATURE_FLAG_INDIVIDUAL_PSEUDONYM"
+    services   = ["portal-bedoccupancy", "portal-disease", "portal-igs", "portal-pathogen", "portal-shell"]
+    flag_name  = "FEATURE_FLAG_FOOTER_LINKS_CORRECTION"
     flag_value = true
   },
   {
-    services   = ["notification-gateway"]
-    flag_name  = "FEATURE_FLAG_LOINC_VERSION_VIA_PORTAL"
+    services   = ["surveillance-pseudonym-service-ars"]
+    flag_name  = "FEATURE_FLAG_INDIVIDUAL_PSEUDONYM"
     flag_value = true
   },
   {
@@ -56,19 +56,29 @@ feature_flags = [
     flag_value = true
   },
   {
-    services   = ["portal-bedoccupancy", "portal-disease", "portal-igs", "portal-pathogen", "portal-shell"]
-    flag_name  = "FEATURE_FLAG_PORTAL_ACCESSIBILITY"
-    flag_value = true
-  },
-  {
     services               = ["portal-shell"]
     flag_name              = "FEATURE_FLAG_PORTAL_ARE_ENABLED"
     flag_value             = true
     synchronize_flag_value = false
   },
   {
-    services   = ["portal-bedoccupancy", "portal-disease", "portal-igs", "portal-pathogen", "portal-shell"]
-    flag_name  = "FEATURE_FLAG_PORTAL_HEADER_FOOTER"
+    services   = ["portal-bedoccupancy"]
+    flag_name  = "FEATURE_FLAG_PORTAL_BED_OCCUPANCY_SIDENAV"
+    flag_value = true
+  },
+  {
+    services   = ["portal-disease"]
+    flag_name  = "FEATURE_FLAG_PORTAL_DISEASE_LAYOUT"
+    flag_value = true
+  },
+  {
+    services   = ["portal-igs"]
+    flag_name  = "FEATURE_FLAG_PORTAL_IGS_SIDENAV"
+    flag_value = true
+  },
+  {
+    services   = ["portal-shell"]
+    flag_name  = "FEATURE_FLAG_PRIVACY_POLICY_TEXT_CHANGE"
     flag_value = true
   },
   {
@@ -77,13 +87,8 @@ feature_flags = [
     flag_value = true
   },
   {
-    services   = ["notification-gateway", "portal-pathogen"]
+    services   = ["notification-gateway", "portal-disease", "portal-pathogen"]
     flag_name  = "FEATURE_FLAG_REFERENCE_FIELD"
-    flag_value = true
-  },
-  {
-    services   = ["portal-pathogen"]
-    flag_name  = "FEATURE_FLAG_REMOVABLE_ANALYT"
     flag_value = true
   },
   {
@@ -109,11 +114,6 @@ feature_flags = [
   {
     services   = ["validation-service-ars", "validation-service-bedoccupancy", "validation-service-disease", "validation-service-igs", "validation-service-pathogen"]
     flag_name  = "FEATURE_FLAG_VALIDATION_EXTENSION_CHECK_ENABLED"
-    flag_value = true
-  },
-  {
-    services   = ["notification-gateway", "portal-disease"]
-    flag_name  = "FEATURE_FLAG_WITHOUT_CONTACT_POINT_USE"
     flag_value = true
   }
 ]

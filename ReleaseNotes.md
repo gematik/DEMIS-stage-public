@@ -2,6 +2,11 @@
 
 # Release Notes stage-public
 
+## Release 1.27.0
+- compatible with DEMIS-Development-Cluster 5.11.0
+- updated portal versions and notification-gateway
+- updated kyverno-policies and kubernetes-network-policies
+
 ## Release 1.26.2
 - compatible with DEMIS-Development-Cluster 5.11.0
 - changed disease package to version 6.2.11
