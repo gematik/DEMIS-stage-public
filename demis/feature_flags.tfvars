@@ -56,6 +56,16 @@ feature_flags = [
     flag_value = true
   },
   {
+    services   = ["pdfgen-service"]
+    flag_name  = "FEATURE_FLAG_PDF_SECOND_PAGE_CR"
+    flag_value = true
+  },
+  {
+    services   = ["pdfgen-service"]
+    flag_name  = "FEATURE_FLAG_PDF_SPLIT_NOTES"
+    flag_value = true
+  },
+  {
     services               = ["portal-shell"]
     flag_name              = "FEATURE_FLAG_PORTAL_ARE_ENABLED"
     flag_value             = true

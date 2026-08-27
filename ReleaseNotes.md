@@ -2,6 +2,17 @@
 
 # Release Notes stage-public
 
+## Release 1.28.0
+- compatible with DEMIS-Development-Cluster 5.11.0
+- updated services:
+    - futs
+    - lifecycle-validation-service
+    - notification-processing-service
+    - notification-routing-service
+    - pdfgen-service
+    - report-processing-service
+- improvements of PDF generation
+
 ## Release 1.27.0
 - compatible with DEMIS-Development-Cluster 5.11.0
 - updated portal versions and notification-gateway
