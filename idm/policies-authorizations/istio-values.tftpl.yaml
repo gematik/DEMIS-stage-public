@@ -36,6 +36,10 @@ idm:
 demis:
   enabled: false
 
+# DMZ Services Policies
+dmz:
+  enabled: false
+
 # Mesh Services Policies
 mesh:
   enabled: false

@@ -2,6 +2,13 @@
 
 # Release Notes stage-public
 
+## Release 1.29.0
+- compatible with DEMIS-Development-Cluster 5.12.0
+- enabled removal of input placeholder text for portals that are not select or autocomplete fields
+- enabled validation for facility input fields (contracted laboratory and workplace) in the disease questionnaire
+- enabled deletion of packages from the package registry after the TTL expires
+- add dmz namespace
+
 ## Release 1.28.0
 - compatible with DEMIS-Development-Cluster 5.11.0
 - updated services:

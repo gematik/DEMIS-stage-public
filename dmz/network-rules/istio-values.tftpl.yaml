@@ -1,0 +1,14 @@
+peerAuthenticationRules:
+  enabled: true
+
+demis:
+  enabled: false
+
+dmz: 
+  enabled: true
+
+idm:
+  enabled: false
+
+mesh:
+  enabled: false

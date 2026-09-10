@@ -95,6 +95,7 @@ traffic_routes_templates:
       api_version: "v4"
       package_name: "igs"
     additional_headers:
+      x-api-version: "${api_version}"
       x-fhir-api-version: "${api_version}"
       x-fhir-package-version: "${api_version}"
       x-fhir-profile: "${package_name}"
