@@ -29,3 +29,7 @@ demis:
 # Mesh Services Policies
 mesh:
   enabled: false
+
+# DMZ Services Policies
+dmz:
+  enabled: false

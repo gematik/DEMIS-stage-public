@@ -26,6 +26,11 @@ feature_flags = [
     flag_value = true
   },
   {
+    services   = ["futs-bedoccupancy", "futs-disease", "futs-igs", "futs-pathogen"]
+    flag_name  = "FEATURE_FLAG_DISEASE_QUESTIONNAIRE_ORG_INPUT_VALIDATION"
+    flag_value = true
+  },
+  {
     services   = ["notification-processing-service"]
     flag_name  = "FEATURE_FLAG_FEIGN_INTERCEPTOR_ENABLED"
     flag_value = true
@@ -66,6 +71,11 @@ feature_flags = [
     flag_value = true
   },
   {
+    services   = ["portal-bedoccupancy", "portal-disease", "portal-pathogen"]
+    flag_name  = "FEATURE_FLAG_PLACEHOLDER_REMOVAL"
+    flag_value = true
+  },
+  {
     services               = ["portal-shell"]
     flag_name              = "FEATURE_FLAG_PORTAL_ARE_ENABLED"
     flag_value             = true
@@ -89,6 +99,11 @@ feature_flags = [
   {
     services   = ["portal-shell"]
     flag_name  = "FEATURE_FLAG_PRIVACY_POLICY_TEXT_CHANGE"
+    flag_value = true
+  },
+  {
+    services   = ["package-registry"]
+    flag_name  = "FEATURE_FLAG_PR_PKG_TTL"
     flag_value = true
   },
   {

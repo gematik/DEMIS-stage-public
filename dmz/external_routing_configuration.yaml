@@ -1,0 +1,23 @@
+traffic_routes_templates:
+- service: "bulk-inbound-service"
+  enabled: true
+  variables:
+    profile_name: "ars"
+    package_name: "ars"
+  additional_headers:
+    x-fhir-api-version: "${api_version}"
+    x-api-version: "${api_version}"
+    x-fhir-profile: "${profile_name}"
+    x-fhir-package-version: "${package_version}"
+    x-fhir-package: "${package_name}"
+  rewrite:
+    target: "/batch"
+  matches:
+  - method:
+      exact: POST
+    uri_template: "${context_path}/surveillance/antibiotic-resistance/${api_version}/batch"
+    ignoreUriCase: true
+  http_route_configs:
+  - variables:
+      api_version: "v1"
+      package_version: "v1"

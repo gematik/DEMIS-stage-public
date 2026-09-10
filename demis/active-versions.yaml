@@ -314,7 +314,7 @@ notification-routing-data:
   enabled: true
 ars-service:
   main:
-    version: 1.5.0
+    version: 1.6.0
     weight: 100
   canary: {}
   deployment-strategy: canary
@@ -379,7 +379,7 @@ kubernetes-network-policies:
   enabled: true
 ars-purger:
   main:
-    version: 1.5.0
+    version: 1.6.0
     weight: 100
   canary: {}
   deployment-strategy: replace

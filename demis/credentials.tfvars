@@ -162,3 +162,7 @@ ars_pseudo_hash_pepper = "36EWaW1l4MBwORh39aaLzT9rVqF9wD3QtE4jltq8NKk="
 rabbitmq_username     = "rabbit_user"
 rabbitmq_password     = "rabbit_password"
 rabbitmq_ars_password = "MyARSPassword123!"
+
+# ars-service - queue encryption secrets
+ars_secure_queue_encryption_current_secret  = "0TW$pfXiW%O8%#kw"
+ars_secure_queue_encryption_previous_secret = "0TW$pfXiW%O8%#kw"

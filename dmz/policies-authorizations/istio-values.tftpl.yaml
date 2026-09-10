@@ -1,0 +1,27 @@
+# If active, as default all traffic is denied
+allowNothing: true
+
+# If active, allow the services to access the local Postgres database
+postgres:
+  enabled: true
+
+idm:
+  enabled: false
+
+dmz:
+  enabled: true
+  namespace: "${namespace}"
+  local:
+    prometheusMetrics:
+      enabled: true
+  rabbitmq:
+    enabled: true
+  featureFlags:
+    arsBulkEnabled: ${feature_flag_ars_bulk_enabled}
+
+demis: 
+  enabled: false
+
+# Mesh Services Policies
+mesh:
+  enabled: false
