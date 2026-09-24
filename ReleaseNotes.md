@@ -2,6 +2,18 @@
 
 # Release Notes stage-public
 
+## Release 1.30.1
+- compatible with DEMIS-Development-Cluster 5.12.0
+- updated service versions:
+    - validation-services in namespaces demis and are
+    - pdfgen-service
+    - portal-bedoccupancy
+
+## Release 1.30.0
+- compatible with DEMIS-Development-Cluster 5.12.0
+- updated INeK list in hospital-location-service
+- usability and accessibility improvements in portal-services
+
 ## Release 1.29.0
 - compatible with DEMIS-Development-Cluster 5.12.0
 - enabled removal of input placeholder text for portals that are not select or autocomplete fields

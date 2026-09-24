@@ -1,13 +1,8 @@
 # Map containing the Feature Flags to be activated for services
 feature_flags = [
   {
-    services   = ["ars-service"]
-    flag_name  = "FEATURE_FLAG_ARS_VALIDATION_ENABLED"
-    flag_value = true
-  },
-  {
-    services   = ["validation-service-bedoccupancy", "validation-service-disease", "validation-service-pathogen"]
-    flag_name  = "FEATURE_FLAG_COMMON_CODE_SYSTEM_TERMINOLOGY_ENABLED"
+    services   = ["portal-bedoccupancy"]
+    flag_name  = "FEATURE_FLAG_BED_A11Y_INFO_REQUIREDFIELDS"
     flag_value = true
   },
   {
@@ -31,8 +26,18 @@ feature_flags = [
     flag_value = true
   },
   {
+    services   = ["portal-disease"]
+    flag_name  = "FEATURE_FLAG_DISEASE_STATUS_ORDER_NODEFAULT"
+    flag_value = true
+  },
+  {
     services   = ["notification-processing-service"]
     flag_name  = "FEATURE_FLAG_FEIGN_INTERCEPTOR_ENABLED"
+    flag_value = true
+  },
+  {
+    services   = ["portal-pathogen"]
+    flag_name  = "FEATURE_FLAG_FILTERABLE_SELECT_SUBPATHOGEN"
     flag_value = true
   },
   {
@@ -56,21 +61,6 @@ feature_flags = [
     flag_value = true
   },
   {
-    services   = ["pdfgen-service"]
-    flag_name  = "FEATURE_FLAG_PDF_OPTIMIZATION"
-    flag_value = true
-  },
-  {
-    services   = ["pdfgen-service"]
-    flag_name  = "FEATURE_FLAG_PDF_SECOND_PAGE_CR"
-    flag_value = true
-  },
-  {
-    services   = ["pdfgen-service"]
-    flag_name  = "FEATURE_FLAG_PDF_SPLIT_NOTES"
-    flag_value = true
-  },
-  {
     services   = ["portal-bedoccupancy", "portal-disease", "portal-pathogen"]
     flag_name  = "FEATURE_FLAG_PLACEHOLDER_REMOVAL"
     flag_value = true
@@ -84,6 +74,11 @@ feature_flags = [
   {
     services   = ["portal-bedoccupancy"]
     flag_name  = "FEATURE_FLAG_PORTAL_BED_OCCUPANCY_SIDENAV"
+    flag_value = true
+  },
+  {
+    services   = ["portal-bedoccupancy", "portal-shell"]
+    flag_name  = "FEATURE_FLAG_PORTAL_BED_TEXT"
     flag_value = true
   },
   {

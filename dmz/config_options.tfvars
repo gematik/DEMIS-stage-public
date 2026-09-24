@@ -1,4 +1,4 @@
-# Map containing the Configuration Options to be activated for services
+# Map containing the Config Options to be activated for services
 config_options = [
   {
     services     = ["bulk-inbound-service"]

@@ -87,7 +87,7 @@ gateway-igs:
   enabled: true
 hospital-location-service:
   main:
-    version: 1.5.0
+    version: 1.6.0
     weight: 100
   canary: {}
   deployment-strategy: canary
@@ -115,7 +115,7 @@ notification-gateway:
   enabled: true
 notification-processing-service:
   main:
-    version: 2.15.1
+    version: 2.15.2
     weight: 100
   canary: {}
   deployment-strategy: canary
@@ -129,7 +129,7 @@ notification-routing-service:
   enabled: true
 pdfgen-service:
   main:
-    version: 2.12.0
+    version: 2.12.1
     weight: 100
   canary: {}
   deployment-strategy: canary
@@ -143,35 +143,35 @@ pgbouncer:
   enabled: true
 portal-bedoccupancy:
   main:
-    version: 1.7.4
+    version: 1.7.6
     weight: 100
   canary: {}
   deployment-strategy: canary
   enabled: true
 portal-disease:
   main:
-    version: 1.9.2
+    version: 1.9.3
     weight: 100
   canary: {}
   deployment-strategy: canary
   enabled: true
 portal-igs:
   main:
-    version: 1.4.4
+    version: 1.4.5
     weight: 100
   canary: {}
   deployment-strategy: canary
   enabled: true
 portal-pathogen:
   main:
-    version: 1.9.5
+    version: 1.9.6
     weight: 100
   canary: {}
   deployment-strategy: canary
   enabled: true
 portal-shell:
   main:
-    version: 1.8.3
+    version: 1.8.4
     weight: 100
   canary: {}
   deployment-strategy: canary
@@ -206,7 +206,7 @@ report-processing-service:
   enabled: true
 validation-service:
   main:
-    version: 2.15.0
+    version: 2.16.0
     weight: 100
   canary: {}
   chart-name: validation-service-delegation
@@ -214,7 +214,7 @@ validation-service:
   enabled: true
 validation-service-bedoccupancy:
   main:
-    version: 2.15.0
+    version: 2.16.0
     weight: 100
     profiles:
       - 6.2.9
@@ -226,7 +226,7 @@ validation-service-bedoccupancy:
   enabled: true
 validation-service-disease:
   main:
-    version: 2.15.0
+    version: 2.16.0
     weight: 100
     profiles:
       - 6.2.11
@@ -238,7 +238,7 @@ validation-service-disease:
   enabled: true
 validation-service-pathogen:
   main:
-    version: 2.15.0
+    version: 2.16.0
     weight: 100
     profiles:
       - 6.2.10
@@ -250,7 +250,7 @@ validation-service-pathogen:
   enabled: true
 validation-service-igs:
   main:
-    version: 2.15.0
+    version: 2.16.0
     weight: 100
     profiles:
       - 4.0.2
@@ -261,7 +261,7 @@ validation-service-igs:
   enabled: true
 validation-service-ars:
   main:
-    version: 2.15.0
+    version: 2.16.0
     weight: 100
     profiles:
       - 1.1.0
