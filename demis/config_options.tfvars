@@ -28,6 +28,11 @@ config_options = [
     option_value = true
   },
   {
+    services     = ["validation-service-bedoccupancy", "validation-service-disease", "validation-service-pathogen"]
+    option_name  = "CONFIG_OPTION_COMMON_CODE_SYSTEM_TERMINOLOGY_ENABLED"
+    option_value = true
+  },
+  {
     services                 = ["pdfgen-service"]
     option_name              = "CONFIG_OPTION_PDF_WATERMARK"
     option_value             = "stage-public"
