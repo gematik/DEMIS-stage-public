@@ -4,7 +4,7 @@ peerAuthenticationRules:
 demis:
   enabled: false
 
-dmz: 
+dmz:
   enabled: true
 
 idm:

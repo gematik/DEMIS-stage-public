@@ -81,7 +81,7 @@ traffic_routes_templates:
       service_name: "pathogen"
       package_name: "laboratory"
   - variables:
-      api_version: "v4"
+      api_version: "v5"
       service_name: "igs"
       package_name: "igs"
 - service: "gateway-igs"
@@ -92,7 +92,7 @@ traffic_routes_templates:
     target: "/"
   http_route_configs:
   - variables:
-      api_version: "v4"
+      api_version: "v5"
       package_name: "igs"
     additional_headers:
       x-api-version: "${api_version}"
@@ -122,8 +122,8 @@ traffic_routes_templates:
     target: "/"
   http_route_configs:
   - variables:
-      api_version: "v4"
-      package_version: "v4"
+      api_version: "v5"
+      package_version: "v5"
     matches:
     - uri_template: "${context_path}/surveillance/notification-sequence/${api_version}/fhir/"
       ignoreUriCase: true
@@ -134,10 +134,10 @@ traffic_routes_templates:
       x-fhir-package-version: "${package_version}"
       x-fhir-package: "${package_name}"
   - variables:
-      api_version: "v4"
-      package_version: "v4"
+      api_version: "v5"
+      package_version: "v5"
     matches:
-    - uri_template: "${context_path}/surveillance/notification-sequence/${api_version}/S3Controller"
+    - uri_template: "${context_path}/surveillance/notification-sequence/S3Controller"
       ignoreUriCase: true
     additional_headers:
       x-fhir-api-version: "${api_version}"
@@ -157,16 +157,7 @@ traffic_routes_templates:
       method: "regex"
       match_template: "(?i)^${context_path}/surveillance/notification-sequence/v([1-9][0-9]?)/fhir/(.*)?$"
       target: "/\\2"
-  - matches:
-    - uri_template: "${context_path}/surveillance/notification-sequence/fhir/"
-    additional_headers:
-      x-fhir-profile: "${package_name}"
-      x-fhir-package: "${package_name}"
-  - matches:
-    - uri_template: "${context_path}/surveillance/notification-sequence/S3Controller/upload/"
-    rewrite:
-      target: "/S3Controller/upload/"
-- service: "minio"
+- service: "object-storage-service"
   enabled: true
   rewrite:
     target: "/"

@@ -42,21 +42,21 @@ istio-routing:
   enabled: true
 rabbitmq:
   main:
-    version: 1.1.2
+    version: 1.1.3
     weight: 100
   canary: {}
   deployment-strategy: rolling
   enabled: true
 bulk-inbound-service:
   main:
-    version: 1.1.0
+    version: 1.1.1
     weight: 100
   canary: {}
   deployment-strategy: canary
   enabled: true
 bulk-inbound-purger:
   main:
-    version: 1.1.0
+    version: 1.1.1
     weight: 100
   canary: {}
   deployment-strategy: replace
@@ -73,14 +73,14 @@ waf-service:
     version: 1.1.0
     weight: 100
   canary: {}
-  deployment-strategy: update
+  deployment-strategy: canary
   enabled: true
 secure-message-gateway:
   main:
-    version: 1.1.0
+    version: 1.1.1
     weight: 100
   canary: {}
-  deployment-strategy: update
+  deployment-strategy: canary
   enabled: true
 ars-profile-snapshots:
   main:

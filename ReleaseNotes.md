@@ -2,6 +2,11 @@
 
 # Release Notes stage-public
 
+## Release 1.30.0
+- compatible with DEMIS-Development-Cluster 5.12.0
+- enabled ARS and ARS-Bulk
+- updated to IGS Profile 5.0.1
+
 ## Release 1.30.1
 - compatible with DEMIS-Development-Cluster 5.12.0
 - updated service versions:
