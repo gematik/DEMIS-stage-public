@@ -1,6 +1,13 @@
 # Map containing the Feature Flags to be activated for services
 feature_flags = [
   {
+    # ARS-Flag should be activated, only if dmz Namespace is deployed before
+    services               = ["ars-service"]
+    flag_name              = "FEATURE_FLAG_ARS_BULK_ENABLED"
+    flag_value             = false
+    synchronize_flag_value = false
+  },
+  {
     services   = ["portal-bedoccupancy"]
     flag_name  = "FEATURE_FLAG_BED_A11Y_INFO_REQUIREDFIELDS"
     flag_value = true
@@ -124,6 +131,11 @@ feature_flags = [
   {
     services   = ["portal-shell"]
     flag_name  = "FEATURE_FLAG_SURVEILLANCE_PROGRAM_ADMISSION_ENABLED"
+    flag_value = true
+  },
+  {
+    services   = ["igs-service"]
+    flag_name  = "FEATURE_FLAG_USE_OBJECT_STORAGE_SERVICE_SECRET"
     flag_value = true
   },
   {

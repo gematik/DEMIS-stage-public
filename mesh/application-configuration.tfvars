@@ -12,7 +12,7 @@ helm_repository = "https://gematik.github.io/DEMIS-Helm-Charts/"
 kubeconfig_path = "../infrastructure/kind-config"
 
 # S3 Storage Server URL
-s3_hostname = "minio.demis.svc.cluster.local"
+s3_hostname = "object-storage-service.demis.svc.cluster.local"
 s3_port     = 9000
 
 # Cluster Endpoints

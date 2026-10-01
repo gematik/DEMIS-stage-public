@@ -72,7 +72,7 @@ futs-igs:
     version: 2.8.1
     weight: 100
     profiles:
-      - 4.0.2
+      - 5.0.1
   canary: {}
   synchronize-profiles: false
   chart-name: futs
@@ -80,7 +80,7 @@ futs-igs:
   enabled: true
 gateway-igs:
   main:
-    version: 1.4.0
+    version: 1.5.1
     weight: 100
   canary: {}
   deployment-strategy: canary
@@ -94,7 +94,7 @@ hospital-location-service:
   enabled: true
 igs-service:
   main:
-    version: 1.5.0
+    version: 1.6.1
     weight: 100
   canary: {}
   deployment-strategy: canary
@@ -253,7 +253,7 @@ validation-service-igs:
     version: 2.16.0
     weight: 100
     profiles:
-      - 4.0.2
+      - 5.0.1
   canary: {}
   synchronize-profiles: false
   chart-name: validation-service
@@ -314,10 +314,17 @@ notification-routing-data:
   enabled: true
 ars-service:
   main:
-    version: 1.6.0
+    version: 1.6.1
     weight: 100
   canary: {}
   deployment-strategy: canary
+  enabled: true
+ars-purger:
+  main:
+    version: 1.6.1
+    weight: 100
+  canary: {}
+  deployment-strategy: replace
   enabled: true
 kyverno-admission-policies:
   main:
@@ -376,14 +383,7 @@ kubernetes-network-policies:
     weight: 100
   canary: {}
   deployment-strategy: update
-  enabled: true
-ars-purger:
-  main:
-    version: 1.6.0
-    weight: 100
-  canary: {}
-  deployment-strategy: replace
-  enabled: true
+  enabled: false
 object-storage-service:
   main:
     version: 1.0.1

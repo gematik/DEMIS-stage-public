@@ -3,7 +3,7 @@ restrict_image_registries:
   image_registries:
     - ${repository}/*
     - docker.io/istio/*
-  
+
 verify_image_signature:
   enabled: true
   image_registries:

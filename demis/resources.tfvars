@@ -165,7 +165,7 @@ resource_definitions = [
     replicas = 1
   },
   {
-    service  = "validation-service-igs:v4"
+    service  = "validation-service-igs:v5"
     replicas = 1
   },
   {

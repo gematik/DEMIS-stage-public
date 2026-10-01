@@ -26,7 +26,7 @@ debug_enabled = true
 database_target_host = "postgres.demis.svc.cluster.local"
 
 # S3 Storage Server URL
-s3_hostname = "minio.demis.svc.cluster.local"
+s3_hostname = "object-storage-service.demis.svc.cluster.local"
 s3_port     = 9000
 # fhir storage service purger cron schedule
 fhir_storage_purger_suspend       = false
@@ -35,6 +35,10 @@ fhir_storage_purger_cron_schedule = "0 22 * * *"
 # surveillance-pseudonym-purger-ars cron schedule
 surveillance_pseudonym_purger_ars_suspend       = false
 surveillance_pseudonym_purger_ars_cron_schedule = "0 22 * * *"
+
+# ars-purger cron schedule
+ars_purger_suspend       = false
+ars_purger_cron_schedule = "0 22 * * *"
 
 # settings for validation service profile provisioning mode
 # null disabled the profile provisioning mode and deploy in old mode

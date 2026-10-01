@@ -7,7 +7,7 @@ demis:
   enabled: true
   local:
     # If active, allows the services to access the minio instance
-    minio:
+    oss:
       enabled: true
 
 # DMZ Services Policies

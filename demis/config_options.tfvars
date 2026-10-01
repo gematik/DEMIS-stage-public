@@ -51,7 +51,7 @@ config_options = [
   {
     services     = ["gateway-igs"]
     option_name  = "IGS_PROFILE_VERSION"
-    option_value = "v4"
+    option_value = "v5"
   },
   {
     services     = ["pseudonymization-service"]
@@ -98,7 +98,7 @@ config_options = [
     synchronize_option_value = false
   },
   {
-    services                 = ["fhir-storage-writer", "surveillance-pseudonym-service-ars"]
+    services                 = ["ars-service", "fhir-storage-writer", "surveillance-pseudonym-service-ars"]
     option_name              = "SPRING_LIQUIBASE_ENABLED"
     option_value             = true
     synchronize_option_value = false
