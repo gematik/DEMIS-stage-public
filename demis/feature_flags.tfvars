@@ -134,9 +134,10 @@ feature_flags = [
     flag_value = true
   },
   {
-    services   = ["igs-service"]
-    flag_name  = "FEATURE_FLAG_USE_OBJECT_STORAGE_SERVICE_SECRET"
-    flag_value = true
+    services               = ["igs-service"]
+    flag_name              = "FEATURE_FLAG_USE_OBJECT_STORAGE_SERVICE_SECRET"
+    flag_value             = true
+    synchronize_flag_value = false
   },
   {
     services   = ["portal-pathogen"]

@@ -2,6 +2,13 @@
 
 # Release Notes stage-public
 
+## Release 1.30.1
+- compatible with DEMIS-Development-Cluster 5.12.0
+- updated service versions:
+    - are-gateway
+    - are-notification-processing-service
+    - portal-are
+
 ## Release 1.30.0
 - compatible with DEMIS-Development-Cluster 5.12.0
 - enabled ARS and ARS-Bulk
