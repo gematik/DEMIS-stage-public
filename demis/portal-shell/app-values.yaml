@@ -1,0 +1,8 @@
+config:
+  infoBanners:
+    - id: "d1b51ce2-d98c-4e8a-9476-dd34f6ab2ff6"
+      type: "info"
+      content: "Seit 02.07.2026 ist COVID-19 nicht mehr gemäß § 6 Abs. 1 Nr. 1 Buchst. t IfSG meldepflichtig. Daher ist die Meldung über das DEMIS-Meldeportal nicht mehr möglich. Die Meldepflicht des Nachweises von SARS-CoV-2 gemäß § 7 Abs. 1 IfSG besteht weiterhin und kann unverändert über das Meldeportal erfolgen."
+      closable: true
+      endsAt: "2026-12-24T20:00:00Z"
+      moreInfo: "https://wiki.gematik.de/x/Q6dgLw"
