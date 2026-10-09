@@ -44,6 +44,16 @@ config_options = [
     option_value = true
   },
   {
+    services     = ["futs-disease"]
+    option_name  = "DATA_DISEASE_NOTIFICATION_CATEGORY_DENY_ACTIVE"
+    option_value = true
+  },
+  {
+    services     = ["futs-disease"]
+    option_name  = "DATA_DISEASE_NOTIFICATION_CATEGORY_DENY_LIST"
+    option_value = "cvdd"
+  },
+  {
     services     = ["igs-service"]
     option_name  = "FASTA_VALIDATION_PATHOGEN_DUMY"
     option_value = "1000,100,0.1"

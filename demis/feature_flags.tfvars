@@ -1,7 +1,6 @@
 # Map containing the Feature Flags to be activated for services
 feature_flags = [
   {
-    # ARS-Flag should be activated, only if dmz Namespace is deployed before
     services               = ["ars-service"]
     flag_name              = "FEATURE_FLAG_ARS_BULK_ENABLED"
     flag_value             = false
