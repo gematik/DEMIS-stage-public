@@ -62,8 +62,8 @@ feature_flags = [
     flag_value = true
   },
   {
-    services   = ["portal-bedoccupancy", "portal-disease", "portal-pathogen"]
-    flag_name  = "FEATURE_FLAG_PLACEHOLDER_REMOVAL"
+    services   = ["notification-processing-service", "notification-routing-service"]
+    flag_name  = "FEATURE_FLAG_PERMISSION_CHECK_ENABLED"
     flag_value = true
   },
   {
@@ -71,11 +71,6 @@ feature_flags = [
     flag_name              = "FEATURE_FLAG_PORTAL_ARE_ENABLED"
     flag_value             = true
     synchronize_flag_value = false
-  },
-  {
-    services   = ["portal-bedoccupancy"]
-    flag_name  = "FEATURE_FLAG_PORTAL_BED_OCCUPANCY_SIDENAV"
-    flag_value = true
   },
   {
     services   = ["portal-bedoccupancy", "portal-shell"]
@@ -93,11 +88,6 @@ feature_flags = [
     flag_value = true
   },
   {
-    services   = ["portal-shell"]
-    flag_name  = "FEATURE_FLAG_PRIVACY_POLICY_TEXT_CHANGE"
-    flag_value = true
-  },
-  {
     services   = ["package-registry"]
     flag_name  = "FEATURE_FLAG_PR_PKG_TTL"
     flag_value = true
@@ -105,16 +95,6 @@ feature_flags = [
   {
     services   = ["notification-processing-service"]
     flag_name  = "FEATURE_FLAG_RECEIPT_WITH_NBL"
-    flag_value = true
-  },
-  {
-    services   = ["notification-gateway", "portal-disease", "portal-pathogen"]
-    flag_name  = "FEATURE_FLAG_REFERENCE_FIELD"
-    flag_value = true
-  },
-  {
-    services   = ["notification-routing-service"]
-    flag_name  = "FEATURE_FLAG_REMOVE_SORMAS_EXCERPTS"
     flag_value = true
   },
   {
@@ -132,11 +112,6 @@ feature_flags = [
     flag_name              = "FEATURE_FLAG_USE_OBJECT_STORAGE_SERVICE_SECRET"
     flag_value             = true
     synchronize_flag_value = false
-  },
-  {
-    services   = ["portal-pathogen"]
-    flag_name  = "FEATURE_FLAG_UUID_VALIDATION"
-    flag_value = true
   },
   {
     services   = ["validation-service-ars", "validation-service-bedoccupancy", "validation-service-disease", "validation-service-igs", "validation-service-pathogen"]
