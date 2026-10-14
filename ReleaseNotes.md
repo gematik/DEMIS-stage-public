@@ -2,6 +2,18 @@
 
 # Release Notes stage-public
 
+## Release 1.32.0
+- compatible with DEMIS-Development-Cluster 5.12.0
+- upgraded service versions:
+    - notification-gateway
+    - notification-routing-service
+    - portal-disease
+    - portal-pathogen
+    - portal-bedoccupancy
+    - portal-shell
+    - certificate-update-service
+- enabled feature flag FEATURE_FLAG_PERMISSION_CHECK_ENABLED for permission check based on routing
+
 ## Release 1.31.1
 - compatible with DEMIS-Development-Cluster 5.12.0
 - fixed version handling for DocumentReference in IGS-Gateway
@@ -13,26 +25,30 @@
 ## Release 1.30.1
 - compatible with DEMIS-Development-Cluster 5.12.0
 - updated service versions:
-    - are-gateway
-    - are-notification-processing-service
-    - portal-are
+  - are-gateway
+  - are-notification-processing-service
+  - portal-are
 
 ## Release 1.30.0
 - compatible with DEMIS-Development-Cluster 5.12.0
 - enabled ARS and ARS-Bulk
 - updated to IGS Profile 5.0.1
 
-## Release 1.30.1
+## Release 1.29.1
 - compatible with DEMIS-Development-Cluster 5.12.0
 - updated service versions:
-    - validation-services in namespaces demis and are
-    - pdfgen-service
-    - portal-bedoccupancy
-
-## Release 1.30.0
-- compatible with DEMIS-Development-Cluster 5.12.0
-- updated INeK list in hospital-location-service
+  - validation-services in namespaces demis and are
+  - pdfgen-service
+  - portal-bedoccupancy
+  - portal-disease
+  - portal-pathogen
+  - portal-igs
+  - portal-shell
+  - hospital-location-service
+  - notification-processing-service
+- updated INeK list
 - usability and accessibility improvements in portal-services
+
 
 ## Release 1.29.0
 - compatible with DEMIS-Development-Cluster 5.12.0

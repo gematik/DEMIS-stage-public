@@ -1,6 +1,6 @@
 certificate-update-service:
   main:
-    version: 1.10.0
+    version: 1.10.1
     weight: 100
   canary: {}
   deployment-strategy: replace
