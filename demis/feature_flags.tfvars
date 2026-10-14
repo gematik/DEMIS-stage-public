@@ -57,11 +57,6 @@ feature_flags = [
     flag_value = true
   },
   {
-    services   = ["surveillance-pseudonym-service-ars"]
-    flag_name  = "FEATURE_FLAG_INDIVIDUAL_PSEUDONYM"
-    flag_value = true
-  },
-  {
     services   = ["notification-processing-service"]
     flag_name  = "FEATURE_FLAG_NBL_FOR_NOTBYNAME_ENABLED"
     flag_value = true

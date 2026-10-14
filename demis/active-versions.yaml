@@ -80,7 +80,7 @@ futs-igs:
   enabled: true
 gateway-igs:
   main:
-    version: 1.5.1
+    version: 1.5.2
     weight: 100
   canary: {}
   deployment-strategy: canary
@@ -157,7 +157,7 @@ portal-disease:
   enabled: true
 portal-igs:
   main:
-    version: 1.4.5
+    version: 1.4.6
     weight: 100
   canary: {}
   deployment-strategy: canary
@@ -335,7 +335,7 @@ kyverno-admission-policies:
   enabled: false
 surveillance-pseudonym-service-ars:
   main:
-    version: 1.2.0
+    version: 1.2.1
     weight: 100
   canary: {}
   chart-name: surveillance-pseudonym-service
@@ -343,7 +343,7 @@ surveillance-pseudonym-service-ars:
   enabled: true
 surveillance-pseudonym-purger-ars:
   main:
-    version: 1.2.0
+    version: 1.2.1
     weight: 100
   canary: {}
   chart-name: surveillance-pseudonym-purger
