@@ -2,6 +2,11 @@
 
 # Release Notes stage-public
 
+## Release 1.31.1
+- compatible with DEMIS-Development-Cluster 5.12.0
+- fixed version handling for DocumentReference in IGS-Gateway
+- removed feature flag FEATURE_FLAG_INDIVIDUAL_PSEUDONYM for surveillance pseudonymization service
+
 ## Release 1.31.0
 - Article 7 of the Act on the Further Development of Pharmacy Supply (ApoVWG) amends Section 6(1) of the Protection against Infection Act (IfSG) effective July 2, 2026. COVID is no longer subject to mandatory reporting, effective immediately; consequently, the requirement has been removed from the reporting portal.
 
