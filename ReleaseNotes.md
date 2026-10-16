@@ -2,6 +2,32 @@
 
 # Release Notes stage-public
 
+## Release 2.0.0
+- compatible with DEMIS-Development-Cluster 5.13.0
+- update contributing.md with new information about the versioning of this repository
+- upgrade of infrastructure components:
+  - kind to version 1.36.4
+  - istio to version 1.31.1
+  - kiali to version 2.27.0
+  - jaeger to version 2.22.0
+  - grafana to version 13.0.9
+  - prometheus to version 29.33.0
+  - kyverno to version 3.9.1
+  - kyverno policy reporter to version 3.10.0
+- also upgraded
+  - postgres
+  - pgbouncer
+  - redis
+  - object-storage-service
+  - network-rules
+  - istio-policies
+- activated otlp endpoint on otlp.ingress.local for otel-collector to receive traces from outside the cluster
+#### Breaking:
+- helm repository reference has changed to use HELM_REPOSITORY_CONFIG of the system (typically found on ~/.config/helm/repositories.yaml or check by `helm env HELM_REPOSITORY_CONFIG`)
+  - please follow the instructions on https://github.com/gematik/DEMIS-Development-Cluster/blob/main/.github/README.md#optional-use-the-helm-repositoriesyaml to set up current system
+  - old behavior is supported by setting up module configurations `helm_repository_source = "url`
+  - get ensure all credentials in HELM_REPOSITORY_CONFIG are correctly otherwise update of helm repositories will fail
+
 ## Release 1.32.0
 - compatible with DEMIS-Development-Cluster 5.12.0
 - upgraded service versions:

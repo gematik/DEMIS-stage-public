@@ -8,6 +8,9 @@ override_stage_name = "public"
 target_namespace = "mesh"
 # The Helm repository to use for the deployment
 helm_repository = "https://gematik.github.io/DEMIS-Helm-Charts/"
+# Resolve the Helm Charts from the Helm repositories.yaml ("local") or from helm_repository ("url")
+helm_repository_source = "local"
+helm_repository_name   = "demis-public"
 # The path to the kubeconfig file to use for the deployment
 kubeconfig_path = "../infrastructure/kind-config"
 

@@ -32,14 +32,14 @@ validation-service-are:
   enabled: true
 policies-authentications:
   main:
-    version: 2.12.2
+    version: 2.13.0
     weight: 100
   canary: {}
   deployment-strategy: update
   enabled: true
 policies-authorizations:
   main:
-    version: 2.12.2
+    version: 2.13.0
     weight: 100
   canary: {}
   deployment-strategy: update
@@ -60,7 +60,7 @@ istio-routing:
   enabled: true
 network-rules:
   main:
-    version: 2.4.0
+    version: 2.5.0
     weight: 100
   canary: {}
   deployment-strategy: update
@@ -78,4 +78,4 @@ kubernetes-network-policies:
     weight: 100
   canary: {}
   deployment-strategy: update
-  enabled: true
+  enabled: false

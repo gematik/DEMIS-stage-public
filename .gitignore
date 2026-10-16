@@ -2,3 +2,5 @@
 .vscode/
 jenkinsfiles
 .scripts
+AGENTS.md
+.github/copilot-instructions.md

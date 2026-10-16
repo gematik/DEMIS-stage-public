@@ -69,3 +69,9 @@ mesh:
       redirect:
         from: "/"
         to: ${portal_hostname}
+
+  otlpGateway:
+    enabled: true
+    # List of hosts requiring the TLS connection
+    hosts:
+      - otlp.ingress.local

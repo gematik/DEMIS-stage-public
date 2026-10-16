@@ -1,7 +1,7 @@
 # Define if it is local or remote
 local_cluster = true
 # Version of KIND
-kind_image_tag = "v1.34.3"
+kind_image_tag = "v1.36.4"
 # Name of the KIND cluster
 kind_cluster_name = "demis-cluster"
 # Number of worker nodes
@@ -13,13 +13,13 @@ stage_name = "public"
 cluster_region = "public"
 
 # Service Mesh Options
-service_mesh_istio_version      = "1.30.2"
-service_mesh_kiali_version      = "2.27.0"
-service_mesh_jaeger_version     = "2.19.0"
-service_mesh_jaeger_digest      = "sha256:ede4864215be4cd85bd8c3129a2fea6c5713c5653c7282c429dba123014bc68b"
-service_mesh_grafana_version    = "13.0.2"
-service_mesh_grafana_digest     = "sha256:5dad0df181cb644a14e13617b913b261a54f7d4fd4510721dba420929f35bea2"
-service_mesh_prometheus_version = "29.12.0"
+service_mesh_istio_version      = "1.31.1"
+service_mesh_kiali_version      = "2.32.0"
+service_mesh_jaeger_version     = "2.22.0"
+service_mesh_jaeger_digest      = "sha256:836b967b5abcf1f7758066aa6b348619267a2f1459f72d472840570f9bd88a17"
+service_mesh_grafana_version    = "13.0.9"
+service_mesh_grafana_digest     = "sha256:c26daa778ea9fd817be3fe606ba4b78ea4c217a7a27c1ba8f5faa4418ecc48dd"
+service_mesh_prometheus_version = "29.33.0"
 # Number of replicas for the Istiod services
 service_mesh_istiod_replica_count = 3
 # Enable the deployment of Monitoring Services (Grafana, Prometheus)
@@ -39,10 +39,14 @@ trivy_use_less_resources = true
 trivy_severity_levels    = "UNKNOWN,LOW,MEDIUM,HIGH,CRITICAL"
 
 kyverno_enabled                       = false
-kyverno_chart_version                 = "3.8.1"
+kyverno_chart_version                 = "3.9.1"
 kyverno_policy_reporter_enabled       = false
-kyverno_policy_reporter_chart_version = "3.7.4"
+kyverno_policy_reporter_chart_version = "3.10.0"
 kyverno_admissioncontroller_replicas  = 1
 kyverno_backgroundcontroller_replicas = 1
 kyverno_cleanupcontroller_replicas    = 1
 kyverno_reportscontroller_replicas    = 1
+
+# Resolve the Helm Charts from the Helm repositories.yaml ("local") or from the public URLs ("url")
+helm_repository_source = "local"
+helm_repository_name   = "demis-public"

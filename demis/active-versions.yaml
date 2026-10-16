@@ -136,7 +136,7 @@ pdfgen-service:
   enabled: true
 pgbouncer:
   main:
-    version: 1.24.2
+    version: 1.26.1
     weight: 100
   canary: {}
   deployment-strategy: update
@@ -178,7 +178,7 @@ portal-shell:
   enabled: true
 postgres:
   main:
-    version: 16.12.0
+    version: 16.15.0
     weight: 100
   canary: {}
   deployment-strategy: update
@@ -272,21 +272,21 @@ validation-service-ars:
   enabled: true
 network-rules:
   main:
-    version: 2.4.0
+    version: 2.5.0
     weight: 100
   canary: {}
   deployment-strategy: update
   enabled: true
 policies-authentications:
   main:
-    version: 2.12.2
+    version: 2.13.0
     weight: 100
   canary: {}
   deployment-strategy: update
   enabled: true
 policies-authorizations:
   main:
-    version: 2.12.2
+    version: 2.13.0
     weight: 100
   canary: {}
   deployment-strategy: update
@@ -386,7 +386,7 @@ kubernetes-network-policies:
   enabled: false
 object-storage-service:
   main:
-    version: 1.0.1
+    version: 1.0.2
     weight: 100
   canary: {}
   deployment-strategy: canary
