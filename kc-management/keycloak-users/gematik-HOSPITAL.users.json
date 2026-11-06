@@ -1,0 +1,190 @@
+[  {
+    "id" : "8a8f2616-09ce-4ab5-9f41-ade510082541",
+    "username" : "11111",
+    "firstName" : "DEMIS-11111",
+    "emailVerified" : false,
+    "attributes" : {
+      "organizationName" : [ "gematik GmbH" ],
+      "city" : [ "Berlin" ],
+      "ik" : [ "098765432" ]
+    },
+    "enabled" : true,
+    "totp" : false,
+    "credentials" : [ ],
+    "disableableCredentialTypes" : [ ],
+    "requiredActions" : [ ],
+    "realmRoles" : [ "default-roles-hospital" ],
+    "notBefore" : 0,
+    "groups" : [ "default_groups" ]
+  }, {
+  "id" : "8a8f2616-09ce-4ab5-9f41-ade510082542",
+  "username" : "22222",
+  "firstName" : "DEMIS-22222",
+  "emailVerified" : false,
+  "attributes" : {
+    "organizationName" : [ "gematik GmbH" ],
+    "city" : [ "Berlin" ],
+    "ik" : [ " 12 3 456 78 9 " ]
+  },
+  "enabled" : true,
+  "totp" : false,
+  "credentials" : [ ],
+  "disableableCredentialTypes" : [ ],
+  "requiredActions" : [ ],
+  "realmRoles" : [ "default-roles-hospital" ],
+  "notBefore" : 0,
+  "groups" : [ "default_groups" ]
+}, {
+  "id" : "8a8f2616-09ce-4ab5-9f41-ade510082543",
+  "username" : "33333",
+  "firstName" : "DEMIS-33333",
+  "emailVerified" : false,
+  "attributes" : {
+    "organizationName" : [ "gematik GmbH" ],
+    "city" : [ "Berlin" ],
+    "ik" : [ "neunacht1" ]
+  },
+  "enabled" : true,
+  "totp" : false,
+  "credentials" : [ ],
+  "disableableCredentialTypes" : [ ],
+  "requiredActions" : [ ],
+  "realmRoles" : [ "default-roles-hospital" ],
+  "notBefore" : 0,
+  "groups" : [ "default_groups" ]
+}, {
+  "id" : "8a8f2616-09ce-4ab5-9f41-ade510082544",
+  "username" : "44444",
+  "firstName" : "DEMIS-44444",
+  "emailVerified" : false,
+  "attributes" : {
+    "organizationName" : [ "gematik GmbH" ],
+    "city" : [ "Berlin" ],
+    "ik" : [ "98765432" ],
+    "SP-User-ID" : [ "3c4e40bf-755a-4717-8a2d-f2c3e1949952" ]
+  },
+  "enabled" : true,
+  "totp" : false,
+  "credentials" : [ ],
+  "disableableCredentialTypes" : [ ],
+  "requiredActions" : [ ],
+  "realmRoles" : [ "default-roles-hospital" ],
+  "notBefore" : 0,
+  "groups" : [ "default_groups", "/SurveillanceProgramme/ARE" ]
+}, {
+  "id" : "8a8f2616-09ce-4ab5-9f41-ade510082545",
+  "username" : "55555",
+  "firstName" : "DEMIS-55555",
+  "emailVerified" : false,
+  "attributes" : {
+    "organizationName" : [ "gematik GmbH" ],
+    "city" : [ "Berlin" ],
+    "ik" : [ "9876543210" ]
+  },
+  "enabled" : true,
+  "totp" : false,
+  "credentials" : [ ],
+  "disableableCredentialTypes" : [ ],
+  "requiredActions" : [ ],
+  "realmRoles" : [ "default-roles-hospital" ],
+  "notBefore" : 0,
+  "groups" : [ "default_groups" ]
+}, {
+  "id" : "8a8f2616-09ce-4ab5-9f41-ade510082546",
+  "username" : "66666",
+  "firstName" : "DEMIS-66666",
+  "emailVerified" : false,
+  "attributes" : {
+    "organizationName" : [ "gematik GmbH" ],
+    "city" : [ "Berlin" ],
+    "preferred_username" : [ "5-2-987654321" ]
+  },
+  "enabled" : true,
+  "totp" : false,
+  "credentials" : [ ],
+  "disableableCredentialTypes" : [ ],
+  "requiredActions" : [ ],
+  "realmRoles" : [ "default-roles-hospital" ],
+  "notBefore" : 0,
+  "groups" : [ "default_groups" ]
+}, {
+  "id" : "8a8f2616-09ce-4ab5-9f41-ade510082547",
+  "username" : "77777",
+  "firstName" : "DEMIS-77777",
+  "emailVerified" : false,
+  "attributes" : {
+    "organizationName" : [ "gematik GmbH" ],
+    "city" : [ "Berlin" ]
+  },
+  "enabled" : true,
+  "totp" : false,
+  "credentials" : [ ],
+  "disableableCredentialTypes" : [ ],
+  "requiredActions" : [ ],
+  "realmRoles" : [ "default-roles-hospital" ],
+  "notBefore" : 0,
+  "groups" : [ "default_groups", "EinrichtungenFür7.3Meldungen" ]
+}, {
+  "id" : "8a8f2616-09ce-4ab5-9f41-ade510082548",
+  "username" : "88888",
+  "firstName" : "DEMIS-88888",
+  "emailVerified" : false,
+  "attributes" : {
+    "organizationName" : [ "gematik - Software Development" ],
+    "city" : [ "Berlin" ],
+    "preferred_username" : [ "4-3-987654321" ]
+  },
+  "enabled" : true,
+  "totp" : false,
+  "credentials" : [ ],
+  "disableableCredentialTypes" : [ ],
+  "requiredActions" : [ ],
+  "realmRoles" : [ "default-roles-hospital" ],
+  "notBefore" : 0,
+  "groups" : [ "default_groups" ]
+}, {
+  "id" : "8a8f2616-09ce-4ab5-9f41-ade510082549",
+  "username" : "99999",
+  "firstName" : "DEMIS-99999",
+  "emailVerified" : false,
+  "attributes" : {
+    "organizationName" : [ "gematik GmbH" ],
+    "city" : [ "Berlin" ],
+    "ik" : [ "987654321" ]
+  },
+  "enabled" : true,
+  "totp" : false,
+  "credentials" : [ ],
+  "disableableCredentialTypes" : [ ],
+  "requiredActions" : [ ],
+  "realmRoles" : [ "default-roles-hospital" ],
+  "notBefore" : 0,
+  "groups" : [ "default_groups" ]
+}, {
+  "id" : "8651ed8e-13df-4eea-abe6-ea5bd2000fe0",
+  "username" : "test-int",
+  "firstName" : "Test-Int",
+  "lastName" : "gematik - Software Development",
+  "email" : "test-int@dummy.de",
+  "emailVerified" : true,
+  "attributes" : {
+    "ik" : [ "987654321" ],
+    "Ansprechpartner IT (Labor)" : [ "gematik - Software Development" ],
+    "organizationName" : [ "gematik - Software Development" ],
+    "city" : [ "Berlin" ]
+  },
+  "enabled" : true,
+  "totp" : false,
+  "credentials" : [ {
+    "id" : "13d92567-75c3-4e5e-9b19-4a90e28ff91e",
+    "type" : "password",
+    "createdDate" : 1665499210362,
+    "secretData" : "{\"value\":\"Effa9YBPw9/p3jgt/ZQmcCcQkfBlhLuADJCFpZZCbZXukkMpwl6hn88Au0nVNaYIFE8fUAyTC++q+7KjWReYbg==\",\"salt\":\"TuZdDi81Xc8+pZ4IBb11dA==\"}",
+    "credentialData" : "{\"hashIterations\":27500,\"algorithm\":\"pbkdf2-sha256\"}"
+  } ],
+  "disableableCredentialTypes" : [ ],
+  "requiredActions" : [ ],
+  "realmRoles" : [ "igs-sequence-data-sender", "igs-notification-data-sender" ],
+  "notBefore" : 0,
+  "groups" : [ "default_groups", "EinrichtungenFür7.3Meldungen", "/Weitere Organisationstypen/EinrichtungenFürAnonymeMeldungen", "/Testusers"]
+}]

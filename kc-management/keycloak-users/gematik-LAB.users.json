@@ -1,0 +1,374 @@
+[  {
+    "id" : "6307e796-a292-4601-a136-a6d5159ef5d4",
+    "username" : "01.01.01.100.",
+    "firstName" : "Lab Test 100",
+    "lastName" : "TI Entwicklung",
+    "email" : "lab_test_0001@demis-labore.de",
+    "emailVerified" : true,
+    "attributes" : {
+      "uid" : [ "e7fc0bf9-9461-4f76-8fa2-7a966a7e61f2" ],
+      "Ansprechpartner IT (Labor)" : [ "Lab Test 100" ],
+      "organizationName" : [ "TI Entwicklung" ],
+      "city" : [ "Berlin" ]
+    },
+    "createdTimestamp" : 1598527458737,
+    "enabled" : true,
+    "totp" : false,
+    "credentials" : [ {
+      "id" : "a7420710-ae26-49df-888e-4e137e5ef02c",
+      "type" : "password",
+      "createdDate" : 1601309524375,
+      "secretData" : "{\"value\":\"fxdYmOd0ZXx5c7tuU5uZebYSkRfeC6T8kP6W3aJKApp6Odjiw043mCySMaCHJsUcGjgjjuRX6aTqsTla7sh0Cw==\",\"salt\":\"uj8hMUSQMSQgXbep+3z2lg==\"}",
+      "credentialData" : "{\"hashIterations\":27500,\"algorithm\":\"pbkdf2-sha256\"}"
+    } ],
+    "disableableCredentialTypes" : [ ],
+    "requiredActions" : [ ],
+    "notBefore" : 0,
+    "groups" : [ "default_groups" ]
+  }, {
+  "id" : "ae36f3ce-a6b1-4474-8d6f-708a256089b3",
+  "username" : "01.01.01.200.",
+  "firstName" : "Lab Test 200",
+  "lastName" : "TI Entwicklung",
+  "email" : "lab_test_002@demis-labore.de",
+  "emailVerified" : true,
+  "attributes" : {
+    "uid" : [ "79ca48f0-5730-4d26-ba83-dc4e9554b578" ],
+    "Ansprechpartner IT (Labor)" : [ "Lab Test 200" ],
+    "organizationName" : [ "TI Entwicklung" ],
+    "city" : [ "Berlin" ]
+  },
+  "createdTimestamp" : 1598527458852,
+  "enabled" : true,
+  "totp" : false,
+  "credentials" : [ {
+    "id" : "dcb7ba75-7065-4124-88ec-d5b63cedb472",
+    "type" : "password",
+    "createdDate" : 1598527458956,
+    "secretData" : "{\"value\":\"5NrP/EjUxBszyk+9p5skc++eLnBBb7wBgefxlvHufjN9TedxLwfbUVNylWAw3mVG7zeqmpYta0kYv4s2PS5hEg==\",\"salt\":\"19xWcJBiUdi9+QKT0W/BdQ==\"}",
+    "credentialData" : "{\"hashIterations\":27500,\"algorithm\":\"pbkdf2-sha256\"}"
+  } ],
+  "disableableCredentialTypes" : [ ],
+  "requiredActions" : [ ],
+  "notBefore" : 0,
+  "groups" : [ "default_groups" ]
+}, {
+  "id" : "bed29438-17de-4509-b18e-a82b547fa412",
+  "username" : "01.01.01.300.",
+  "firstName" : "Lab Test 300",
+  "lastName" : "TI Entwicklung",
+  "email" : "lab_test_003@demis-labore.de",
+  "emailVerified" : true,
+  "attributes" : {
+    "uid" : [ "c424216c-f27d-4f3b-979e-c68c27b53d42" ],
+    "Ansprechpartner IT (Labor)" : [ "Lab Test 300" ],
+    "organizationName" : [ "TI Entwicklung" ],
+    "city" : [ "Berlin" ]
+  },
+  "createdTimestamp" : 1598527458968,
+  "enabled" : true,
+  "totp" : false,
+  "credentials" : [ {
+    "id" : "9b0c9397-5613-40be-bcad-a372544b080d",
+    "type" : "password",
+    "createdDate" : 1598527459072,
+    "secretData" : "{\"value\":\"FILtTwicDeJFvQU8xNDIZnM/kY7OHcVPFps/qTPpUKZs6J7CwytLKbE5WXRYkZCLl17GZct5VaMneaT+EY6vCQ==\",\"salt\":\"O6mTvEr03RgGQ78+L2TSiw==\"}",
+    "credentialData" : "{\"hashIterations\":27500,\"algorithm\":\"pbkdf2-sha256\"}"
+  } ],
+  "disableableCredentialTypes" : [ ],
+  "requiredActions" : [ ],
+  "notBefore" : 0,
+  "groups" : [ "default_groups" ]
+}, {
+  "id" : "0bfba060-571a-4ad4-8122-5158d09bee58",
+  "username" : "01.01.01.400.",
+  "firstName" : "Lab Test 400",
+  "lastName" : "TI Entwicklung",
+  "email" : "lab_test_004@demis-labore.de",
+  "emailVerified" : true,
+  "attributes" : {
+    "uid" : [ "e1cc8222-fec3-4a7e-af95-a6b369e66bbb" ],
+    "Ansprechpartner IT (Labor)" : [ "Lab Test 400" ],
+    "organizationName" : [ "TI Entwicklung" ],
+    "city" : [ "Berlin" ]
+  },
+  "createdTimestamp" : 1598527459088,
+  "enabled" : true,
+  "totp" : false,
+  "credentials" : [ {
+    "id" : "e2bd648b-7e39-47b1-8447-0d8222efd87b",
+    "type" : "password",
+    "createdDate" : 1598527459192,
+    "secretData" : "{\"value\":\"pVR+NHtG0jN0amQnHo593SpWLj8yz73ttQKynCZQOIEPW4RxxwjmswEYsQCswmRTBRhcJWxQaqORHJzv16SQZw==\",\"salt\":\"lNcEziphKO1A/8uvfIs8xg==\"}",
+    "credentialData" : "{\"hashIterations\":27500,\"algorithm\":\"pbkdf2-sha256\"}"
+  } ],
+  "disableableCredentialTypes" : [ ],
+  "requiredActions" : [ ],
+  "notBefore" : 0,
+  "groups" : [ "default_groups" ]
+}, {
+  "id" : "738998fe-ce99-4d0c-937f-500be1ef50fb",
+  "username" : "01.01.01.500.",
+  "firstName" : "Lab Test 500",
+  "lastName" : "TI Entwicklung",
+  "email" : "lab_test_005@demis-labore.de",
+  "emailVerified" : true,
+  "attributes" : {
+    "uid" : [ "394271b1-d921-4ac3-b7ad-511532449d88" ],
+    "Ansprechpartner IT (Labor)" : [ "Lab Test 500" ],
+    "organizationName" : [ "TI Entwicklung" ],
+    "city" : [ "Berlin" ]
+  },
+  "createdTimestamp" : 1598527459204,
+  "enabled" : true,
+  "totp" : false,
+  "credentials" : [ {
+    "id" : "4c9af85c-745b-4257-b981-6f295a0617fb",
+    "type" : "password",
+    "createdDate" : 1598527459324,
+    "secretData" : "{\"value\":\"ylwHFxTZ9suNa97EANNFWCwnsUO4jUqNQP6RQq9Zu52WUlbwlB7cZYlEerpTm0YX1SrDwuBiljOxh4GJgpEvZw==\",\"salt\":\"M2Z9MHSuibDvF+zTejrMYA==\"}",
+    "credentialData" : "{\"hashIterations\":27500,\"algorithm\":\"pbkdf2-sha256\"}"
+  } ],
+  "disableableCredentialTypes" : [ ],
+  "requiredActions" : [ ],
+  "notBefore" : 0,
+  "groups" : [ "default_groups" ]
+}, {
+  "id" : "6c2ad3ad-dd28-4bd3-a64b-3b6f67509f05",
+  "username" : "01.01.01.600.",
+  "firstName" : "Lab Test 600",
+  "lastName" : "TI Entwicklung",
+  "email" : "lab_test_006@demis-labore.de",
+  "emailVerified" : true,
+  "attributes" : {
+    "uid" : [ "d7937ec4-67df-49a6-8d24-a0b33f832c3f" ],
+    "Ansprechpartner IT (Labor)" : [ "Lab Test 600" ],
+    "organizationName" : [ "TI Entwicklung" ],
+    "city" : [ "Berlin" ]
+  },
+  "createdTimestamp" : 1598527459337,
+  "enabled" : true,
+  "totp" : false,
+  "credentials" : [ {
+    "id" : "4452ce4a-f193-4deb-8b3e-6dfd42a9daa8",
+    "type" : "password",
+    "createdDate" : 1598527459441,
+    "secretData" : "{\"value\":\"nBFgtJ9ykOxOJjw1g85D71lxZf3kWUj/Tpp5hIOs9apwnI/452nwd1KNhhPC0z2uVnzCwQ5s4YgGqwyhT1pLvw==\",\"salt\":\"tsKiTuabUtIkb1fqfkZUew==\"}",
+    "credentialData" : "{\"hashIterations\":27500,\"algorithm\":\"pbkdf2-sha256\"}"
+  } ],
+  "disableableCredentialTypes" : [ ],
+  "requiredActions" : [ ],
+  "notBefore" : 0,
+  "groups" : [ "default_groups" ]
+}, {
+  "id" : "bdf215c6-a2bc-48c1-880b-4415d5b93a34",
+  "username" : "11111",
+  "firstName" : "DEMIS-11111",
+  "emailVerified" : false,
+  "createdTimestamp" : 1605000518722,
+  "enabled" : true,
+  "totp" : false,
+  "credentials" : [ ],
+  "disableableCredentialTypes" : [ ],
+  "requiredActions" : [ ],
+  "notBefore" : 0,
+  "groups" : [ "default_groups", "/SurveillanceProgramme/IGS" ]
+}, {
+  "id" : "6ca7d0b2-83fb-4d4c-84c8-4392374ea0fd",
+  "username" : "22222",
+  "firstName" : "DEMIS-22222",
+  "emailVerified" : false,
+  "createdTimestamp" : 1605000541681,
+  "enabled" : true,
+  "totp" : false,
+  "credentials" : [ ],
+  "disableableCredentialTypes" : [ ],
+  "requiredActions" : [ ],
+  "notBefore" : 0,
+  "groups" : [ "default_groups", "/SurveillanceProgramme/IgsFastAOnly" ]
+}, {
+  "id" : "ce4d7a1c-34e1-4524-b668-d785485824a4",
+  "username" : "33333",
+  "firstName" : "DEMIS-33333",
+  "emailVerified" : false,
+  "createdTimestamp" : 1605000555602,
+  "enabled" : true,
+  "totp" : false,
+  "credentials" : [ ],
+  "disableableCredentialTypes" : [ ],
+  "requiredActions" : [ ],
+  "notBefore" : 0,
+  "groups" : [ "default_groups" ]
+}, {
+  "id" : "cb442654-edf5-40ca-8713-170ce00f9dee",
+  "username" : "44444",
+  "firstName" : "DEMIS-44444",
+  "emailVerified" : false,
+  "createdTimestamp" : 1605000577476,
+  "enabled" : true,
+  "totp" : false,
+  "credentials" : [ ],
+  "disableableCredentialTypes" : [ ],
+  "requiredActions" : [ ],
+  "notBefore" : 0,
+  "groups" : [ "default_groups" ]
+}, {
+  "id" : "6ec6a925-18ed-4316-97b4-6babeeba34e7",
+  "username" : "55555",
+  "firstName" : "DEMIS-55555",
+  "emailVerified" : false,
+  "attributes" : {
+    "testuserRecipient" : [ "test-int" ]
+  },
+  "createdTimestamp" : 1605000591360,
+  "enabled" : true,
+  "totp" : false,
+  "credentials" : [ ],
+  "disableableCredentialTypes" : [ ],
+  "requiredActions" : [ ],
+  "notBefore" : 0,
+  "groups" : [ "default_groups", "/Testusers" ]
+}, {
+  "id" : "c3bae0d0-9e53-4f3a-8bfe-1c06deadf197",
+  "username" : "66666",
+  "firstName" : "DEMIS-66666",
+  "emailVerified" : false,
+  "createdTimestamp" : 1605000603099,
+  "enabled" : true,
+  "totp" : false,
+  "credentials" : [ ],
+  "disableableCredentialTypes" : [ ],
+  "requiredActions" : [ ],
+  "notBefore" : 0,
+  "groups" : [ "default_groups" ]
+}, {
+  "id" : "ee62c681-8add-49b5-ae5e-c8b703749bed",
+  "username" : "77777",
+  "firstName" : "DEMIS-77777",
+  "emailVerified" : false,
+  "createdTimestamp" : 1605000615532,
+  "enabled" : true,
+  "totp" : false,
+  "credentials" : [ ],
+  "disableableCredentialTypes" : [ ],
+  "requiredActions" : [ ],
+  "notBefore" : 0,
+  "groups" : [ "default_groups", "/Weitere Organisationstypen/EinrichtungenFürAnonymeMeldungen", "EinrichtungenFür7.3Meldungen" ]
+}, {
+  "id" : "142d7fc2-f0f0-4e30-ab63-69f1a797ebb2",
+  "username" : "88888",
+  "firstName" : "DEMIS-88888",
+  "emailVerified" : false,
+  "createdTimestamp" : 1605000626354,
+  "enabled" : true,
+  "totp" : false,
+  "credentials" : [ ],
+  "disableableCredentialTypes" : [ ],
+  "requiredActions" : [ ],
+  "notBefore" : 0,
+  "groups" : [ "default_groups" ]
+}, {
+  "id" : "63a6c0c0-6a8b-45aa-8881-410b16081d26",
+  "username" : "99999",
+  "firstName" : "demis-99999",
+  "emailVerified" : false,
+  "attributes" : {
+    "organizationName" : [ "gematik GmbH" ],
+    "city" : [ "Berlin" ]
+  },
+  "createdTimestamp" : 1605000639717,
+  "enabled" : true,
+  "totp" : false,
+  "credentials" : [ ],
+  "disableableCredentialTypes" : [ ],
+  "requiredActions" : [ ],
+  "realmRoles" : [ "disease-notification-sender", "pathogen-notification-sender", "vaccine-injury-sender" ],
+  "notBefore" : 0,
+  "groups" : [ "default_groups" ]
+}, {
+  "id" : "96bba77c-68a2-42de-b4b4-89b6b9525a91",
+  "username" : "admin-lab",
+  "emailVerified" : true,
+  "createdTimestamp" : 1598527397347,
+  "enabled" : true,
+  "totp" : false,
+  "credentials" : [ {
+    "id" : "69bdc454-7a6e-44bd-9b6f-6940d323e8bb",
+    "type" : "password",
+    "createdDate" : 1598527397513,
+    "secretData" : "{\"value\":\"wohvTmwjEedVv+UBtzr2V7pJFw9mFDnCl70rPqodzgHajp22zZoM6RCe5PJFVD7izYY6ulMUGS/84KWRMOPMxQ==\",\"salt\":\"odiiiI5BLW4OqJj86Cb9TQ==\"}",
+    "credentialData" : "{\"hashIterations\":27500,\"algorithm\":\"pbkdf2-sha256\"}"
+  } ],
+  "disableableCredentialTypes" : [ ],
+  "requiredActions" : [ ],
+  "notBefore" : 0,
+  "groups" : [ "default_groups" ]
+}, {
+  "id" : "415489b5-ca8c-4b9e-9f4c-6c09f9b9521b",
+  "username" : "asd",
+  "emailVerified" : false,
+  "createdTimestamp" : 1645027010299,
+  "enabled" : true,
+  "totp" : false,
+  "credentials" : [ ],
+  "disableableCredentialTypes" : [ ],
+  "requiredActions" : [ ],
+  "notBefore" : 0,
+  "groups" : [ "default_groups" ]
+}, {
+  "id" : "4091e32b-d18a-448e-96d9-df9091126822",
+  "username" : "lab_test_001",
+  "firstName" : "Vorname",
+  "lastName" : "Nachname",
+  "email" : "lab_test_001@demis-labore.de",
+  "emailVerified" : true,
+  "attributes" : {
+    "uid" : [ "lab_test_001_uid" ],
+    "organizationName" : [ "Testlabor 001" ],
+    "streetAddress" : [ "Teststr. 2" ],
+    "city" : [ "Berlin" ],
+    "postalCode" : [ "12345" ]
+  },
+  "createdTimestamp" : 1598527397540,
+  "enabled" : true,
+  "totp" : false,
+  "credentials" : [ {
+    "id" : "0dac90e3-2158-4222-b95c-5dcfc7114eaf",
+    "type" : "password",
+    "createdDate" : 1598527397654,
+    "secretData" : "{\"value\":\"CRRPOwpyBxU/11cfbMm0O9UUoog1xWP6X/U+x4zTFD1HCHRh+A4J+KGS28G7VzLH+F4pYGKjqdNxRg6iN+FE7Q==\",\"salt\":\"gJYe8TGpDKZkEZU9I1ygTQ==\"}",
+    "credentialData" : "{\"hashIterations\":27500,\"algorithm\":\"pbkdf2-sha256\"}"
+  } ],
+  "disableableCredentialTypes" : [ ],
+  "requiredActions" : [ ],
+  "notBefore" : 0,
+  "groups" : [ "default_groups" ]
+}, {
+  "id" : "3e54a887-9316-43f3-8593-ccb0a62e4bfb",
+  "username" : "test-int",
+  "firstName" : "Test-Int",
+  "lastName" : "TI Entwicklung",
+  "email" : "ti-entwicklung@gematik.de",
+  "emailVerified" : true,
+  "attributes" : {
+    "uid" : [ "2e0360ec-799e-4463-afd3-b066b54c1ecf" ],
+    "Ansprechpartner IT (Labor)" : [ "Test-Int" ],
+    "organizationName" : [ "TI Entwicklung" ],
+    "city" : [ "Berlin" ],
+    "testuserRecipient" : [ "test-int" ]
+  },
+  "createdTimestamp" : 1598527458621,
+  "enabled" : true,
+  "totp" : false,
+  "credentials" : [ {
+    "id" : "2b207c4f-cab6-4674-ad8d-aba8cdf04124",
+    "type" : "password",
+    "createdDate" : 1598527458725,
+    "secretData" : "{\"value\":\"Effa9YBPw9/p3jgt/ZQmcCcQkfBlhLuADJCFpZZCbZXukkMpwl6hn88Au0nVNaYIFE8fUAyTC++q+7KjWReYbg==\",\"salt\":\"TuZdDi81Xc8+pZ4IBb11dA==\"}",
+    "credentialData" : "{\"hashIterations\":27500,\"algorithm\":\"pbkdf2-sha256\"}"
+  } ],
+  "disableableCredentialTypes" : [ ],
+  "requiredActions" : [ ],
+  "notBefore" : 0,
+  "groups" : [ "default_groups", "/Weitere Organisationstypen/EinrichtungenFürAnonymeMeldungen", "/Testusers" ]
+}]

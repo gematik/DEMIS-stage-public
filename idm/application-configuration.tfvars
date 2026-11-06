@@ -25,8 +25,8 @@ debug_enabled = true
 # Database Host Address for PGBouncer
 database_target_host = "postgres.idm.svc.cluster.local"
 
-# Enable User Realm Import in Keycloak and BundID IDP
-keycloak_user_import_enabled   = true
+# Enable Realm Import (Config + User) in Keycloak and BundID IDP
+keycloak_user_import_enabled   = false
 bundid_idp_user_import_enabled = true
 bundid_idp_issuer_subdomain    = "bundid-idp"
 

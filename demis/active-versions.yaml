@@ -34,6 +34,7 @@ futs:
   chart-name: futs-delegation
   deployment-strategy: canary
   enabled: true
+  pin-image-digests: false
 futs-bedoccupancy:
   main:
     version: 2.8.1
@@ -73,6 +74,17 @@ futs-igs:
     weight: 100
     profiles:
       - 5.0.1
+  canary: {}
+  synchronize-profiles: false
+  chart-name: futs
+  deployment-strategy: canary
+  enabled: true
+futs-ars:
+  main:
+    version: 2.8.1
+    weight: 100
+    profiles:
+      - 1.2.0
   canary: {}
   synchronize-profiles: false
   chart-name: futs
@@ -212,6 +224,7 @@ validation-service:
   chart-name: validation-service-delegation
   deployment-strategy: canary
   enabled: true
+  pin-image-digests: false
 validation-service-bedoccupancy:
   main:
     version: 2.16.0
@@ -264,7 +277,7 @@ validation-service-ars:
     version: 2.16.0
     weight: 100
     profiles:
-      - 1.1.0
+      - 1.2.0
   canary: {}
   synchronize-profiles: false
   chart-name: validation-service
@@ -275,29 +288,33 @@ network-rules:
     version: 2.5.0
     weight: 100
   canary: {}
-  deployment-strategy: update
+  deployment-strategy: rolling
   enabled: true
+  pin-image-digests: false
 policies-authentications:
   main:
-    version: 2.13.0
+    version: 2.14.0
     weight: 100
   canary: {}
-  deployment-strategy: update
+  deployment-strategy: rolling
   enabled: true
+  pin-image-digests: false
 policies-authorizations:
   main:
-    version: 2.13.0
+    version: 2.14.0
     weight: 100
   canary: {}
-  deployment-strategy: update
+  deployment-strategy: rolling
   enabled: true
+  pin-image-digests: false
 istio-routing:
   main:
     version: 1.3.1
     weight: 100
   canary: {}
-  deployment-strategy: update
+  deployment-strategy: rolling
   enabled: true
+  pin-image-digests: false
 stage-configuration-data:
   main:
     version: 1.5.1
@@ -310,18 +327,18 @@ notification-routing-data:
     version: 1.3.0
     weight: 100
   canary: {}
-  deployment-strategy: update
+  deployment-strategy: rolling
   enabled: true
 ars-service:
   main:
-    version: 1.6.1
+    version: 1.7.0
     weight: 100
   canary: {}
   deployment-strategy: canary
   enabled: true
 ars-purger:
   main:
-    version: 1.6.1
+    version: 1.7.0
     weight: 100
   canary: {}
   deployment-strategy: replace
@@ -331,11 +348,12 @@ kyverno-admission-policies:
     version: 1.2.0
     weight: 100
   canary: {}
-  deployment-strategy: update
+  deployment-strategy: rolling
   enabled: false
+  pin-image-digests: false
 surveillance-pseudonym-service-ars:
   main:
-    version: 1.2.1
+    version: 1.2.2
     weight: 100
   canary: {}
   chart-name: surveillance-pseudonym-service
@@ -343,7 +361,7 @@ surveillance-pseudonym-service-ars:
   enabled: true
 surveillance-pseudonym-purger-ars:
   main:
-    version: 1.2.1
+    version: 1.2.2
     weight: 100
   canary: {}
   chart-name: surveillance-pseudonym-purger
@@ -379,11 +397,12 @@ package-registry:
   enabled: true
 kubernetes-network-policies:
   main:
-    version: 1.2.0
+    version: 1.3.0
     weight: 100
   canary: {}
-  deployment-strategy: update
+  deployment-strategy: rolling
   enabled: false
+  pin-image-digests: false
 object-storage-service:
   main:
     version: 1.0.2

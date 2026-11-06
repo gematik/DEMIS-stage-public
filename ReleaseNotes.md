@@ -2,6 +2,12 @@
 
 # Release Notes stage-public
 
+## Release 2.1.0
+- compatible with DEMIS-Development-Cluster 5.14.0
+- updated deployment-strategy from update to rolling for policies and network-rules to avoid downtime during updates
+- added ars-profile-snapshot 1.2.0
+- added kc-management for keycloak management and configuration
+
 ## Release 2.0.0
 - compatible with DEMIS-Development-Cluster 5.13.0
 - update contributing.md with new information about the versioning of this repository

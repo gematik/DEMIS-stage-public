@@ -10,19 +10,19 @@ policies-authentications:
     version: 2.4.0
     weight: 100
   canary: {}
-  deployment-strategy: update
+  deployment-strategy: rolling
   enabled: true
 policies-authorizations:
   main:
     version: 2.4.0
     weight: 100
   canary: {}
-  deployment-strategy: update
+  deployment-strategy: rolling
   enabled: true
 istio-routing:
   main:
     version: 1.2.0
     weight: 100
   canary: {}
-  deployment-strategy: update
+  deployment-strategy: rolling
   enabled: true
