@@ -1,0 +1,468 @@
+[{
+    "id" : "83a493ef-2a6f-4094-b447-f39be8c280df",
+    "username" : "demis-user-purger",
+    "emailVerified" : true,
+    "attributes" : {
+      "locale" : [ "de" ],
+      "lastLoginDate" : [ "1744164011636" ]
+    },
+    "createdTimestamp" : 1722944689589,
+    "enabled" : true,
+    "totp" : false,
+    "credentials" : [ {
+      "id" : "a98abfc6-db32-41c9-a674-058cdef45515",
+      "type" : "password",
+      "userLabel" : "My password",
+      "createdDate" : 1722944717739,
+      "secretData" : "DEMIS_USER_PURGER_CREDENTIALS_SECRET_DATA_PLACEHOLDER",
+      "credentialData" : "{\"hashIterations\":5,\"algorithm\":\"argon2\",\"additionalParameters\":{\"hashLength\":[\"32\"],\"memory\":[\"7168\"],\"type\":[\"id\"],\"version\":[\"1.3\"],\"parallelism\":[\"1\"]}}"
+    } ],
+    "disableableCredentialTypes" : [ ],
+    "requiredActions" : [ ],
+    "clientRoles" : {
+      "realm-management" : [ "query-users", "manage-users" ]
+    },
+    "notBefore" : 0,
+    "groups" : [ ]
+  }, {
+  "id" : "4023c1fb-a325-43ab-886d-866170fe1966",
+  "username" : "g-d67e7bd3-a1e8-4c35-b6a0-ba191dbae10f",
+  "firstName" : "test-surveillance-1",
+  "lastName" : "test-surveillance-1",
+  "emailVerified" : false,
+  "attributes" : {
+    "accountSource" : [ "bundid" ],
+    "accountIsTemporary" : [ "true" ],
+    "lastLoginDate" : [ "1774968738943" ],
+    "levelOfAssurance" : [ "STORK-QAA-Level-1" ],
+    "accountType" : [ "person" ]
+  },
+  "enabled" : true,
+  "createdTimestamp" : 1774968738792,
+  "totp" : false,
+  "credentials" : [ ],
+  "disableableCredentialTypes" : [ ],
+  "requiredActions" : [ ],
+  "federatedIdentities" : [ {
+    "identityProvider" : "bundid-idp",
+    "userId" : "G-d67e7bd3-a1e8-4c35-b6a0-ba191dbae10f",
+    "userName" : "g-d67e7bd3-a1e8-4c35-b6a0-ba191dbae10f"
+  } ],
+  "realmRoles" : [ "default-roles-portal" ],
+  "notBefore" : 0,
+  "groups" : [ "/Anmeldeverfahren/OZG" ]
+  }, {
+  "id" : "a1c52db9-1ea0-46b3-9495-5c25f88a7961",
+  "username" : "g-cb659e07-b516-4f77-931d-d4229dd2bd8b",
+  "firstName" : "test-igs-1",
+  "lastName" : "BundID-Mock-federated",
+  "emailVerified" : false,
+  "attributes" : {
+    "accountSource" : [ "bundid" ],
+    "accountIsTemporary" : [ "false" ],
+    "levelOfAssurance" : [ "STORK-QAA-Level-1" ],
+    "accountType" : [ "person" ]
+  },
+  "createdTimestamp" : 1717153637082,
+  "enabled" : true,
+  "totp" : false,
+  "credentials" : [ ],
+  "disableableCredentialTypes" : [ ],
+  "requiredActions" : [ ],
+  "federatedIdentities" : [ {
+    "identityProvider" : "bundid-idp",
+    "userId" : "G-cb659e07-b516-4f77-931d-d4229dd2bd8b",
+    "userName" : "g-cb659e07-b516-4f77-931d-d4229dd2bd8b"
+  } ],
+  "realmRoles" : [ "default-roles-portal" ],
+  "notBefore" : 0,
+  "groups" : [ "/SurveillanceProgramme/IGS", "/Anmeldeverfahren/OZG" ]
+}, {
+  "id" : "410a2f8c-1c17-4930-b152-b307ea124fc0",
+  "username" : "g-d0fe87c2-48fe-4bc5-82c8-6827b3c964e8",
+  "emailVerified" : false,
+  "attributes" : {
+    "accountSource" : [ "bundid" ],
+    "accountIsTemporary" : [ "false" ],
+    "lastLoginDate" : [ "1730278269636" ],
+    "levelOfAssurance" : [ "STORK-QAA-Level-1" ],
+    "accountType" : [ "person" ]
+  },
+  "createdTimestamp" : 1712586237281,
+  "enabled" : true,
+  "totp" : false,
+  "credentials" : [ ],
+  "disableableCredentialTypes" : [ ],
+  "requiredActions" : [ ],
+  "federatedIdentities" : [ {
+    "identityProvider" : "bundid-idp",
+    "userId" : "G-d0fe87c2-48fe-4bc5-82c8-6827b3c964e8",
+    "userName" : "g-d0fe87c2-48fe-4bc5-82c8-6827b3c964e8"
+  } ],
+  "realmRoles" : [ "default-roles-portal" ],
+  "notBefore" : 0,
+  "groups" : [ "EinrichtungenFür7.3Meldungen", "/Anmeldeverfahren/OZG" ]
+}, {
+  "id" : "7894329f-aa32-4947-abf6-b7837ca3f36c",
+  "username" : "5-2-123456789",
+  "emailVerified" : false,
+  "attributes" : {
+    "professionOid" : [ "1.2.276.0.76.4.53" ],
+    "organizationName" : [ "Krankenhaus Delfinsee TEST-ONLY" ],
+    "accountType" : [ "organization" ],
+    "accountSource" : [ "gematik" ],
+    "accountIsTemporary" : [ "false" ],
+    "lastLoginDate" : [ "1747309595244" ],
+    "levelOfAssurance" : [ "STORK-QAA-Level-3" ]
+  },
+  "createdTimestamp" : 1747309584827,
+  "enabled" : true,
+  "totp" : false,
+  "credentials" : [ ],
+  "disableableCredentialTypes" : [ ],
+  "requiredActions" : [ ],
+  "federatedIdentities" : [ {
+    "identityProvider" : "gematik-authenticator",
+    "userId" : "5-2-123456789",
+    "userName" : "5-2-123456789"
+  } ],
+  "realmRoles" : [ "default-roles-portal" ],
+  "notBefore" : 0,
+  "groups" : [ "EinrichtungenFür7.3Meldungen", "/Organisationstypen/MedizinischeEinrichtung/Krankenhaus" ]
+}, {
+  "id" : "275bc259-e2ac-4d9a-9399-59834e753545",
+  "username" : "hukcmxk1nju-ji0fw78iamnkr26tg49y0oqngzhmdyi",
+  "emailVerified" : false,
+  "attributes" : {
+    "accountSource" : [ "bundid" ],
+    "accountIsTemporary" : [ "false" ],
+    "lastLoginDate" : [ "1730278444355" ],
+    "levelOfAssurance" : [ "STORK-QAA-Level-3" ],
+    "accountType" : [ "person" ]
+  },
+  "createdTimestamp" : 1730278444116,
+  "enabled" : true,
+  "totp" : false,
+  "credentials" : [ ],
+  "disableableCredentialTypes" : [ ],
+  "requiredActions" : [ ],
+  "federatedIdentities" : [ {
+    "identityProvider" : "bundid-idp",
+    "userId" : "hUKcmxK1NjU-JI0fw78iamNKR26TG49Y0OqnGzHMDyI",
+    "userName" : "hukcmxk1nju-ji0fw78iamnkr26tg49y0oqngzhmdyi"
+  } ],
+  "realmRoles" : [ "default-roles-portal" ],
+  "notBefore" : 0,
+  "groups" : [ "/SurveillanceProgramme/IGS", "/Anmeldeverfahren/OZG" ]
+}, {
+  "id" : "d38ff313-d0f7-4483-a9a5-cea57ac2bc29",
+  "username" : "_idi5nm640pbonifdrr8sfhbdpiqp05h5osrdh6mnqw",
+  "firstName" : "test-igs-1",
+  "lastName" : "BundID-Ref-federated",
+  "emailVerified" : false,
+  "attributes" : {
+    "accountSource" : [ "bundid" ],
+    "accountIsTemporary" : [ "false" ],
+    "levelOfAssurance" : [ "STORK-QAA-Level-1" ],
+    "accountType" : [ "person" ]
+  },
+  "createdTimestamp" : 1717148512213,
+  "enabled" : true,
+  "totp" : false,
+  "credentials" : [ ],
+  "disableableCredentialTypes" : [ ],
+  "requiredActions" : [ ],
+  "federatedIdentities" : [ {
+    "identityProvider" : "bundid-idp",
+    "userId" : "_iDI5nM640PBONifdRR8sFHBDPIQp05h5oSrDH6mNqw",
+    "userName" : "_idi5nm640pbonifdrr8sfhbdpiqp05h5osrdh6mnqw"
+  } ],
+  "realmRoles" : [ "default-roles-portal" ],
+  "notBefore" : 0,
+  "groups" : [ "/SurveillanceProgramme/IGS", "/Anmeldeverfahren/OZG" ]
+}, {
+  "id" : "7fc2fd56-18e5-4d13-b66e-44e2913b8363",
+  "username" : "mkb20iszkxqdsqzgr4k_d6lgeflh7vdzck7rtw-kkwu",
+  "emailVerified" : false,
+  "attributes" : {
+    "accountSource" : [ "bundid" ],
+    "accountIsTemporary" : [ "false" ],
+    "lastLoginDate" : [ "1730278269636" ],
+    "levelOfAssurance" : [ "STORK-QAA-Level-3" ],
+    "accountType" : [ "person" ]
+  },
+  "createdTimestamp" : 1730278269041,
+  "enabled" : true,
+  "totp" : false,
+  "credentials" : [ ],
+  "disableableCredentialTypes" : [ ],
+  "requiredActions" : [ ],
+  "federatedIdentities" : [ {
+    "identityProvider" : "bundid-idp",
+    "userId" : "mKB20ISZkXqDSQzGr4k_d6LGefLh7vdzCK7rTW-kkwU",
+    "userName" : "mkb20iszkxqdsqzgr4k_d6lgeflh7vdzck7rtw-kkwu"
+  } ],
+  "realmRoles" : [ "default-roles-portal" ],
+  "notBefore" : 0,
+  "groups" : [ "EinrichtungenFür7.3Meldungen", "/Anmeldeverfahren/OZG" ]
+}, {
+  "id" : "d46c3c4c-df95-4115-8c36-c40d80392d46",
+  "username" : "test-ces-personalausweis",
+  "firstName" : "BundIdUser",
+  "lastName" : "Personalausweis",
+  "emailVerified" : false,
+  "attributes" : {
+    "bPK2" : [ "JKFgukzFtuzfKUZFktf-zuIgKUZfTZdFKuzFkDCWTfk" ],
+    "accountSource" : [ "bundid" ],
+    "accountIsTemporary" : [ "false" ],
+    "levelOfAssurance" : [ "STORK-QAA-Level-4" ],
+    "accountType" : [ "person" ]
+  },
+  "createdTimestamp" : 1715871588789,
+  "enabled" : true,
+  "totp" : false,
+  "credentials" : [ {
+    "id" : "3b6a6ca6-3eed-45e9-8ae4-9967d6dd07e1",
+    "type" : "password",
+    "userLabel" : "My password",
+    "createdDate" : 1716475390616,
+    "secretData" : "{\"value\":\"d8xDRJRp+4w9bn58t/KGetlJLpnrqzFYcU4XpwuyRAY=\",\"salt\":\"25Y91ylPY/DjOUXJlXUynw==\",\"additionalParameters\":{}}",
+    "credentialData" : "{\"hashIterations\":27500,\"algorithm\":\"pbkdf2-sha256\",\"additionalParameters\":{}}"
+  } ],
+  "disableableCredentialTypes" : [ ],
+  "requiredActions" : [ ],
+  "realmRoles" : [ "default-roles-portal" ],
+  "notBefore" : 0,
+  "groups" : [ "/SurveillanceProgramme/IGS", "/Anmeldeverfahren/OZG" ]
+}, {
+  "id" : "e8af0f11-c562-4652-9f04-610b61155b67",
+  "username" : "test-ces-username-password",
+  "firstName" : "BundIdUser",
+  "lastName" : "UsernamePassword",
+  "emailVerified" : false,
+  "attributes" : {
+    "bPK2" : [ "TwgGOFLvVmgVCAMHd-ASbADFbiqfy" ],
+    "accountSource" : [ "bundid" ],
+    "accountIsTemporary" : [ "false" ],
+    "levelOfAssurance" : [ "STORK-QAA-Level-1" ],
+    "accountType" : [ "person" ]
+  },
+  "createdTimestamp" : 1715871472787,
+  "enabled" : true,
+  "totp" : false,
+  "credentials" : [ {
+    "id" : "8f504ced-3b15-4ea5-a222-c9930b6be3b1",
+    "type" : "password",
+    "userLabel" : "My password",
+    "createdDate" : 1716475368339,
+    "secretData" : "{\"value\":\"6zhqAIa+ojsrD141j4DX2ODrSH9nRA83HDLRhEAn7AU=\",\"salt\":\"v/i25goQP2JZvJKVz3p6Xg==\",\"additionalParameters\":{}}",
+    "credentialData" : "{\"hashIterations\":27500,\"algorithm\":\"pbkdf2-sha256\",\"additionalParameters\":{}}"
+  } ],
+  "disableableCredentialTypes" : [ ],
+  "requiredActions" : [ ],
+  "realmRoles" : [ "default-roles-portal" ],
+  "notBefore" : 0,
+  "groups" : [ "/SurveillanceProgramme/IGS", "/Anmeldeverfahren/OZG" ]
+}, {
+  "id" : "67e4972c-f506-430e-b2a6-e20a08286db4",
+  "username" : "test-igs",
+  "emailVerified" : false,
+  "attributes" : {
+    "accountSource" : [ "bundid" ]
+  },
+  "createdTimestamp" : 1715319419259,
+  "enabled" : true,
+  "totp" : false,
+  "credentials" : [ {
+    "id" : "c293585a-a882-4016-b958-c96316241af7",
+    "type" : "password",
+    "userLabel" : "My password",
+    "createdDate" : 1715319525942,
+    "secretData" : "{\"value\":\"la9FiKcptgomr1EjQYtCorJ2/n8U/V4uFQr3VVc55d4=\",\"salt\":\"jF+hbmM/6PiiS2UdwNiEFQ==\",\"additionalParameters\":{}}",
+    "credentialData" : "{\"hashIterations\":27500,\"algorithm\":\"pbkdf2-sha256\",\"additionalParameters\":{}}"
+  } ],
+  "disableableCredentialTypes" : [ ],
+  "requiredActions" : [ ],
+  "realmRoles" : [ "default-roles-portal" ],
+  "notBefore" : 0,
+  "groups" : [ "/SurveillanceProgramme/IGS" ]
+}, {
+  "id" : "d6ef06e2-825e-4762-a6cf-09081f76a525",
+  "username" : "test-lup-igs-laboratory",
+  "emailVerified" : false,
+  "createdTimestamp" : 1714639298836,
+  "enabled" : true,
+  "totp" : false,
+  "credentials" : [ {
+    "id" : "72d2c1b7-8008-4d2d-8374-9b48ac9099a6",
+    "type" : "password",
+    "userLabel" : "My password",
+    "createdDate" : 1714639343014,
+    "secretData" : "{\"value\":\"vS++l4D713TPlNlcsw3ZCU9qHNOUFqkLpwLeK9e/p7U=\",\"salt\":\"NPW+JkJB1BzeXWMT/kZV8A==\",\"additionalParameters\":{}}",
+    "credentialData" : "{\"hashIterations\":27500,\"algorithm\":\"pbkdf2-sha256\",\"additionalParameters\":{}}"
+  } ],
+  "disableableCredentialTypes" : [ ],
+  "requiredActions" : [ ],
+  "realmRoles" : [ "default-roles-portal" ],
+  "notBefore" : 0,
+  "groups" : [ "/SurveillanceProgramme/IGS" ]
+}, {
+    "id" : "2003f570-d3a6-4bd4-b319-21955975e02b",
+    "username" : "g-c1ae4a71-b833-40a0-9bb5-50162f467971",
+    "firstName" : "bundid-user-5",
+    "emailVerified" : false,
+    "attributes" : {
+      "accountIsTemporary" : [ "false" ],
+      "accountSource" : [ "bundid" ],
+      "lastLoginDate" : [ "1773644870951" ],
+      "levelOfAssurance" : [ "STORK-QAA-Level-1" ],
+      "SP-User-ID" : [ "2b4e40bf-755a-4717-8a2d-f2c3e1949952" ],
+      "accountType" : [ "person" ]
+    },
+    "enabled" : true,
+    "createdTimestamp" : 1773644870372,
+    "totp" : false,
+    "credentials" : [ ],
+    "disableableCredentialTypes" : [ ],
+    "requiredActions" : [ ],
+    "federatedIdentities" : [ {
+      "identityProvider" : "bundid-idp",
+      "userId" : "G-c1ae4a71-b833-40a0-9bb5-50162f467971",
+      "userName" : "g-c1ae4a71-b833-40a0-9bb5-50162f467971"
+    } ],
+    "realmRoles" : [ "default-roles-portal" ],
+    "notBefore" : 0,
+    "groups" : [ "/SurveillanceProgramme/ARE", "/Anmeldeverfahren/OZG" ]
+  }, {
+    "id" : "3eb0c631-d42a-4784-a3c2-f6842d76f836",
+    "username" : "test-surveillance-are",
+    "emailVerified" : false,
+    "attributes" : {
+      "accountIsTemporary" : [ "false" ],
+      "accountSource" : [ "bundid" ],
+      "lastLoginDate" : [ "1773665930333" ],
+      "levelOfAssurance" : [ "STORK-QAA-Level-1" ],
+      "accountType" : [ "person" ],
+      "SP-User-ID" : [ "3c4e40bf-755a-4717-8a2d-f2c3e1949952" ]
+    },
+    "enabled" : true,
+    "createdTimestamp" : 1773665527214,
+    "totp" : false,
+    "credentials" : [ {
+      "id" : "35100011-40e6-41a2-bd4c-bbc05f8992cd",
+      "type" : "password",
+      "userLabel" : "My password",
+      "createdDate" : 1773665554429,
+      "secretData" : "{\"value\":\"GVJwu61Afdir55v0BQ+QKjlUU6R0dw7MRsvv5ktuTrA=\",\"salt\":\"hfTO1jgRsFwE9U0RncyBew==\",\"additionalParameters\":{}}",
+      "credentialData" : "{\"hashIterations\":5,\"algorithm\":\"argon2\",\"additionalParameters\":{\"hashLength\":[\"32\"],\"memory\":[\"7168\"],\"type\":[\"id\"],\"version\":[\"1.3\"],\"parallelism\":[\"1\"]}}"
+    } ],
+    "disableableCredentialTypes" : [ ],
+    "requiredActions" : [ ],
+    "realmRoles" : [ "default-roles-portal" ],
+    "notBefore" : 0,
+    "groups" : [ "/SurveillanceProgramme/ARE" ]
+  }, {
+    "id" : "d48f336d-dbf5-49d9-b397-e248562569da",
+    "username" : "test-surveillance-not-are",
+    "emailVerified" : false,
+    "attributes" : {
+      "accountSource" : [ "bundid" ],
+      "accountIsTemporary" : [ "false" ],
+      "lastLoginDate" : [ "1773666108536" ],
+      "levelOfAssurance" : [ "STORK-QAA-Level-1" ],
+      "accountType" : [ "person" ]
+    },
+    "enabled" : true,
+    "createdTimestamp" : 1773665575167,
+    "totp" : false,
+    "credentials" : [ {
+      "id" : "3b40d2ea-da1d-4d47-9be2-1144b4a535cd",
+      "type" : "password",
+      "userLabel" : "My password",
+      "createdDate" : 1773665589159,
+      "secretData" : "{\"value\":\"BPXOvrpypBYJvoDfNko1YGqzvj5PVTDES9yO16KAbM4=\",\"salt\":\"MHMXkdamzwKFmNyHKUW6nA==\",\"additionalParameters\":{}}",
+      "credentialData" : "{\"hashIterations\":5,\"algorithm\":\"argon2\",\"additionalParameters\":{\"hashLength\":[\"32\"],\"memory\":[\"7168\"],\"type\":[\"id\"],\"version\":[\"1.3\"],\"parallelism\":[\"1\"]}}"
+    } ],
+    "disableableCredentialTypes" : [ ],
+    "requiredActions" : [ ],
+    "realmRoles" : [ "pathogen-notification-nonnominal-sender", "vaccine-injury-sender", "default-roles-portal", "disease-notification-nonnominal-sender", "igs-notification-data-sender", "pathogen-notification-sender", "disease-notification-sender", "pathogen-notification-anonymous-sender", "bed-occupancy-sender", "igs-sequence-data-sender", "igs-sequence-data-sender-fasta-only" ],
+    "notBefore" : 0,
+    "groups" : [ ]
+  }, {
+    "id" : "87f830ed-7509-4d71-a2a7-5755f39c96ef",
+    "username" : "8cmjrfclb__qb6c8xdp40affscubgfqb1gmup1cuwwo",
+    "emailVerified" : false,
+    "attributes" : {
+      "connectedSpUserId" : [ "eac2bfc1-2e13-4454-8a9d-f457a22c6ba9" ],
+      "SP-User-ID" : [ "1a4e40bf-755a-4717-8a2d-f2c3e1949952" ],
+      "accountType" : [ "person" ],
+      "accountIsTemporary" : [ "false" ],
+      "accountSource" : [ "bundid" ],
+      "lastLoginDate" : [ "1780040966590" ],
+      "levelOfAssurance" : [ "STORK-QAA-Level-3" ]
+    },
+    "enabled" : true,
+    "createdTimestamp" : 1780040966430,
+    "totp" : false,
+    "credentials" : [ ],
+    "disableableCredentialTypes" : [ ],
+    "requiredActions" : [ ],
+    "federatedIdentities" : [ {
+      "identityProvider" : "bundid-idp",
+      "userId" : "8cMJRFclB__qB6C8XDP40AffScuBgfQB1gmuP1CuWwo",
+      "userName" : "8cmjrfclb__qb6c8xdp40affscubgfqb1gmup1cuwwo"
+    } ],
+    "realmRoles" : [ "default-roles-portal" ],
+    "notBefore" : 0,
+    "groups" : [ "/SurveillanceProgramme/ARE", "/Anmeldeverfahren/OZG" ]
+  }, {
+    "id" : "08e8bee6-2433-4d48-b1c7-979de3a154ef",
+    "username" : "du-muk-user-0",
+    "emailVerified" : false,
+    "attributes" : {
+      "accountSource" : [ "muk" ],
+      "accountIsTemporary" : [ "false" ],
+      "lastLoginDate" : [ "1792496552720" ],
+      "levelOfAssurance" : [ "STORK-QAA-Level-3" ],
+      "accountType" : [ "organization" ]
+    },
+    "enabled" : true,
+    "createdTimestamp" : 1792496552652,
+    "totp" : false,
+    "credentials" : [ ],
+    "disableableCredentialTypes" : [ ],
+    "requiredActions" : [ ],
+    "federatedIdentities" : [ {
+      "identityProvider" : "muk",
+      "userId" : "G-75b033a5-3caf-419b-963d-ae9cf491ff7b",
+      "userName" : "g-75b033a5-3caf-419b-963d-ae9cf491ff7b"
+    } ],
+    "realmRoles" : [ "default-roles-portal" ],
+    "notBefore" : 0,
+    "groups" : [ "EinrichtungenFür7.3Meldungen", "/Anmeldeverfahren/OZG" ]
+}, {
+    "id" : "769d36cb-2234-43c3-ba73-c4bdd2d23b77",
+    "username" : "du-9e1dc3bd51520fb95a1b3a335f981d666cdfafbc",
+    "emailVerified" : false,
+    "attributes" : {
+      "accountSource" : [ "muk" ],
+      "accountIsTemporary" : [ "false" ],
+      "lastLoginDate" : [ "1792500773842" ],
+      "levelOfAssurance" : [ "STORK-QAA-Level-3" ],
+      "accountType" : [ "organization" ]
+    },
+    "enabled" : true,
+    "createdTimestamp" : 1792473995654,
+    "totp" : false,
+    "credentials" : [ ],
+    "disableableCredentialTypes" : [ ],
+    "requiredActions" : [ ],
+    "federatedIdentities" : [ {
+      "identityProvider" : "muk",
+      "userId" : "ek-0c03beac1ccfd8639e070f5dd9ca47a76dafa0e7",
+      "userName" : "ek-0c03beac1ccfd8639e070f5dd9ca47a76dafa0e7"
+    } ],
+    "realmRoles" : [ "default-roles-portal" ],
+    "notBefore" : 0,
+    "groups" : [ "EinrichtungenFür7.3Meldungen", "/Anmeldeverfahren/OZG" ]
+}]

@@ -1,0 +1,21 @@
+  [{
+    "id" : "eac2bfc1-2e13-4454-8a9d-f457a22c6ba9",
+    "username" : "test-user-1",
+    "email" : "test-user-1@doc.de",
+    "emailVerified" : false,
+    "attributes" : {
+      "DEMIS-ID" : [],
+      "SP-User-ID" : [ "1a4e40bf-755a-4717-8a2d-f2c3e1949952" ],
+      "Surveillance-Programm" : [ "ARE" ],
+      "PLZ" : [ "90210" ]
+    },
+    "enabled" : true,
+    "createdTimestamp" : 1773301009631,
+    "totp" : false,
+    "credentials" : [ ],
+    "disableableCredentialTypes" : [ ],
+    "requiredActions" : [ ],
+    "realmRoles" : [ "default-roles-surveillance-programs" ],
+    "notBefore" : 0,
+    "groups" : [ ]
+  }]

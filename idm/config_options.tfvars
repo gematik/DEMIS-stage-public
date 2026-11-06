@@ -36,6 +36,19 @@ config_options = [
     synchronize_option_value = false
   },
   {
+    services                 = ["keycloak"]
+    option_name              = "KC_BOOTSTRAP_ADMIN_CLIENT_ID"
+    option_value             = "terraform-client"
+    synchronize_option_value = false
+  },
+  {
+    services                 = ["keycloak"]
+    option_name              = "KC_BOOTSTRAP_ADMIN_CLIENT_SECRET"
+    option_value             = "B!r&DoiF1T6Q3YtbtnNBDfgg9%R^ykQ0"
+    synchronize_option_value = false
+
+  },
+  {
     services     = ["keycloak"]
     option_name  = "ONLINE_SERVICE_ID"
     option_value = "BMI-A2623"

@@ -7,6 +7,11 @@ feature_flags = [
     synchronize_flag_value = false
   },
   {
+    services   = ["ars-service"]
+    flag_name  = "FEATURE_FLAG_ARS_SENTINEL_ENABLED"
+    flag_value = false
+  },
+  {
     services   = ["portal-bedoccupancy"]
     flag_name  = "FEATURE_FLAG_BED_A11Y_INFO_REQUIREDFIELDS"
     flag_value = true
@@ -22,12 +27,12 @@ feature_flags = [
     flag_value = true
   },
   {
-    services   = ["futs-bedoccupancy", "futs-disease", "futs-igs", "futs-pathogen"]
+    services   = ["futs-ars", "futs-bedoccupancy", "futs-disease", "futs-igs", "futs-pathogen"]
     flag_name  = "FEATURE_FLAG_DISEASE_INDENT"
     flag_value = true
   },
   {
-    services   = ["futs-bedoccupancy", "futs-disease", "futs-igs", "futs-pathogen"]
+    services   = ["futs-ars", "futs-bedoccupancy", "futs-disease", "futs-igs", "futs-pathogen"]
     flag_name  = "FEATURE_FLAG_DISEASE_QUESTIONNAIRE_ORG_INPUT_VALIDATION"
     flag_value = true
   },

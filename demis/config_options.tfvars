@@ -1,12 +1,12 @@
 # Map containing the Config Options to be activated for services
 config_options = [
   {
-    services     = ["futs-bedoccupancy", "futs-disease", "futs-igs", "futs-pathogen"]
+    services     = ["futs-ars", "futs-bedoccupancy", "futs-disease", "futs-igs", "futs-pathogen"]
     option_name  = "ADD_TEST_DATA_ERROR_CASE_FOR_LAB"
     option_value = true
   },
   {
-    services     = ["futs-bedoccupancy", "futs-disease", "futs-igs", "futs-pathogen"]
+    services     = ["futs-ars", "futs-bedoccupancy", "futs-disease", "futs-igs", "futs-pathogen"]
     option_name  = "ADD_TEST_DATA_LABORATORY_SORTING"
     option_value = true
   },

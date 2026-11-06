@@ -41,6 +41,10 @@ resource_definitions = [
     replicas = 1
   },
   {
+    service  = "futs-ars"
+    replicas = 1
+  },
+  {
     service  = "gateway-igs"
     replicas = 1
   },
