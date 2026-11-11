@@ -46,7 +46,6 @@ config_options = [
     option_name              = "KC_BOOTSTRAP_ADMIN_CLIENT_SECRET"
     option_value             = "B!r&DoiF1T6Q3YtbtnNBDfgg9%R^ykQ0"
     synchronize_option_value = false
-
   },
   {
     services     = ["keycloak"]
