@@ -2,6 +2,19 @@
 
 # Release Notes stage-public
 
+## Release 2.2.0
+- compatible with DEMIS-Development-Cluster 5.14.0
+- updated service versions:
+  - futs
+  - portal-bedoccupancy
+  - portal-disease
+  - portal-igs
+  - portal-pathogen
+  - portal-shell
+  - validation-service
+- removed several old feature flags
+- activated FEATURE_FLAG_REFERENCE_PROFILE_VALIDATION for validation-service to enable validation of profile reference
+
 ## Release 2.1.0
 - compatible with DEMIS-Development-Cluster 5.14.0
 - updated deployment-strategy from update to rolling for policies and network-rules to avoid downtime during updates

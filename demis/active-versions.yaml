@@ -28,7 +28,7 @@ fhir-storage-writer:
   enabled: true
 futs:
   main:
-    version: 2.8.1
+    version: 2.8.2
     weight: 100
   canary: {}
   chart-name: futs-delegation
@@ -37,7 +37,7 @@ futs:
   pin-image-digests: false
 futs-bedoccupancy:
   main:
-    version: 2.8.1
+    version: 2.8.2
     weight: 100
     profiles:
       - 6.2.9
@@ -48,7 +48,7 @@ futs-bedoccupancy:
   enabled: true
 futs-disease:
   main:
-    version: 2.8.1
+    version: 2.8.2
     weight: 100
     profiles:
       - 6.2.11
@@ -59,7 +59,7 @@ futs-disease:
   enabled: true
 futs-pathogen:
   main:
-    version: 2.8.1
+    version: 2.8.2
     weight: 100
     profiles:
       - 6.2.10
@@ -70,7 +70,7 @@ futs-pathogen:
   enabled: true
 futs-igs:
   main:
-    version: 2.8.1
+    version: 2.8.2
     weight: 100
     profiles:
       - 5.0.1
@@ -81,7 +81,7 @@ futs-igs:
   enabled: true
 futs-ars:
   main:
-    version: 2.8.1
+    version: 2.8.2
     weight: 100
     profiles:
       - 1.2.0
@@ -155,35 +155,35 @@ pgbouncer:
   enabled: true
 portal-bedoccupancy:
   main:
-    version: 1.7.8
+    version: 1.7.9
     weight: 100
   canary: {}
   deployment-strategy: canary
   enabled: true
 portal-disease:
   main:
-    version: 1.9.4
+    version: 1.9.5
     weight: 100
   canary: {}
   deployment-strategy: canary
   enabled: true
 portal-igs:
   main:
-    version: 1.4.6
+    version: 1.4.7
     weight: 100
   canary: {}
   deployment-strategy: canary
   enabled: true
 portal-pathogen:
   main:
-    version: 1.9.7
+    version: 1.9.8
     weight: 100
   canary: {}
   deployment-strategy: canary
   enabled: true
 portal-shell:
   main:
-    version: 1.8.5
+    version: 1.8.6
     weight: 100
   canary: {}
   deployment-strategy: canary
@@ -218,7 +218,7 @@ report-processing-service:
   enabled: true
 validation-service:
   main:
-    version: 2.16.0
+    version: 2.17.0
     weight: 100
   canary: {}
   chart-name: validation-service-delegation
@@ -227,7 +227,7 @@ validation-service:
   pin-image-digests: false
 validation-service-bedoccupancy:
   main:
-    version: 2.16.0
+    version: 2.17.0
     weight: 100
     profiles:
       - 6.2.9
@@ -239,7 +239,7 @@ validation-service-bedoccupancy:
   enabled: true
 validation-service-disease:
   main:
-    version: 2.16.0
+    version: 2.17.0
     weight: 100
     profiles:
       - 6.2.11
@@ -251,7 +251,7 @@ validation-service-disease:
   enabled: true
 validation-service-pathogen:
   main:
-    version: 2.16.0
+    version: 2.17.0
     weight: 100
     profiles:
       - 6.2.10
@@ -263,7 +263,7 @@ validation-service-pathogen:
   enabled: true
 validation-service-igs:
   main:
-    version: 2.16.0
+    version: 2.17.0
     weight: 100
     profiles:
       - 5.0.1
@@ -274,7 +274,7 @@ validation-service-igs:
   enabled: true
 validation-service-ars:
   main:
-    version: 2.16.0
+    version: 2.17.0
     weight: 100
     profiles:
       - 1.2.0
