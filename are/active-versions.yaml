@@ -14,7 +14,7 @@ are-notification-processing-service:
   enabled: true
 validation-service:
   main:
-    version: 2.16.0
+    version: 2.17.0
     weight: 100
   canary: {}
   chart-name: validation-service-delegation
@@ -23,7 +23,7 @@ validation-service:
   pin-image-digests: false
 validation-service-are:
   main:
-    version: 2.16.0
+    version: 2.17.0
     weight: 100
     profiles:
       - 1.0.2
