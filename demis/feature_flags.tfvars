@@ -47,10 +47,9 @@ feature_flags = [
     flag_value = true
   },
   {
-    services               = ["portal-shell"]
-    flag_name              = "FEATURE_FLAG_PORTAL_ARE_ENABLED"
-    flag_value             = true
-    synchronize_flag_value = false
+    services   = ["portal-shell"]
+    flag_name  = "FEATURE_FLAG_PORTAL_ARE_ENABLED"
+    flag_value = true
   },
   {
     services   = ["portal-bedoccupancy", "portal-shell"]

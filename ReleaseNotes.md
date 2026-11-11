@@ -2,6 +2,10 @@
 
 # Release Notes stage-public
 
+## Release 2.2.1
+- compatible with DEMIS-Development-Cluster 5.14.0
+- updated are services
+
 ## Release 2.2.0
 - compatible with DEMIS-Development-Cluster 5.14.0
 - updated service versions:
