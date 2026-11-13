@@ -9,7 +9,7 @@ feature_flags = [
   {
     services   = ["ars-service"]
     flag_name  = "FEATURE_FLAG_ARS_SENTINEL_ENABLED"
-    flag_value = false
+    flag_value = true
   },
   {
     services   = ["portal-bedoccupancy"]
@@ -67,9 +67,10 @@ feature_flags = [
     flag_value = true
   },
   {
-    services   = ["validation-service-ars", "validation-service-bedoccupancy", "validation-service-disease", "validation-service-igs", "validation-service-pathogen"]
-    flag_name  = "FEATURE_FLAG_REFERENCE_PROFILE_VALIDATION"
-    flag_value = true
+    services               = ["validation-service-ars", "validation-service-bedoccupancy", "validation-service-disease", "validation-service-igs", "validation-service-pathogen"]
+    flag_name              = "FEATURE_FLAG_REFERENCE_PROFILE_VALIDATION"
+    flag_value             = true
+    synchronize_flag_value = false
   },
   {
     services   = ["notification-routing-service"]

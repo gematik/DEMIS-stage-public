@@ -331,7 +331,7 @@ notification-routing-data:
   enabled: true
 ars-service:
   main:
-    version: 1.7.0
+    version: 1.7.1
     weight: 100
   canary: {}
   deployment-strategy: canary
