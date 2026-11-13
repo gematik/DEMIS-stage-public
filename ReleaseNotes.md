@@ -2,6 +2,10 @@
 
 # Release Notes stage-public
 
+## Release 2.3.0
+- compatible with DEMIS-Development-Cluster 5.14.0
+- enabled ARS-Sentinels
+
 ## Release 2.2.1
 - compatible with DEMIS-Development-Cluster 5.14.0
 - updated are services

@@ -11,8 +11,9 @@ feature_flags = [
     flag_value = true
   },
   {
-    services   = ["validation-service-are"]
-    flag_name  = "FEATURE_FLAG_REFERENCE_PROFILE_VALIDATION"
-    flag_value = true
+    services               = ["validation-service-are"]
+    flag_name              = "FEATURE_FLAG_REFERENCE_PROFILE_VALIDATION"
+    flag_value             = true
+    synchronize_flag_value = false
   }
 ]
