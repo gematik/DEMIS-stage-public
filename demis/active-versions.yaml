@@ -231,7 +231,6 @@ validation-service-bedoccupancy:
     weight: 100
     profiles:
       - 6.2.9
-      - 5.4.1
   canary: {}
   synchronize-profiles: false
   chart-name: validation-service
@@ -243,7 +242,6 @@ validation-service-disease:
     weight: 100
     profiles:
       - 6.2.11
-      - 5.4.1
   canary: {}
   synchronize-profiles: false
   chart-name: validation-service
@@ -255,7 +253,6 @@ validation-service-pathogen:
     weight: 100
     profiles:
       - 6.2.10
-      - 5.4.1
   canary: {}
   synchronize-profiles: false
   chart-name: validation-service
@@ -369,21 +366,21 @@ surveillance-pseudonym-purger-ars:
   enabled: true
 destination-lookup-writer:
   main:
-    version: 1.3.0
+    version: 1.3.1
     weight: 100
   canary: {}
   deployment-strategy: canary
   enabled: true
 destination-lookup-reader:
   main:
-    version: 1.3.0
+    version: 1.3.1
     weight: 100
   canary: {}
   deployment-strategy: canary
   enabled: true
 destination-lookup-purger:
   main:
-    version: 1.3.0
+    version: 1.3.1
     weight: 100
   canary: {}
   deployment-strategy: replace

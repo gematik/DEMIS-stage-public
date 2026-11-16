@@ -2,6 +2,12 @@
 
 # Release Notes stage-public
 
+## Release 2.4.0
+- compatible with DEMIS-Development-Cluster 5.14.0
+- extended default lifetime of initial notification id in destination-log-service from 30 to 180 days
+- removed support of profile versions 5.X.X on disease, pathogen and bedoccupancy services, only profile versions 6.X.X are supported now
+  - endpoints /reports/bedoccupancy/v5/fhir/, /notifications/disease/v5/fhir/, /notifications/pathogen/v5/fhir/ are removed
+
 ## Release 2.3.0
 - compatible with DEMIS-Development-Cluster 5.14.0
 - enabled ARS-Sentinels

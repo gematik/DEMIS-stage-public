@@ -235,30 +235,6 @@ traffic_routes_templates:
       x-fhir-package: "${package_name}"
       x-validation-relaxed: "false"
   - variables:
-      api_version: "v5"
-      package_version: "v5"
-      submission_type: "disease"
-      package_name: "disease"
-    additional_headers:
-      x-fhir-api-version: "${api_version}"
-      x-api-version: "${api_version}"
-      x-fhir-profile: "${package_name}"
-      x-fhir-package-version: "${package_version}"
-      x-fhir-package: "${package_name}"
-      x-validation-relaxed: "true"
-  - variables:
-      api_version: "v5"
-      package_version: "v5"
-      submission_type: "pathogen"
-      package_name: "laboratory"
-    additional_headers:
-      x-fhir-api-version: "${api_version}"
-      x-api-version: "${api_version}"
-      x-fhir-profile: "${package_name}"
-      x-fhir-package-version: "${package_version}"
-      x-fhir-package: "${package_name}"
-      x-validation-relaxed: "true"
-  - variables:
       submission_type: "any"
       api_version: "v6"
       package_version: "v6"
@@ -332,13 +308,6 @@ traffic_routes_templates:
   - variables:
       api_version: "v6"
       package_version: "v6"
-    additional_headers:
-      x-fhir-api-version: "${api_version}"
-      x-api-version: "${api_version}"
-      x-fhir-package-version: "${package_version}"
-  - variables:
-      api_version: "v5"
-      package_version: "v5"
     additional_headers:
       x-fhir-api-version: "${api_version}"
       x-api-version: "${api_version}"
