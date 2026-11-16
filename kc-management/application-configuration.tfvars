@@ -1,7 +1,7 @@
 ######################
 # Global Options
 ######################
-stage_name    = "local"
+stage_name    = "public"
 is_production = false
 
 # The path to the kubeconfig file to use for the deployment
