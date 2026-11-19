@@ -12,6 +12,11 @@ config_options = [
     synchronize_option_value = false
   },
   {
+    services     = ["keycloak"]
+    option_name  = "JAVA_OPTS_APPEND"
+    option_value = "-XX:-UseBASE64Intrinsics"
+  },
+  {
     services                 = ["keycloak"]
     option_name              = "JWT_VALIDATION_EXPECTED_ISSUER"
     option_value             = null

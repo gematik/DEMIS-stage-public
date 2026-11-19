@@ -2,6 +2,10 @@
 
 # Release Notes stage-public
 
+## Release 2.4.1
+- compatible with DEMIS-Development-Cluster 5.15.3
+- added environment variable UseBASE64Intrinsics to keycloak to disable the Base64 intrinsic entirely
+
 ## Release 2.4.0
 - compatible with DEMIS-Development-Cluster 5.14.0
 - extended default lifetime of initial notification id in destination-log-service from 30 to 180 days

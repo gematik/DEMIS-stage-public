@@ -1,5 +1,7 @@
 /.idea/
 .vscode/
+/lib/
+
 jenkinsfiles
 .scripts
 AGENTS.md
