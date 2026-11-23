@@ -2,6 +2,15 @@
 
 # Release Notes stage-public
 
+## Release 2.5.0
+- compatible with DEMIS-Development-Cluster 5.15.3
+- upgraded service versions for:
+  - portal-disease
+  - portal-pathogen
+  - portal-igs
+  - portal-shell
+- activated feature flag FEATURE_FLAG_CORE_SIDENAV for new a11y compliant side navigation to pathogen portal
+
 ## Release 2.4.1
 - compatible with DEMIS-Development-Cluster 5.15.3
 - added environment variable UseBASE64Intrinsics to keycloak to disable the Base64 intrinsic entirely

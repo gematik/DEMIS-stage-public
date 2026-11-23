@@ -17,8 +17,8 @@ feature_flags = [
     flag_value = true
   },
   {
-    services   = ["portal-disease"]
-    flag_name  = "FEATURE_FLAG_DISEASE_AUTOCOMPLETE"
+    services   = ["portal-pathogen"]
+    flag_name  = "FEATURE_FLAG_CORE_SIDENAV"
     flag_value = true
   },
   {
