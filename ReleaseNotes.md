@@ -2,6 +2,10 @@
 
 # Release Notes stage-public
 
+## Release 2.6.0
+- compatible with DEMIS-Development-Cluster 5.16.1
+- update kc-management to individual add specific configurations
+
 ## Release 2.5.0
 - compatible with DEMIS-Development-Cluster 5.15.3
 - upgraded service versions for:
