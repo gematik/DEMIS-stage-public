@@ -1,6 +1,11 @@
 # Map containing the Feature Flags to be activated for services
 feature_flags = [
   {
+    services   = ["validation-service-are"]
+    flag_name  = "FEATURE_FLAG_ABSTRACT_PROFILE_VALIDATION"
+    flag_value = true
+  },
+  {
     services   = ["are-notification-processing-service"]
     flag_name  = "FEATURE_FLAG_ARE_ENRICHMENT_ENABLED"
     flag_value = true

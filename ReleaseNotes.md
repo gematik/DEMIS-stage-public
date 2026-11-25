@@ -2,6 +2,11 @@
 
 # Release Notes stage-public
 
+## Release 2.7.0
+- compatible with DEMIS-Development-Cluster 5.16.1
+- upgraded package for disease to version 6.2.12
+- activated feature flag FEATURE_FLAG_ABSTRACT_PROFILE_VALIDATION to prevent usage of abstract profiles for notifications
+
 ## Release 2.6.0
 - compatible with DEMIS-Development-Cluster 5.16.1
 - update kc-management to individual add specific configurations

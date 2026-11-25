@@ -1,6 +1,11 @@
 # Map containing the Feature Flags to be activated for services
 feature_flags = [
   {
+    services   = ["validation-service-ars", "validation-service-bedoccupancy", "validation-service-disease", "validation-service-pathogen"]
+    flag_name  = "FEATURE_FLAG_ABSTRACT_PROFILE_VALIDATION"
+    flag_value = true
+  },
+  {
     services               = ["ars-service"]
     flag_name              = "FEATURE_FLAG_ARS_BULK_ENABLED"
     flag_value             = false
